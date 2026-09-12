@@ -1,4 +1,4 @@
-.page{
+﻿.page{
 background:#f7f8fb;
 min-height:100vh;
 padding-bottom:60px;
@@ -167,7 +167,7 @@ bottom:-20px;
 width:270px;
 height:380px;
 opacity:.08;
-background:url("/tour-eiffel.png") center/contain no-repeat;
+background:none;
 }.jobsPanel{
 background:#fff;
 border-radius:16px;

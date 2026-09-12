@@ -198,8 +198,8 @@ export default function PolitiqueConfidentialitePage() {
               <div>
                 <dt>Adresse électronique</dt>
                 <dd>
-                  <a href="mailto:contact@sbiparis.com">
-                    contact@sbiparis.com
+                  <a href="mailto:contactsbiparis@gmail.com">
+                    contactsbiparis@gmail.com
                   </a>
                 </dd>
               </div>
@@ -493,8 +493,8 @@ export default function PolitiqueConfidentialitePage() {
 
             <p>
               Pour exercer vos droits, écrivez à{" "}
-              <a href="mailto:contact@sbiparis.com">
-                contact@sbiparis.com
+              <a href="mailto:contactsbiparis@gmail.com">
+                contactsbiparis@gmail.com
               </a>{" "}
               en précisant votre demande. Une preuve d’identité pourra être
               demandée uniquement lorsque cela est nécessaire pour vérifier
@@ -601,12 +601,12 @@ export default function PolitiqueConfidentialitePage() {
             </p>
 
             <div className={styles.contactGrid}>
-              <a href="mailto:contact@sbiparis.com">
+              <a href="mailto:contactsbiparis@gmail.com">
                 <Mail size={22} strokeWidth={1.6} aria-hidden="true" />
 
                 <span>
                   <strong>E-mail</strong>
-                  <small>contact@sbiparis.com</small>
+                  <small>contactsbiparis@gmail.com</small>
                 </span>
               </a>
 

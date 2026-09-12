@@ -1,94 +1,651 @@
-.sportPage {
-  padding: 40px !important;
-  background: #fff !important;
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f6f8fb;
+  color: #071c3f;
 }
 
-.topSection {
-  display: grid !important;
-  grid-template-columns: 380px 1fr !important;
-  gap: 30px !important;
-  align-items: start !important;
-  margin-bottom: 35px !important;
+.layout {
+  display: grid;
+  grid-template-columns: 315px minmax(0, 1fr);
+  width: 100%;
+  min-height: 100vh;
 }
 
-.leftIntro h1 {
-  font-size: 54px !important;
-  font-weight: 900 !important;
-  color: #091b45 !important;
-  margin: 15px 0 !important;
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 36px 28px 30px;
+  background: linear-gradient(
+    180deg,
+    #061a39 0%,
+    #08264d 100%
+  );
+  color: #ffffff;
 }
 
-.leftIntro p {
-  font-size: 22px !important;
-  color: #666 !important;
-  line-height: 1.6 !important;
+.sidebarHeader {
+  margin-bottom: 34px;
 }
 
-.sportIcon {
-  font-size: 55px !important;
+.sidebarHeader span {
+  display: block;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.1;
 }
 
-.rightBanner {
-  height: 270px !important;
-  border-radius: 18px !important;
-  background: linear-gradient(135deg, #1c4c95, #091b45) !important;
-  display: flex !important;
-  align-items: center !important;
-  padding: 45px !important;
-  color: white !important;
+.sidebarHeader strong {
+  display: block;
+  margin-top: 9px;
+  color: #ef313b;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 1;
 }
 
-.rightBanner h2 {
-  font-size: 42px !important;
-  font-weight: 900 !important;
-  line-height: 1.2 !important;
+.redLine {
+  width: 51px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: #ef313b;
 }
 
-.cardsGrid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 22px !important;
+.homeButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 55px;
+  margin-bottom: 36px;
+  padding: 0 18px;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #071c3f;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
 }
 
-.sportCard {
-  background: white !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 18px !important;
-  overflow: hidden !important;
+.homeIcon {
+  color: #ef313b;
+  font-size: 21px;
 }
 
-.sportPhoto {
-  width: 100% !important;
-  aspect-ratio: 16 / 9 !important;
-  background: linear-gradient(135deg, #dbeafe, #eff6ff) !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  font-size: 50px !important;
+.sidebarSection {
+  width: 100%;
 }
 
-.sportContent {
-  padding: 18px !important;
+.sidebarLabel {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
-.sportContent h3 {
-  font-size: 30px !important;
-  font-weight: 900 !important;
-  color: #091b45 !important;
-  margin: 0 !important;
+.sportNav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
-.sportContent p {
-  margin-top: 8px !important;
-  color: #555 !important;
+.sportNavItem {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 42px;
+  padding: 0 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 
-.sportCard small {
-  display: block !important;
-  padding: 0 18px 18px !important;
-  color: #777 !important;
+.sportNavItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(3px);
 }
 
-.sportCard:nth-child(5) {
-  grid-column: 1 !important;
+.navSportIcon {
+  display: inline-flex;
+  justify-content: center;
+  width: 23px;
+  font-size: 17px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  margin: 23px 0 27px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 38px;
+  padding: 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.infoItem > span:first-child {
+  display: inline-flex;
+  justify-content: center;
+  width: 23px;
+}
+
+.sidebarServices {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 38px;
+}
+
+.sidebarService {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 9px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.serviceIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 39px;
+  width: 39px;
+  height: 39px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.sidebarService strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.sidebarService span {
+  display: block;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 10px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  min-width: 0;
+  background: #f8fafc;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  display: grid;
+  grid-template-columns:
+    minmax(390px, 0.85fr)
+    minmax(520px, 1.15fr);
+  min-height: 420px;
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+  padding: 40px 26px 28px 52px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 33px;
+  color: #788499;
+  font-size: 12px;
+}
+
+.breadcrumb b {
+  color: #adb5c2;
+  font-weight: 500;
+}
+
+.breadcrumb strong {
+  color: #071c3f;
+}
+
+.heroText h1 {
+  margin: 0;
+  color: #071c3f;
+  font-size: clamp(44px, 4vw, 64px);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.heroText h1 span {
+  display: block;
+  margin-top: 10px;
+  color: #ef313b;
+}
+
+.heroUnderline {
+  width: 75px;
+  height: 4px;
+  margin: 23px 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #071c3f 0%,
+    #071c3f 52%,
+    #ef313b 52%,
+    #ef313b 100%
+  );
+}
+
+.heroDescription {
+  max-width: 390px;
+  margin: 0;
+  color: #66758c;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.heroBenefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 520px;
+  gap: 18px 20px;
+  margin-top: 39px;
+}
+
+.heroBenefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefitIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dce3ec;
+  border-radius: 50%;
+  color: #071c3f;
+  font-size: 15px;
+}
+
+.heroBenefit strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #071c3f;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.heroBenefit small {
+  display: block;
+  color: #8d98aa;
+  font-size: 9px;
+}
+
+.heroVisual {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  background: #0b2d5b;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.heroFade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 0.18) 18%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}
+
+/* =========================
+   DISCIPLINES
+========================= */
+
+.disciplines {
+  padding: 38px 40px 30px;
+}
+
+.sectionHeading {
+  margin-bottom: 22px;
+}
+
+.sectionKicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+  color: #ef313b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.sectionKicker span {
+  width: 24px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #071c3f 0%,
+    #071c3f 50%,
+    #ef313b 50%,
+    #ef313b 100%
+  );
+}
+
+.sectionHeading h2 {
+  margin: 0;
+  color: #071c3f;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.disciplineGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 19px;
+}
+
+.disciplineCard {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 7px 22px rgba(22, 41, 70, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.disciplineCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(22, 41, 70, 0.12);
+}
+
+.disciplineImage {
+  height: 195px;
+  overflow: hidden;
+  background: #edf2f7;
+}
+
+.disciplineImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.disciplineCard:hover .disciplineImage img {
+  transform: scale(1.045);
+}
+
+.disciplineIcon {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  margin: -25px auto 0;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: #082b58;
+  color: #ffffff;
+  font-size: 19px;
+  box-shadow: 0 4px 12px rgba(8, 43, 88, 0.22);
+}
+
+.disciplineContent {
+  padding: 10px 14px 21px;
+  text-align: center;
+}
+
+.disciplineContent h3 {
+  margin: 0 0 5px;
+  color: #071c3f;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.disciplineContent p {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.discover {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #ef313b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.discover b {
+  font-size: 14px;
+}
+
+/* =========================
+   BOTTOM SERVICES
+========================= */
+
+.bottomServices {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 40px 34px;
+  padding: 18px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.bottomService {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 2px 18px;
+  border-right: 1px solid #edf1f5;
+}
+
+.bottomService:last-child {
+  border-right: none;
+}
+
+.bottomIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 41px;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #f3f6fa;
+  color: #071c3f;
+  font-size: 17px;
+}
+
+.bottomService strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #071c3f;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.bottomService span {
+  display: block;
+  color: #7b879a;
+  font-size: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1280px) {
+  .layout {
+    grid-template-columns: 270px minmax(0, 1fr);
+  }
+
+  .sidebar {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .hero {
+    grid-template-columns:
+      minmax(330px, 0.9fr)
+      minmax(430px, 1.1fr);
+  }
+
+  .heroText {
+    padding-left: 38px;
+  }
+
+  .disciplineGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    min-height: auto;
+  }
+
+  .sidebarServices {
+    display: none;
+  }
+
+  .sportNav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroVisual {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 720px) {
+  .sidebar {
+    padding: 25px 18px;
+  }
+
+  .sportNav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heroText {
+    padding: 30px 21px;
+  }
+
+  .heroText h1 {
+    font-size: 43px;
+  }
+
+  .heroBenefits {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heroVisual {
+    min-height: 260px;
+  }
+
+  .disciplines {
+    padding: 29px 18px 25px;
+  }
+
+  .disciplineGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bottomServices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 0 18px 25px;
+  }
+
+  .bottomService {
+    padding: 0;
+    border-right: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroBenefits {
+    grid-template-columns: 1fr;
+  }
+
+  .disciplineGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomServices {
+    grid-template-columns: 1fr;
+  }
 }

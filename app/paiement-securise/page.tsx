@@ -77,13 +77,13 @@ export default function PaiementSecurisePage() {
         </Link>
 
         <span aria-hidden="true">›</span>
-        <strong>Paiement sécurisé</strong>
+        <strong>Modalités de paiement</strong>
       </div>
 
       <section className={styles.hero}>
         <span className={styles.kicker}>TRANSACTIONS PROTÉGÉES</span>
 
-        <h1>Paiement sécurisé</h1>
+        <h1>Modalités de paiement</h1>
 
         <span className={styles.titleLine} />
 
@@ -126,30 +126,9 @@ export default function PaiementSecurisePage() {
           <span className={styles.cardLine} />
 
           <div className={styles.paymentGroup}>
-            <h3>Cartes bancaires</h3>
-
-            <div className={styles.paymentLogos}>
-              <span className={styles.visa}>VISA</span>
-
-              <span className={styles.mastercard} aria-label="Mastercard">
-                <i />
-                <i />
-              </span>
-
-              <span className={styles.amex}>AMEX</span>
-
-              <span className={styles.cb}>CB</span>
-            </div>
           </div>
 
           <div className={styles.paymentGroup}>
-            <h3>Paiements en ligne</h3>
-
-            <div className={styles.paymentLogos}>
-              <span className={styles.paypal}>PayPal</span>
-              <span className={styles.applePay}> Pay</span>
-              <span className={styles.googlePay}>G Pay</span>
-            </div>
           </div>
 
           <div className={styles.paymentGroup}>

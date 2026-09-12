@@ -93,9 +93,7 @@ export default function CGVPage() {
             <h2>5. Paiement</h2>
 
             <p>
-              Les paiements sont sécurisés via nos partenaires.
-              Les cartes Visa, Mastercard, American Express, Apple Pay
-              et PayPal sont acceptées.
+              Le paiement en ligne n&apos;est pas encore disponible directement sur le site. Les modalités de paiement sont communiquées lors de la validation de la commande.
             </p>
           </section>
 
@@ -177,7 +175,7 @@ export default function CGVPage() {
           <section id="contact" className={styles.card}>
             <h2>14. Contact</h2>
 
-            <p><strong>E-mail :</strong> contact@sbiparis.com</p>
+            <p><strong>E-mail :</strong> contactsbiparis@gmail.com</p>
 
             <p><strong>Téléphone :</strong> +33 6 22 19 68 58</p>
 

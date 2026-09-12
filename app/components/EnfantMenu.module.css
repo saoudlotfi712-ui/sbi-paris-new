@@ -2,55 +2,172 @@
   position: absolute;
   top: 100%;
   left: 50%;
+
   width: 760px;
-  background: #fff;
+  max-width: 92vw;
+
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
   gap: 40px;
+
   padding: 40px;
+
+  background: #ffffff;
+
+  border-top: 3px solid #d91f32;
   border-radius: 0 0 24px 24px;
-  box-shadow: 0 25px 60px rgba(9, 27, 69, 0.18);
+
+  box-shadow:
+    0 25px 60px rgba(9, 27, 69, 0.18);
+
   z-index: 9999;
 
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) translateY(14px);
-  transition: 0.25s ease;
+
+  transform:
+    translateX(-50%)
+    translateY(14px);
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
 }
 
-:global(.navItem:hover) .menu {
+:global(.navItem:hover) .menu,
+.menu:hover {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+
+  transform:
+    translateX(-50%)
+    translateY(0);
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 
 .column h2 {
-  font-size: 24px;
+  position: relative;
+
+  margin: 0 0 24px;
+
   color: #091b45;
+
+  font-size: 24px;
   font-weight: 900;
-  margin-bottom: 15px;
+}
+
+.column h2::after {
+  content: "";
+
+  display: block;
+
+  width: 50px;
+  height: 4px;
+
+  margin-top: 11px;
+
+  border-radius: 10px;
+
+  background: #d91f32;
 }
 
 .item {
+  position: relative;
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #091b45;
+
   font-size: 17px;
   font-weight: 700;
-  color: #091b45;
+
+  text-decoration: none;
+
   cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.item svg {
+  flex-shrink: 0;
+
+  color: currentColor;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.item::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #091b45,
+    #ffffff,
+    #d91f32
+  );
+
+  transition: width 0.3s ease;
 }
 
 .item:hover {
   color: #d91f32;
+
+  transform: translateX(6px);
+}
+
+.item:hover svg {
+  transform: scale(1.08);
+}
+
+.item:hover::after {
+  width: 100%;
 }
 
 .divider {
   width: 1px;
+  min-height: 100%;
+
   background: #e5e7eb;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    width: 92vw;
+
+    padding: 28px;
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+  }
 }

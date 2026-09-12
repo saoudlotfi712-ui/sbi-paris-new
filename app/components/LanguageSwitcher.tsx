@@ -7,7 +7,7 @@ import {
   useTransition,
 } from "react";
 import {useLocale} from "next-intl";
-import {useRouter} from "next/navigation";
+import {usePathname} from "next/navigation";
 import {Check, ChevronDown, Globe2} from "lucide-react";
 
 import styles from "./LanguageSwitcher.module.css";
@@ -83,7 +83,7 @@ const languages: Language[] = [
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
-  const router = useRouter();
+  const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
@@ -143,8 +143,30 @@ export default function LanguageSwitcher() {
 
     setIsOpen(false);
 
+    const segments = pathname
+      .split("/")
+      .filter(Boolean);
+
+    const hasLocalePrefix =
+      languages.some(
+        (item) => item.code === segments[0],
+      );
+
+    const rest = hasLocalePrefix
+      ? segments.slice(1)
+      : segments;
+
+    const nextPath =
+      `/${language.code}${
+        rest.length
+          ? `/${rest.join("/")}`
+          : ""
+      }`;
+
     startTransition(() => {
-      router.refresh();
+      window.location.assign(
+        nextPath + window.location.search,
+      );
     });
   }
 

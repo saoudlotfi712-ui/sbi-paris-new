@@ -224,546 +224,916 @@
     "addedToCart": "Aggiunto al carrello ✓"
   },
   "collectionMenu": {
-    "dailyUniverse": "Everyday universe",
-    "bags": "Bags",
-    "leatherGoods": "Leather goods",
-    "luggage": "Luggage",
-    "accessories": "Accessories",
-    "signature": "SBI Paris signature",
-    "craftsmanship": "Craftsmanship",
-    "traditionalFashion": "Traditional fashion"
+    "dailyUniverse": "Universo quotidiano",
+    "bags": "Borse",
+    "leatherGoods": "Pelletteria",
+    "luggage": "Bagagli",
+    "accessories": "Accessori",
+    "signature": "Firma SBI PARIS",
+    "craftsmanship": "Artigianalità",
+    "traditionalFashion": "Moda tradizionale"
   },
   "hommeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Men’s sport universe"
+      "title": "Stile sportivo",
+      "polosSport": "Polo sportive",
+      "tankTops": "Canotte",
+      "shorts": "Pantaloncini",
+      "tracksuits": "Tute sportive",
+      "sportShoes": "Scarpe sportive",
+      "caps": "Cappellini",
+      "universe": "Universo sport uomo"
     },
     "classic": {
-      "title": "Classic style",
-      "polos": "Polos",
-      "shirts": "Shirts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "title": "Stile classico",
+      "polos": "Polo",
+      "shirts": "Camicie",
+      "trousers": "Pantaloni",
+      "jackets": "Giacche",
+      "cityShoes": "Scarpe eleganti"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "underwear": "Underwear"
+      "title": "Essenziali",
+      "socks": "Calze",
+      "underwear": "Intimo"
     }
   },
   "femmeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Women’s sport universe"
+      "title": "Stile sportivo",
+      "polosSport": "Polo sportive",
+      "tankTops": "Canotte",
+      "shorts": "Pantaloncini",
+      "tracksuits": "Tute sportive",
+      "sportShoes": "Scarpe sportive",
+      "caps": "Cappellini",
+      "universe": "Universo sport donna"
     },
     "classic": {
-      "title": "Classic style",
-      "polos": "Polos",
-      "shirts": "Shirts",
-      "dresses": "Dresses",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "title": "Stile classico",
+      "polos": "Polo",
+      "shirts": "Camicie",
+      "dresses": "Abiti",
+      "trousers": "Pantaloni",
+      "jackets": "Giacche",
+      "cityShoes": "Scarpe eleganti"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "lingerie": "Lingerie"
+      "title": "Essenziali",
+      "socks": "Calze",
+      "lingerie": "Intimo"
     }
   },
   "enfantMenu": {
     "boy": {
-      "title": "Boys",
-      "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes",
-      "caps": "Caps"
+      "title": "Bambini",
+      "polos": "Polo",
+      "shorts": "Pantaloncini",
+      "trousers": "Pantaloni",
+      "jackets": "Giacche",
+      "shoes": "Scarpe",
+      "caps": "Cappellini"
     },
     "girl": {
-      "title": "Girls",
-      "dresses": "Dresses",
-      "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes"
+      "title": "Bambine",
+      "dresses": "Abiti",
+      "polos": "Polo",
+      "shorts": "Pantaloncini",
+      "trousers": "Pantaloni",
+      "jackets": "Giacche",
+      "shoes": "Scarpe"
     }
   },
   "parfumMenu": {
     "men": {
-      "title": "For him",
-      "perfumes": "Men’s perfumes",
-      "boysPerfumes": "Boys’ perfumes"
+      "title": "Per lui",
+      "perfumes": "Profumi uomo",
+      "boysPerfumes": "Profumi per ragazzi"
     },
     "women": {
-      "title": "For her",
-      "perfumes": "Women’s perfumes",
-      "girlsPerfumes": "Girls’ perfumes"
+      "title": "Per lei",
+      "perfumes": "Profumi donna",
+      "girlsPerfumes": "Profumi per ragazze"
     }
   },
   "mobiliteMenu": {
-    "electricScooters": "Electric scooters",
-    "electricBikes": "Electric bikes",
-    "electricLuggage": "Electric luggage"
+    "electricScooters": "Monopattini elettrici",
+    "electricBikes": "Biciclette elettriche",
+    "electricLuggage": "Bagagli elettrici"
   },
   "promotionsMenu": {
     "promotions": {
-      "title": "Promotions",
-      "label": "Current offers"
+      "title": "Promozioni",
+      "label": "Offerte in corso"
     },
     "newArrivals": {
-      "title": "New arrivals",
-      "label": "Discover what’s new"
+      "title": "Nuovi arrivi",
+      "label": "Scopri le novità"
     }
   },
   "history": {
-    "imageAlt": "SBI Paris store",
-    "subtitle": "Our story",
-    "description": "Since 1994, SBI PARIS has offered elegant, carefully selected collections inspired by Parisian style.",
+    "imageAlt": "Boutique SBI PARIS",
+    "subtitle": "La nostra storia",
+    "description": "Dal 1994, SBI PARIS propone collezioni eleganti e accuratamente selezionate, ispirate allo stile parigino.",
     "stats": {
-      "collections": "Collections",
-      "countries": "Countries",
-      "customers": "Satisfied customers",
+      "collections": "Collezioni",
+      "countries": "Paesi",
+      "customers": "Clienti soddisfatti",
       "qualityTitle": "Premium",
-      "quality": "Quality"
+      "quality": "Qualità"
     }
   },
   "hero": {
-    "imageAlt": "SBI Paris collection",
+    "imageAlt": "Collezione SBI PARIS",
     "title": {
-      "line1": "Parisian elegance",
-      "line2": "for every day",
+      "line1": "Eleganza parigina",
+      "line2": "ogni giorno",
       "line3": "SBI PARIS"
     },
     "description": {
-      "line1": "Discover refined collections",
-      "line2": "designed for every style."
+      "line1": "Scopri collezioni raffinate",
+      "line2": "pensate per ogni stile."
     },
     "buttons": {
-      "collection": "Discover the collection",
-      "news": "See new arrivals"
+      "collection": "Scopri la collezione",
+      "news": "Vedi le novità"
     },
     "stats": {
-      "paris": "Parisian spirit",
-      "collections": "Collections",
-      "countries": "Countries"
+      "paris": "Spirito parigino",
+      "collections": "Collezioni",
+      "countries": "Paesi"
     }
   },
   "homeSport": {
-    "kicker": "Sport universe",
-    "title": "Move in style",
-    "viewAll": "View all",
-    "productCount": "{count} products",
-    "discover": "Discover",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "padel": "Padel",
-    "running": "Running"
+    "kicker": "Universo sport",
+    "title": "Muoviti con stile",
+    "viewAll": "Vedi tutto",
+    "productCount": "{count} prodotti",
+    "discover": "Scopri",
+    "sports": {
+      "football": "Calcio",
+      "basketball": "Basket",
+      "tennis": "Tennis",
+      "padel": "Padel",
+      "running": "Corsa"
+    }
   },
   "parisUniverse": {
-    "kicker": "SBI PARIS universes",
+    "kicker": "Gli universi SBI PARIS",
     "title": {
-      "line1": "A style for",
-      "line2": "every moment"
+      "line1": "Uno stile per",
+      "line2": "ogni momento"
     },
-    "description": "Explore our fashion, fragrance and mobility universes.",
-    "button": "View all collections",
-    "discover": "Discover",
+    "description": "Esplora i nostri universi moda, profumo e mobilità.",
+    "button": "Vedi tutte le collezioni",
+    "discover": "Scopri",
     "cards": {
       "women": {
-        "category": "Women",
-        "title": "Elegant women’s fashion"
+        "category": "Donna",
+        "title": "Moda donna elegante"
       },
       "men": {
-        "category": "Men",
-        "title": "Modern men’s fashion"
+        "category": "Uomo",
+        "title": "Moda uomo moderna"
       },
       "perfume": {
-        "category": "Perfume",
-        "title": "Signature fragrances"
+        "category": "Profumo",
+        "title": "Profumi distintivi"
       },
       "kids": {
-        "category": "Kids",
-        "title": "Style for children"
+        "category": "Bambini",
+        "title": "Stile per bambini"
       },
       "mobility": {
-        "category": "Mobility",
-        "title": "Electric mobility"
+        "category": "Mobilità",
+        "title": "Mobilità elettrica"
       },
       "news": {
-        "category": "New",
-        "title": "Latest arrivals"
+        "category": "Novità",
+        "title": "Ultime novità"
       }
     }
   },
   "wholesale": {
-    "kicker": "Professional space",
+    "kicker": "Spazio professionale",
     "title": {
-      "line1": "Grow your business",
-      "line2": "with SBI PARIS"
+      "line1": "Fai crescere la tua attività",
+      "line2": "con SBI PARIS"
     },
-    "description": "Benefit from professional pricing, reliable delivery and dedicated support.",
-    "button": "Become a partner",
-    "imageAlt": "SBI Paris professional service",
+    "description": "Approfitta di prezzi professionali, consegna affidabile e supporto dedicato.",
+    "button": "Diventa partner",
+    "imageAlt": "Servizio professionale SBI PARIS",
     "benefits": {
       "prices": {
-        "title": "Professional prices",
-        "description": "Competitive conditions for your business."
+        "title": "Prezzi professionali",
+        "description": "Condizioni competitive per la tua attività."
       },
       "delivery": {
-        "title": "International delivery",
-        "description": "Reliable logistics solutions."
+        "title": "Consegna internazionale",
+        "description": "Soluzioni logistiche affidabili."
       },
       "support": {
-        "title": "Dedicated support",
-        "description": "A team at your service."
+        "title": "Supporto dedicato",
+        "description": "Un team al tuo servizio."
       },
       "quality": {
-        "title": "Selected quality",
-        "description": "Products chosen with care."
+        "title": "Qualità selezionata",
+        "description": "Prodotti scelti con cura."
       }
     }
   },
   "promotionsShowcase": {
-    "logoAlt": "SBI Paris logo",
-    "header": "Offers and new arrivals",
-    "discover": "Discover",
+    "logoAlt": "Logo SBI PARIS",
+    "header": "Promozioni e novità",
+    "discover": "Scopri",
     "promotions": {
-      "kicker": "Exclusive offers",
+      "kicker": "Offerte esclusive",
       "title": {
-        "line1": "Exceptional",
-        "line2": "promotions"
+        "line1": "Promozioni",
+        "line2": "eccezionali"
       },
-      "description": "Enjoy selected offers for a limited time.",
-      "button": "View promotions",
-      "viewSelection": "View selection",
+      "description": "Approfitta di offerte selezionate per un periodo limitato.",
+      "button": "Vedi promozioni",
+      "viewSelection": "Vedi selezione",
       "discount": {
-        "upTo": "Up to -50%",
-        "description": "On selected products"
+        "upTo": "Fino al -50%",
+        "description": "Su prodotti selezionati"
       },
       "items": {
         "perfume": {
-          "title": "Perfumes",
-          "subtitle": "Signature scents"
+          "title": "Profumi",
+          "subtitle": "Fragranze distintive"
         },
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "Elegant details"
+          "title": "Accessori",
+          "subtitle": "Dettagli eleganti"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "Selected styles"
+          "title": "Uomo",
+          "subtitle": "Stili selezionati"
         }
       }
     },
     "newItems": {
-      "kicker": "New arrivals",
+      "kicker": "Novità",
       "title": {
-        "line1": "New season",
-        "line2": "new inspirations"
+        "line1": "Nuova stagione",
+        "line2": "nuove ispirazioni"
       },
-      "description": "Discover the latest SBI PARIS arrivals.",
-      "button": "See new arrivals",
-      "viewProduct": "View product",
+      "description": "Scopri le ultime novità SBI PARIS.",
+      "button": "Vedi le novità",
+      "viewProduct": "Vedi prodotto",
       "items": {
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "New details"
+          "title": "Accessori",
+          "subtitle": "Nuovi dettagli"
         },
         "travelBag": {
-          "title": "Travel bag",
-          "subtitle": "Elegant travel"
+          "title": "Borsa da viaggio",
+          "subtitle": "Viaggiare con eleganza"
         },
         "women": {
-          "title": "Women",
-          "subtitle": "New collection"
+          "title": "Donna",
+          "subtitle": "Nuova collezione"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "New collection"
+          "title": "Uomo",
+          "subtitle": "Nuova collezione"
         },
         "mobility": {
-          "title": "Mobility",
-          "subtitle": "Electric innovation"
+          "title": "Mobilità",
+          "subtitle": "Innovazione elettrica"
         }
       }
     }
   },
   "hommePage": {
-    "pageTitle": "Men",
+    "pageTitle": "Uomo",
     "breadcrumb": {
       "home": "Home",
-      "men": "Men"
+      "men": "Uomo"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "sportUniverse": {
       "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title2": "universo",
+      "description": "Prestazioni e stile ogni giorno.",
+      "button": "Scopri"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "Stile sportivo",
+        "description": "Comfort e prestazioni per uno stile di vita attivo.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "Polo sportive",
+          "tankTops": "Canotte",
+          "shorts": "Pantaloncini",
+          "tracksuits": "Tute sportive",
+          "sportShoes": "Scarpe sportive",
+          "caps": "Cappellini"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "Stile classico",
+        "description": "Capi senza tempo per un guardaroba elegante.",
         "items": {
-          "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes"
+          "polos": "Polo",
+          "shirts": "Camicie",
+          "trousers": "Pantaloni",
+          "jackets": "Giacche",
+          "cityShoes": "Scarpe eleganti"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "Essenziali",
+        "description": "Essenziali per ogni giorno.",
         "items": {
-          "socks": "Socks",
-          "underwear": "Underwear"
+          "socks": "Calze",
+          "underwear": "Intimo"
         }
       }
     }
   },
   "femmePage": {
-    "pageTitle": "Women",
+    "pageTitle": "Donna",
     "breadcrumb": {
       "home": "Home",
-      "women": "Women"
+      "women": "Donna"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "sportUniverse": {
       "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title2": "universo",
+      "description": "Prestazioni e stile ogni giorno.",
+      "button": "Scopri"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "Stile sportivo",
+        "description": "Comfort e prestazioni per uno stile di vita attivo.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "Polo sportive",
+          "tankTops": "Canotte",
+          "shorts": "Pantaloncini",
+          "tracksuits": "Tute sportive",
+          "sportShoes": "Scarpe sportive",
+          "caps": "Cappellini"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "Stile classico",
+        "description": "Capi senza tempo per un guardaroba elegante.",
         "items": {
-          "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes",
-          "dresses": "Dresses"
+          "polos": "Polo",
+          "shirts": "Camicie",
+          "trousers": "Pantaloni",
+          "jackets": "Giacche",
+          "cityShoes": "Scarpe eleganti",
+          "dresses": "Abiti"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "Essenziali",
+        "description": "Essenziali per ogni giorno.",
         "items": {
-          "socks": "Socks",
-          "lingerie": "Lingerie"
+          "socks": "Calze",
+          "lingerie": "Intimo"
         }
       }
     }
   },
   "enfantPage": {
-    "pageTitle": "Kids",
+    "pageTitle": "Bambini",
     "breadcrumb": {
       "home": "Home",
-      "children": "Kids"
+      "children": "Bambini"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "sections": {
       "boy": {
-        "title": "Boys",
-        "description": "Comfortable styles for boys.",
+        "title": "Bambini",
+        "description": "Stili comodi per bambini.",
         "items": {
-          "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes",
-          "caps": "Caps"
+          "polos": "Polo",
+          "shorts": "Pantaloncini",
+          "trousers": "Pantaloni",
+          "jackets": "Giacche",
+          "shoes": "Scarpe",
+          "caps": "Cappellini"
         }
       },
       "girl": {
-        "title": "Girls",
-        "description": "Elegant and comfortable styles for girls.",
+        "title": "Bambine",
+        "description": "Stili eleganti e comodi per bambine.",
         "items": {
-          "dresses": "Dresses",
-          "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes"
+          "dresses": "Abiti",
+          "polos": "Polo",
+          "shorts": "Pantaloncini",
+          "trousers": "Pantaloni",
+          "jackets": "Giacche",
+          "shoes": "Scarpe"
         }
       }
     }
   },
   "collectionPage": {
-    "pageTitle": "Collections",
+    "pageTitle": "Collezioni",
     "breadcrumb": {
       "home": "Home",
-      "collection": "Collection"
+      "collection": "Collezione"
     },
-    "discover": "Discover",
-    "title": "The collection",
+    "discover": "Scopri",
+    "title": "La collezione",
     "sections": {
       "quotidien": {
-        "title": "Everyday universe",
-        "description": "Essentials selected for everyday life.",
+        "title": "Universo quotidiano",
+        "description": "Essenziali selezionati per la vita quotidiana.",
         "items": {
-          "bags": "Bags",
-          "leatherGoods": "Leather goods",
-          "luggage": "Luggage",
-          "accessories": "Accessories"
+          "bags": "Borse",
+          "leatherGoods": "Pelletteria",
+          "luggage": "Bagagli",
+          "accessories": "Accessori"
         }
       },
       "signature": {
-        "title": "SBI Paris signature",
-        "description": "Craftsmanship and traditional style.",
+        "title": "Firma SBI PARIS",
+        "description": "Artigianalità e stile tradizionale.",
         "items": {
-          "craftsmanship": "Craftsmanship",
-          "traditionalFashion": "Traditional fashion"
+          "craftsmanship": "Artigianalità",
+          "traditionalFashion": "Moda tradizionale"
         }
       }
     }
   },
   "parfumPage": {
-    "pageTitle": "Perfumes",
+    "pageTitle": "Profumi",
     "breadcrumb": {
       "home": "Home",
-      "perfume": "Perfumes"
+      "perfume": "Profumi"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "sections": {
       "men": {
-        "title": "For him",
-        "description": "Distinctive fragrances for men and boys.",
+        "title": "Per lui",
+        "description": "Fragranze distintive per uomini e ragazzi.",
         "items": {
-          "perfumes": "Men’s perfumes",
-          "boysPerfumes": "Boys’ perfumes"
+          "perfumes": "Profumi uomo",
+          "boysPerfumes": "Profumi per ragazzi"
         }
       },
       "women": {
-        "title": "For her",
-        "description": "Elegant fragrances for women and girls.",
+        "title": "Per lei",
+        "description": "Fragranze eleganti per donne e ragazze.",
         "items": {
-          "perfumes": "Women’s perfumes",
-          "girlsPerfumes": "Girls’ perfumes"
+          "perfumes": "Profumi donna",
+          "girlsPerfumes": "Profumi per ragazze"
         }
       }
     }
   },
   "mobilitePage": {
-    "pageTitle": "Electric mobility",
+    "pageTitle": "Mobilità elettrica",
     "breadcrumb": {
       "home": "Home",
-      "mobility": "Mobility"
+      "mobility": "Mobilità"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "section": {
-      "title": "Electric mobility",
-      "description": "Practical and modern mobility solutions.",
+      "title": "Mobilità elettrica",
+      "description": "Soluzioni di mobilità pratiche e moderne.",
       "items": {
-        "electricScooters": "Electric scooters",
-        "electricBikes": "Electric bikes",
-        "electricLuggage": "Electric luggage"
+        "electricScooters": "Monopattini elettrici",
+        "electricBikes": "Biciclette elettriche",
+        "electricLuggage": "Bagagli elettrici"
       }
     }
   },
   "promotionsPage": {
-    "pageTitle": "Offers and new arrivals",
+    "pageTitle": "Offerte e novità",
     "breadcrumb": {
       "home": "Home",
-      "promotionsAndNews": "Offers and new arrivals"
+      "promotionsAndNews": "Offerte e novità"
     },
-    "discover": "Discover",
+    "discover": "Scopri",
     "sections": {
       "promotions": {
-        "title": "Promotions",
-        "description": "Discover our current special offers.",
+        "title": "Promozioni",
+        "description": "Scopri le nostre offerte speciali del momento.",
         "items": {
-          "promotions": "Current promotions"
+          "promotions": "Promozioni in corso"
         }
       },
       "news": {
-        "title": "New arrivals",
-        "description": "Explore our latest products.",
+        "title": "Nuovi arrivi",
+        "description": "Scopri i nostri ultimi prodotti.",
         "items": {
-          "news": "New arrivals"
+          "news": "Nuovi arrivi"
         }
       }
     }
   },
   "home": {
     "history": {
-      "imageAlt": "SBI PARIS store",
-      "kicker": "OUR STORY",
-      "description": "Since 1994, SBI PARIS has embodied the spirit of Paris: timeless elegance, exceptional craftsmanship and a constant pursuit of excellence. Every creation, whether dedicated to fashion, sport, perfume or mobility, is designed to offer a unique experience where style meets innovation.",
+      "imageAlt": "Boutique SBI PARIS",
+      "kicker": "LA NOSTRA STORIA",
+      "description": "Dal 1994, SBI PARIS incarna lo spirito di Parigi: eleganza senza tempo, savoir-faire d’eccellenza e una ricerca costante della perfezione. Ogni creazione, che sia moda, sport, profumo o mobilità, è pensata per offrire un’esperienza unica dove lo stile incontra l’innovazione.",
       "stats": {
-        "collections": "COLLECTIONS",
-        "countries": "COUNTRIES",
-        "satisfiedCustomers": "SATISFIED CUSTOMERS",
-        "quality": "QUALITY",
+        "collections": "COLLEZIONI",
+        "countries": "PAESI",
+        "satisfiedCustomers": "CLIENTI SODDISFATTI",
+        "quality": "QUALITÀ",
         "premium": "PREMIUM"
       }
     },
     "trust": {
       "internationalDelivery": {
-        "title": "International delivery",
-        "description": "Fast and secure shipping to several countries."
+        "title": "Consegna internazionale",
+        "description": "Spedizione rapida e sicura verso diversi paesi."
       },
       "securePayment": {
-        "title": "100% secure payment",
-        "description": "Your transactions are protected through secure payment."
+        "title": "Pagamento 100% sicuro",
+        "description": "Le tue transazioni sono protette con pagamenti sicuri."
       },
       "customerSupport": {
-        "title": "Advisers at your service",
-        "description": "A team available to answer all your questions."
+        "title": "Consulenti a tua disposizione",
+        "description": "Un team disponibile per rispondere a tutte le tue domande."
       },
       "selectedProducts": {
-        "title": "Selected products",
-        "description": "Carefully selected items to guarantee premium quality."
+        "title": "Prodotti selezionati",
+        "description": "Articoli scelti con cura per garantire una qualità premium."
       },
       "availableStock": {
-        "title": "Available stock",
-        "description": "Thousands of products available with fast shipping."
+        "title": "Stock disponibile",
+        "description": "Migliaia di articoli disponibili con spedizione rapida."
       }
     }
+  },
+  "contactPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contattaci"
+    },
+    "kicker": "SERVIZIO CLIENTI",
+    "title": "Contattaci",
+    "description": "Il nostro team è disponibile per rispondere alle tue domande sugli ordini, sui prodotti o sui servizi.",
+    "contact": {
+      "phone": "Telefono",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail"
+    },
+    "backHome": "Torna alla home",
+    "form": {
+      "title": "Inviaci un messaggio",
+      "description": "Compila il modulo qui sotto e ti risponderemo il prima possibile.",
+      "fields": {
+        "name": {
+          "label": "Nome e cognome",
+          "placeholder": "Il tuo nome e cognome"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Il tuo indirizzo e-mail"
+        },
+        "phone": {
+          "label": "Telefono",
+          "placeholder": "Il tuo numero di telefono"
+        },
+        "subject": {
+          "label": "Oggetto",
+          "placeholder": "Oggetto del messaggio"
+        },
+        "message": {
+          "label": "Messaggio",
+          "placeholder": "Scrivi qui il tuo messaggio..."
+        }
+      },
+      "submit": "INVIA MESSAGGIO"
+    }
+  },
+  "faqPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "FAQ"
+    },
+    "hero": {
+      "title": "Domande frequenti",
+      "line1": "Qui trovi le risposte alle domande più comuni.",
+      "line2": "Se non trovi la risposta, il nostro team è qui per aiutarti."
+    },
+    "help": {
+      "kicker": "HAI BISOGNO DI AIUTO?",
+      "title1": "Siamo qui",
+      "title2": "per te.",
+      "description": "Il nostro team è disponibile tutti i giorni."
+    },
+    "contact": {
+      "phone": "Telefono",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "button": "CONTATTACI"
+    },
+    "items": [
+      {
+        "question": "Quali sono i tempi di consegna?",
+        "answer": "Gli ordini vengono generalmente consegnati entro 2-5 giorni lavorativi nella Francia metropolitana. Per le consegne internazionali, i tempi variano in base alla destinazione."
+      },
+      {
+        "question": "Posso tracciare il mio ordine?",
+        "answer": "Sì. Quando l'ordine viene spedito, riceverai le informazioni di tracciamento via e-mail."
+      },
+      {
+        "question": "Quali metodi di pagamento sono accettati?",
+        "answer": "I metodi di pagamento disponibili dipendono dai servizi attivati al checkout."
+      },
+      {
+        "question": "Posso restituire o cambiare un articolo?",
+        "answer": "Puoi richiedere un reso o un cambio entro 30 giorni dalla consegna, nel rispetto delle condizioni di reso."
+      },
+      {
+        "question": "Come scelgo la taglia giusta?",
+        "answer": "Consulta la nostra guida alle taglie e confronta le tue misure."
+      },
+      {
+        "question": "I prodotti SBI PARIS sono autentici?",
+        "answer": "Sì. I prodotti proposti sul nostro sito sono selezionati e venduti da SBI PARIS."
+      },
+      {
+        "question": "Come posso contattare il servizio clienti?",
+        "answer": "Puoi contattarci per telefono, WhatsApp, e-mail o tramite il modulo di contatto."
+      }
+    ]
+  },
+  "trackingPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Tracciamento ordine"
+    },
+    "title": "Tracciamento ordine",
+    "description": "Inserisci il numero d’ordine e l’e-mail usata per l’acquisto per controllare lo stato dell’ordine.",
+    "form": {
+      "title": "Traccia il tuo ordine",
+      "orderNumber": "Numero d'ordine",
+      "orderPlaceholder": "Esempio: SBIPARIS-123456",
+      "email": "E-mail",
+      "emailPlaceholder": "Esempio: tua@email.com",
+      "submit": "TRACCIA IL MIO ORDINE",
+      "help": "Trovi il numero d'ordine nell'e-mail di conferma ricevuta dopo l'acquisto."
+    },
+    "example": {
+      "title": "Dove trovo il mio numero d'ordine?",
+      "description": "Il numero d'ordine ti è stato inviato via e-mail al momento della conferma dell'acquisto.",
+      "thanks": "Grazie per il tuo ordine!",
+      "orderNumberIs": "Il tuo numero d'ordine è:",
+      "date": "Data: 14 maggio 2026",
+      "shippingUpdates": "Ti terremo aggiornato in ogni fase della spedizione."
+    },
+    "features": {
+      "fast": {
+        "title": "Consegna rapida",
+        "text": "Da 2 a 5 giorni lavorativi in Francia"
+      },
+      "realtime": {
+        "title": "Tracciamento in tempo reale",
+        "text": "Segui il tuo pacco in ogni fase"
+      },
+      "secure": {
+        "title": "Pagamento sicuro",
+        "text": "Transazioni protette in base ai metodi abilitati"
+      },
+      "help": {
+        "title": "Hai bisogno di aiuto?",
+        "text": "Il nostro servizio clienti è qui per aiutarti"
+      }
+    }
+  },
+  "returnsPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Resi e cambi"
+    },
+    "title": "Resi e cambi",
+    "description": "La tua soddisfazione è la nostra priorità. Puoi richiedere un reso o cambio entro 30 giorni dalla consegna.",
+    "cards": {
+      "delay": {
+        "title": "30 giorni per cambiare idea",
+        "text": "Reso disponibile entro 30 giorni dalla consegna."
+      },
+      "free": {
+        "title": "Resi gratuiti",
+        "text": "I resi sono gratuiti nella Francia metropolitana."
+      },
+      "exchange": {
+        "title": "Cambi rapidi",
+        "text": "Cambio soggetto a disponibilità."
+      },
+      "refund": {
+        "title": "Rimborso",
+        "text": "Elaborato dopo la ricezione e l'approvazione del reso."
+      }
+    },
+    "steps": {
+      "1": {
+        "title": "Richiesta di reso",
+        "text": "Contatta il nostro team per avviare la procedura di reso."
+      },
+      "2": {
+        "title": "Spedizione",
+        "text": "Prepara e spedisci il pacco seguendo le istruzioni ricevute."
+      },
+      "3": {
+        "title": "Ricezione",
+        "text": "Controlliamo il reso dopo averlo ricevuto."
+      },
+      "4": {
+        "title": "Rimborso",
+        "text": "Il rimborso viene elaborato dopo l'approvazione."
+      },
+      "title": "Come restituire un articolo?"
+    },
+    "conditions": {
+      "title": "Condizioni di reso",
+      "items": [
+        "L'articolo deve essere nuovo e non utilizzato.",
+        "È richiesto l'imballaggio originale.",
+        "Le etichette devono essere ancora attaccate.",
+        "Gli articoli personalizzati non possono essere restituiti.",
+        "Resi gratuiti nella Francia metropolitana."
+      ]
+    },
+    "help": {
+      "title": "Hai bisogno di aiuto?",
+      "text": "Il nostro team è disponibile 7 giorni su 7."
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Chi siamo"
+    },
+    "hero": {
+      "kicker": "LA NOSTRA STORIA",
+      "title": "Chi siamo",
+      "p1": "Nata nel cuore di Parigi, SBI PARIS è un marchio francese dedicato a moda, accessori, profumi e mobilità elettrica.",
+      "p2": "Dal 1994 proponiamo prodotti eleganti e accuratamente selezionati.",
+      "p3": "Il nostro obiettivo è rendere accessibile uno stile raffinato, preservando al contempo il savoir-faire francese.",
+      "button": "SCOPRI LE NOSTRE COLLEZIONI"
+    },
+    "experience": "Anni di esperienza",
+    "values": {
+      "title": "I NOSTRI VALORI",
+      "quality": {
+        "title": "QUALITÀ",
+        "text": "Prodotti selezionati con la massima cura."
+      },
+      "trust": {
+        "title": "FIDUCIA",
+        "text": "Rapporti duraturi con i nostri clienti."
+      },
+      "innovation": {
+        "title": "INNOVAZIONE",
+        "text": "Sempre alla ricerca di nuove idee e tendenze."
+      },
+      "passion": {
+        "title": "PASSIONE",
+        "text": "Un team appassionato dedicato alla soddisfazione dei clienti."
+      }
+    },
+    "stats": {
+      "experience": "Anni di esperienza",
+      "customers": "Clienti soddisfatti",
+      "products": "Prodotti venduti",
+      "support": "Disponibilità del servizio clienti"
+    }
+  },
+  "careersPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Lavora con noi"
+    },
+    "title": "Lavora con noi",
+    "description": "Entra in SBI PARIS e contribuisci a una storia di eleganza, passione e innovazione.",
+    "values": {
+      "team": {
+        "title": "Spirito di squadra",
+        "text": "Crediamo nella collaborazione e nel rispetto reciproco."
+      },
+      "growth": {
+        "title": "Crescita",
+        "text": "Sosteniamo il tuo sviluppo professionale."
+      },
+      "excellence": {
+        "title": "Eccellenza",
+        "text": "Puntiamo all'eccellenza in ogni dettaglio."
+      },
+      "innovation": {
+        "title": "Innovazione",
+        "text": "Incoraggiamo nuove idee e creatività."
+      },
+      "passion": {
+        "title": "Passione",
+        "text": "Condividiamo la passione per la moda e il servizio."
+      }
+    },
+    "reasons": {
+      "title": "Perché lavorare con noi?",
+      "items": {
+        "brand": {
+          "title": "Un marchio elegante e ambizioso",
+          "text": "SBI PARIS è un marchio parigino in crescita."
+        },
+        "environment": {
+          "title": "Un ambiente stimolante",
+          "text": "Entra in team appassionati in un ambiente dinamico."
+        },
+        "opportunities": {
+          "title": "Opportunità di carriera",
+          "text": "Offriamo concrete opportunità di crescita e formazione."
+        },
+        "benefits": {
+          "title": "Vantaggi interessanti",
+          "text": "I benefit professionali dipendono dal ruolo e dalle condizioni applicabili."
+        }
+      }
+    },
+    "jobs": {
+      "title": "Posizioni aperte",
+      "viewAll": "Vedi tutte le posizioni",
+      "viewOffer": "VEDI OFFERTA",
+      "items": {
+        "sales": {
+          "title": "Addetto/a alle vendite",
+          "category": "Vendita al dettaglio",
+          "location": "Parigi, Francia",
+          "contract": "Tempo indeterminato"
+        },
+        "manager": {
+          "title": "Responsabile di negozio",
+          "category": "Vendita al dettaglio",
+          "location": "Parigi, Francia",
+          "contract": "Tempo indeterminato"
+        },
+        "ecommerce": {
+          "title": "Specialista e-commerce",
+          "category": "Digitale",
+          "location": "Parigi, Francia",
+          "contract": "Tempo indeterminato"
+        },
+        "marketing": {
+          "title": "Assistente marketing",
+          "category": "Marketing",
+          "location": "Parigi, Francia",
+          "contract": "Tempo indeterminato"
+        },
+        "service": {
+          "title": "Servizio clienti",
+          "category": "Relazioni con i clienti",
+          "location": "Parigi, Francia",
+          "contract": "Tempo determinato"
+        }
+      }
+    },
+    "spontaneous": {
+      "title": "Non trovi il ruolo giusto?",
+      "text": "Inviaci una candidatura spontanea e la valuteremo con attenzione.",
+      "button": "INVIA LA MIA CANDIDATURA"
+    }
+  },
+  "assistant": {
+    "header": {
+      "title": "SBI PARIS - Assistente",
+      "online": "Online"
+    },
+    "welcome": "Ciao! 👋\nSono l'assistente SBI PARIS.\nCome posso aiutarti?",
+    "actions": {
+      "product": {
+        "label": "Cerca un prodotto",
+        "prompt": "Cerco un prodotto SBI PARIS."
+      },
+      "tracking": {
+        "label": "Segui il mio ordine",
+        "prompt": "Voglio seguire il mio ordine."
+      },
+      "delivery": {
+        "label": "Consegna e resi",
+        "prompt": "Vorrei informazioni sulla consegna e sui resi."
+      },
+      "sport": {
+        "label": "Universo Sport",
+        "prompt": "Voglio scoprire Universo Sport SBI PARIS."
+      },
+      "perfumes": {
+        "label": "Profumi",
+        "prompt": "Cerco profumi SBI PARIS."
+      },
+      "mobility": {
+        "label": "Mobilità",
+        "prompt": "Voglio scoprire la gamma Mobilità SBI PARIS."
+      }
+    },
+    "composer": {
+      "placeholder": "Es.: Cerco una valigia elettrica..."
+    },
+    "send": "Invia",
+    "demoReply": "Grazie. Sto cercando la risposta migliore per te."
   }
 }

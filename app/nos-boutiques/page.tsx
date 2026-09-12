@@ -133,7 +133,7 @@ export default function NosBoutiquesPage() {
               <div>
                 <h4>💳 Paiement sécurisé</h4>
                 <p>
-                  Paiement 100% sécurisé dans toutes nos boutiques.
+                  Les modalités de paiement sont disponibles auprès de chaque boutique.
                 </p>
               </div>
 

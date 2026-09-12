@@ -1,706 +1,368 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
+﻿import {supabase} from "@/lib/supabase";
 import {
-  useParams,
-  useRouter,
-} from "next/navigation";
+  createMetadata,
+  type SeoLocale,
+} from "@/app/lib/seo";
 import {
-  Heart,
-  LockKeyhole,
-  Minus,
-  Plus,
-  RefreshCcw,
-  ShoppingBag,
-  Truck,
-  Zap,
-} from "lucide-react";
-import {
-  type MouseEvent,
-  useCallback,
-  useMemo,
-  useState,
-} from "react";
+  BreadcrumbJsonLd,
+  ProductJsonLd,
+} from "@/app/components/SeoJsonLd";
+import {getLocale} from "next-intl/server";
+import {catalogBySlug} from "@/app/lib/catalog";
 
-import { catalogBySlug } from "../../../lib/catalog";
-import { getProductById } from "../../../lib/products";
+import ProductPageClient, {
+  type ProductPageProduct,
+} from "./ProductPageClient";
 
-import styles from "./page.module.css";
-
-type CartItem = {
-  id: string;
-  name: string;
-  price: string;
-  image: string;
-  size?: number;
-  color?: string;
-  quantity: number;
+type ProductPageProps = {
+  params: Promise<{
+    categorySlug: string;
+    productId: string;
+  }>;
 };
 
-function getRouteValue(
-  value: string | string[] | undefined,
-): string {
-  if (Array.isArray(value)) {
-    return value[0] ?? "";
+type DatabaseProduct = {
+  id: string;
+  name: string;
+  description: string | null;
+  price: number | string;
+  old_price: number | string | null;
+  category: string | null;
+  subcategory: string | null;
+  images: string[] | null;
+  stock: number | null;
+  is_active: boolean | null;
+  is_new: boolean | null;
+  is_promotion: boolean | null;
+  is_featured: boolean | null;
+};
+
+const homeLabels: Record<SeoLocale, string> = {
+  fr: "Accueil",
+  en: "Home",
+  de: "Startseite",
+  es: "Inicio",
+  it: "Home",
+  ar: "الرئيسية",
+  zh: "首页",
+};
+
+export async function generateMetadata({
+  params,
+}: ProductPageProps) {
+  const {categorySlug, productId} = await params;
+
+  const locale =
+    (await getLocale()) as SeoLocale;
+
+  const {data, error} = await supabase
+    .from("products")
+    .select("name, description, is_active")
+    .eq("id", productId)
+    .eq("is_active", true)
+    .maybeSingle();
+
+  const path =
+    `/produit/${categorySlug}/${productId}`;
+
+  if (error || !data) {
+    return createMetadata({
+      title: "Produit",
+      description: "Produit SBI PARIS.",
+      path,
+      noIndex: true,
+      locale,
+    });
   }
 
-  return value ?? "";
-}
+  const productName =
+    String(data.name ?? "Produit SBI PARIS").trim();
 
-function formatPrice(price: number): string {
-  return new Intl.NumberFormat("fr-FR", {
-    style: "currency",
-    currency: "EUR",
-  }).format(price);
-}
+  const rawDescription =
+    typeof data.description === "string"
+      ? data.description
+      : "";
 
-export default function ProductPage() {
-  const router = useRouter();
+  const cleanDescription =
+    rawDescription
+      .replace(/\s+/g, " ")
+      .trim();
 
-  const params = useParams<{
-    categorySlug: string | string[];
-    productId: string | string[];
-  }>();
+  const description =
+    cleanDescription.length > 0
+      ? cleanDescription.slice(0, 160)
+      : `Découvrez ${productName} chez SBI PARIS.`;
 
-  const categorySlug = getRouteValue(
-    params.categorySlug,
-  );
-
-  const productId = getRouteValue(params.productId);
-
-  const product = useMemo(
-    () => getProductById(categorySlug, productId),
-    [categorySlug, productId],
-  );
-
-  const catalogCategory = useMemo(
-    () => catalogBySlug.get(categorySlug),
-    [categorySlug],
-  );
-
-  const [selectedImage, setSelectedImage] = useState(
-    product?.images[0] ?? "",
-  );
-
-  const [selectedSize, setSelectedSize] = useState<
-    number | undefined
-  >(product?.sizes[0]);
-
-  const [selectedColor, setSelectedColor] =
-    useState<string>(
-      product?.colors[0]?.id ?? "",
-    );
-
-  const [quantity, setQuantity] = useState(1);
-  const [isFavorite, setIsFavorite] = useState(false);
-  const [isZooming, setIsZooming] = useState(false);
-  const [cartMessage, setCartMessage] = useState("");
-
-  const [zoomPosition, setZoomPosition] = useState({
-    x: 50,
-    y: 50,
+  return createMetadata({
+    title: productName,
+    description,
+    path,
+    locale,
   });
+}
 
-  const selectedColorData = useMemo(
-    () =>
-      product?.colors.find(
-        (color) => color.id === selectedColor,
-      ) ??
-      product?.colors[0],
-    [product, selectedColor],
-  );
+export default async function ProductPage({
+  params,
+}: ProductPageProps) {
+  const {categorySlug, productId} = await params;
 
-  const decreaseQuantity = useCallback(() => {
-    setQuantity((currentQuantity) =>
-      Math.max(1, currentQuantity - 1),
-    );
-  }, []);
+  const locale =
+    (await getLocale()) as SeoLocale;
 
-  const increaseQuantity = useCallback(() => {
-    setQuantity((currentQuantity) =>
-      Math.min(
-        product?.stock ?? 10,
-        currentQuantity + 1,
-      ),
-    );
-  }, [product?.stock]);
+  const {data, error} = await supabase
+    .from("products")
+    .select(`
+      id,
+      name,
+      description,
+      price,
+      old_price,
+      category,
+      subcategory,
+      images,
+      stock,
+      is_active,
+      is_new,
+      is_promotion,
+      is_featured
+    `)
+    .eq("id", productId)
+    .eq("is_active", true)
+    .maybeSingle();
 
-  const handleZoomMove = useCallback(
-    (event: MouseEvent<HTMLDivElement>) => {
-      const bounds =
-        event.currentTarget.getBoundingClientRect();
-
-      const x =
-        ((event.clientX - bounds.left) /
-          bounds.width) *
-        100;
-
-      const y =
-        ((event.clientY - bounds.top) /
-          bounds.height) *
-        100;
-
-      setZoomPosition({
-        x: Math.max(0, Math.min(100, x)),
-        y: Math.max(0, Math.min(100, y)),
-      });
-    },
-    [],
-  );
-
-  const handleAddToCart = useCallback(() => {
-    if (!product || !selectedImage) {
-      return;
-    }
-
-    const savedCart =
-      localStorage.getItem("sbi-cart");
-
-    let cart: CartItem[] = [];
-
-    if (savedCart) {
-      try {
-        const parsedCart = JSON.parse(savedCart);
-
-        if (Array.isArray(parsedCart)) {
-          cart = parsedCart;
-        }
-      } catch {
-        cart = [];
-      }
-    }
-
-    const newProduct: CartItem = {
-      id: product.id,
-      name: product.name,
-      price: product.price.toFixed(2),
-      image: selectedImage,
-      size: selectedSize,
-      color: selectedColorData?.label,
-      quantity,
-    };
-
-    const existingProduct = cart.find(
-      (item) =>
-        item.id === newProduct.id &&
-        item.size === newProduct.size &&
-        item.color === newProduct.color,
-    );
-
-    if (existingProduct) {
-      existingProduct.quantity += quantity;
-    } else {
-      cart.push(newProduct);
-    }
-
-    localStorage.setItem(
-      "sbi-cart",
-      JSON.stringify(cart),
-    );
-
-    window.dispatchEvent(
-      new Event("sbi-cart-updated"),
-    );
-
-    setCartMessage(
-      `${quantity} article${
-        quantity > 1 ? "s" : ""
-      } ajouté${quantity > 1 ? "s" : ""} au panier`,
-    );
-
-    window.setTimeout(() => {
-      setCartMessage("");
-    }, 3000);
-  }, [
-    product,
-    quantity,
-    selectedColorData,
-    selectedImage,
-    selectedSize,
-  ]);
-
-  const handleBuyNow = useCallback(() => {
-    if (!product || !selectedImage) {
-      return;
-    }
-
-    const checkoutProduct = {
-      id: product.id,
-      categorySlug: product.categorySlug,
-      name: product.name,
-      image: selectedImage,
-      price: product.price,
-      size: selectedSize,
-      color: selectedColorData?.label,
-      colorId: selectedColor,
-      quantity,
-    };
-
-    localStorage.setItem(
-      "checkoutProduct",
-      JSON.stringify(checkoutProduct),
-    );
-
-    router.push("/checkout");
-  }, [
-    product,
-    quantity,
-    router,
-    selectedColor,
-    selectedColorData,
-    selectedImage,
-    selectedSize,
-  ]);
-
-  if (!product) {
+  if (error) {
     return (
-      <main className={styles.page}>
-        <div className={styles.container}>
-          <div
-            style={{
-              maxWidth: 620,
-              margin: "80px auto",
-              padding: 32,
-              textAlign: "center",
-              background: "#ffffff",
-              border: "1px solid #e2e8f0",
-              borderRadius: 14,
-            }}
-          >
-            <h1
-              style={{
-                marginBottom: 12,
-                color: "#0a1931",
-              }}
-            >
-              Produit introuvable
-            </h1>
+      <main
+        style={{
+          maxWidth: 900,
+          margin: "60px auto",
+          padding: 32,
+        }}
+      >
+        <h1 style={{marginBottom: 16}}>
+          Erreur Supabase
+        </h1>
 
-            <p
-              style={{
-                marginBottom: 24,
-                color: "#64748b",
-              }}
-            >
-              Ce produit n’existe pas ou n’est plus
-              disponible.
-            </p>
-
-            <Link
-              href="/"
-              style={{
-                display: "inline-flex",
-                padding: "12px 22px",
-                borderRadius: 8,
-                background: "#0a1931",
-                color: "#ffffff",
-                textDecoration: "none",
-                fontWeight: 700,
-              }}
-            >
-              Retour à l’accueil
-            </Link>
-          </div>
-        </div>
+        <pre
+          style={{
+            padding: 20,
+            overflowX: "auto",
+            whiteSpace: "pre-wrap",
+            borderRadius: 10,
+            background: "#f1f5f9",
+            color: "#b91c1c",
+          }}
+        >
+          {JSON.stringify(error, null, 2)}
+        </pre>
       </main>
     );
   }
 
-  const displayedImage =
-    selectedImage || product.images[0];
+  if (!data) {
+    return (
+      <main
+        style={{
+          maxWidth: 900,
+          margin: "60px auto",
+          padding: 32,
+        }}
+      >
+        <h1 style={{marginBottom: 12}}>
+          Produit introuvable
+        </h1>
 
-  const displayedStars = "★".repeat(
-    Math.max(0, Math.min(5, product.rating)),
-  );
+        <p>
+          Aucun produit actif trouvé avec cet identifiant :
+        </p>
 
-  const emptyStars = "☆".repeat(
-    Math.max(0, 5 - product.rating),
-  );
+        <code
+          style={{
+            display: "block",
+            marginTop: 16,
+            padding: 16,
+            borderRadius: 8,
+            background: "#f1f5f9",
+          }}
+        >
+          {productId}
+        </code>
+      </main>
+    );
+  }
 
-  const categoryLabel =
-    product.shortName ??
+  const databaseProduct = data as DatabaseProduct;
+
+  const {
+    data: productSizeRows,
+    error: productSizeError,
+  } = await supabase
+    .from("product_sizes")
+    .select("size, size_type, stock, active")
+    .eq("product_id", productId)
+    .eq("active", true)
+    .gt("stock", 0);
+
+  const availableSizes = productSizeError
+    ? []
+    : (productSizeRows ?? [])
+        .map((row) => String(row.size).trim())
+        .filter((size) => size.length > 0)
+        .sort((a, b) => {
+          const order = [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL",
+          ];
+
+          const ai = order.indexOf(a.toUpperCase());
+          const bi = order.indexOf(b.toUpperCase());
+
+          if (ai !== -1 && bi !== -1) {
+            return ai - bi;
+          }
+
+          if (ai !== -1) return -1;
+          if (bi !== -1) return 1;
+
+          return a.localeCompare(b, "fr", {
+            numeric: true,
+          });
+        });
+
+  const sizeType =
+    productSizeError
+      ? null
+      : (productSizeRows ?? []).some(
+            (row) => row.size_type === "pointure",
+          )
+        ? "pointure"
+        : (productSizeRows ?? []).some(
+              (row) => row.size_type === "taille",
+            )
+          ? "taille"
+          : null;
+
+  const catalogCategory =
+    catalogBySlug.get(categorySlug);
+
+  const displayName =
     catalogCategory?.productPrefix ??
-    product.name;
+    databaseProduct.name;
+
+  const badge = databaseProduct.is_promotion
+    ? "Promotion"
+    : databaseProduct.is_new
+      ? "Nouveau"
+      : databaseProduct.is_featured
+        ? "Sélection"
+        : undefined;
+
+  const product: ProductPageProduct = {
+    id: databaseProduct.id,
+
+    categorySlug,
+
+    name: displayName,
+
+    shortName:
+      catalogCategory?.productPrefix ??
+      databaseProduct.subcategory ??
+      undefined,
+
+    description:
+      databaseProduct.description ??
+      "Produit SBI PARIS",
+
+    price: Number(databaseProduct.price),
+
+    oldPrice:
+      databaseProduct.old_price !== null
+        ? Number(databaseProduct.old_price)
+        : null,
+
+    images: Array.isArray(databaseProduct.images)
+      ? databaseProduct.images.filter(
+          (image): image is string =>
+            typeof image === "string" &&
+            image.trim().length > 0,
+        )
+      : [],
+
+    sizes: availableSizes,
+    sizeType,
+    colors: [],
+
+    stock: databaseProduct.stock ?? 0,
+
+    rating: 5,
+    reviewCount: 0,
+
+    badge,
+
+    features: [
+      "Qualité premium SBI PARIS",
+      "Livraison rapide",
+      "Retour sous 14 jours",
+      "Paiement sécurisé",
+    ],
+  };
+
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    "https://www.sbiparis.com";
+
+  const productUrl =
+    `${siteUrl}/${locale}/produit/${categorySlug}/${productId}`;
+
+  const productImage =
+    product.images.length > 0
+      ? product.images[0]
+      : undefined;
+
+  const productDescription =
+    product.description
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const productPrice =
+    Number.isFinite(product.price)
+      ? product.price
+      : undefined;
 
   return (
-    <main className={styles.page}>
-      <div className={styles.container}>
-        <nav
-          className={styles.breadcrumb}
-          aria-label="Fil d’Ariane"
-        >
-          <Link href="/">Accueil</Link>
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          {
+            name: homeLabels[locale],
+            url: `${siteUrl}/${locale}`,
+          },
+          {
+            name: displayName,
+            url: productUrl,
+          },
+        ]}
+      />
 
-          <span>/</span>
+      <ProductJsonLd
+        name={displayName}
+        description={productDescription}
+        image={productImage}
+        url={productUrl}
+        price={productPrice}
+        currency="EUR"
+        availability={
+          product.stock > 0
+            ? "InStock"
+            : "OutOfStock"
+        }
+      />
 
-          <Link
-            href={
-              catalogCategory?.parentHref ?? "/homme"
-            }
-          >
-            Homme
-          </Link>
-
-          <span>/</span>
-
-          <span>{categoryLabel}</span>
-
-          <span>/</span>
-
-          <span>{product.name}</span>
-        </nav>
-
-        <section className={styles.productLayout}>
-          <div
-            className={styles.thumbnails}
-            aria-label="Images du produit"
-          >
-            {product.images.map((image, index) => {
-              const isActive =
-                displayedImage === image;
-
-              return (
-                <button
-                  key={image}
-                  type="button"
-                  className={`${
-                    styles.thumbnailButton
-                  } ${
-                    isActive
-                      ? styles.thumbnailActive
-                      : ""
-                  }`}
-                  onClick={() => {
-                    setSelectedImage(image);
-                    setIsZooming(false);
-                    setZoomPosition({
-                      x: 50,
-                      y: 50,
-                    });
-                  }}
-                  aria-label={`Afficher la vue ${
-                    index + 1
-                  }`}
-                >
-                  <Image
-                    src={image}
-                    alt={`${product.name} - Vue ${
-                      index + 1
-                    }`}
-                    width={82}
-                    height={82}
-                  />
-                </button>
-              );
-            })}
-          </div>
-
-          <div
-            className={styles.mainImageBox}
-            onMouseEnter={() => setIsZooming(true)}
-            onMouseLeave={() => setIsZooming(false)}
-            onMouseMove={handleZoomMove}
-          >
-            {product.badge && (
-              <span className={styles.newBadge}>
-                {product.badge}
-              </span>
-            )}
-
-            <Image
-              key={displayedImage}
-              src={displayedImage}
-              alt={product.name}
-              width={900}
-              height={900}
-              priority
-              className={`${
-                styles.mainProductImage
-              } ${
-                isZooming ? styles.imageHidden : ""
-              }`}
-            />
-
-            {isZooming && (
-              <div
-                className={styles.zoomLayer}
-                style={{
-                  backgroundImage: `url("${displayedImage}")`,
-                  backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`,
-                }}
-                aria-hidden="true"
-              />
-            )}
-          </div>
-
-          <div className={styles.productInfo}>
-            <h1 className={styles.title}>
-              {product.name}
-            </h1>
-
-            <div className={styles.rating}>
-              <span className={styles.stars}>
-                {displayedStars}
-                {emptyStars}
-              </span>
-
-              <span className={styles.reviewCount}>
-                ({product.reviewCount} avis)
-              </span>
-            </div>
-
-            <p className={styles.price}>
-              {formatPrice(product.price)}
-            </p>
-
-            {product.oldPrice && (
-              <p
-                style={{
-                  marginTop: -8,
-                  color: "#94a3b8",
-                  textDecoration: "line-through",
-                }}
-              >
-                {formatPrice(product.oldPrice)}
-              </p>
-            )}
-
-            <p className={styles.description}>
-              {product.description}
-            </p>
-
-            <div className={styles.separator} />
-
-            {product.colors.length > 0 && (
-              <>
-                <h2 className={styles.optionTitle}>
-                  COULEUR :
-                  <span>
-                    {" "}
-                    {selectedColorData?.label}
-                  </span>
-                </h2>
-
-                <div className={styles.colors}>
-                  {product.colors.map((color) => {
-                    const colorStyle =
-                      styles[color.className] ?? "";
-
-                    return (
-                      <button
-                        key={color.id}
-                        type="button"
-                        aria-label={color.label}
-                        title={color.label}
-                        className={`${
-                          styles.colorButton
-                        } ${colorStyle} ${
-                          selectedColor === color.id
-                            ? styles.colorActive
-                            : ""
-                        }`}
-                        onClick={() =>
-                          setSelectedColor(color.id)
-                        }
-                      />
-                    );
-                  })}
-                </div>
-              </>
-            )}
-
-            {product.sizes.length > 0 && (
-              <>
-                <div className={styles.sizeHeading}>
-                  <h2
-                    className={styles.optionTitle}
-                  >
-                    TAILLE :
-                  </h2>
-
-                  <Link
-                    href="/tableau-des-tailles"
-                    className={styles.sizeGuide}
-                  >
-                    Tableau des tailles
-                  </Link>
-                </div>
-
-                <div className={styles.sizes}>
-                  {product.sizes.map((size) => (
-                    <button
-                      key={size}
-                      type="button"
-                      className={`${
-                        styles.sizeButton
-                      } ${
-                        selectedSize === size
-                          ? styles.sizeActive
-                          : ""
-                      }`}
-                      onClick={() =>
-                        setSelectedSize(size)
-                      }
-                    >
-                      {size}
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-
-            <div className={styles.quantitySection}>
-              <h2 className={styles.optionTitle}>
-                QUANTITÉ :
-              </h2>
-
-              <div className={styles.quantity}>
-                <button
-                  type="button"
-                  onClick={decreaseQuantity}
-                  disabled={quantity === 1}
-                  aria-label="Diminuer la quantité"
-                >
-                  <Minus size={17} />
-                </button>
-
-                <span>{quantity}</span>
-
-                <button
-                  type="button"
-                  onClick={increaseQuantity}
-                  disabled={
-                    quantity >= (product.stock ?? 10)
-                  }
-                  aria-label="Augmenter la quantité"
-                >
-                  <Plus size={17} />
-                </button>
-              </div>
-            </div>
-
-            {cartMessage && (
-              <div
-                className={styles.cartMessage}
-                role="status"
-                aria-live="polite"
-              >
-                {cartMessage}
-              </div>
-            )}
-
-            <div className={styles.actions}>
-              <button
-                type="button"
-                className={styles.addToCart}
-                onClick={handleAddToCart}
-              >
-                <ShoppingBag size={18} />
-                Ajouter au panier
-              </button>
-
-              <button
-                type="button"
-                className={styles.favoriteButton}
-                onClick={() =>
-                  setIsFavorite(
-                    (current) => !current,
-                  )
-                }
-                aria-label={
-                  isFavorite
-                    ? "Retirer des favoris"
-                    : "Ajouter aux favoris"
-                }
-              >
-                <Heart
-                  size={22}
-                  fill={
-                    isFavorite
-                      ? "currentColor"
-                      : "none"
-                  }
-                />
-              </button>
-
-              <button
-                type="button"
-                className={styles.buyNow}
-                onClick={handleBuyNow}
-              >
-                Acheter maintenant
-              </button>
-            </div>
-
-            <div className={styles.services}>
-              <div>
-                <Truck size={22} />
-
-                <span>
-                  Livraison rapide
-                  <small>24 à 72 h</small>
-                </span>
-              </div>
-
-              <div>
-                <RefreshCcw size={22} />
-
-                <span>
-                  Retour gratuit
-                  <small>14 jours</small>
-                </span>
-              </div>
-
-              <div>
-                <LockKeyhole size={22} />
-
-                <span>
-                  Paiement sécurisé
-                  <small>100 % sécurisé</small>
-                </span>
-              </div>
-            </div>
-
-            <div
-              style={{
-                marginTop: 24,
-                padding: 18,
-                border: "1px solid #e2e8f0",
-                borderRadius: 10,
-                background: "#fafafa",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  fontWeight: 700,
-                  color: "#0a1931",
-                }}
-              >
-                <Zap size={18} />
-
-                Pourquoi choisir SBI PARIS ?
-              </div>
-
-              <ul
-                style={{
-                  marginTop: 14,
-                  paddingLeft: 18,
-                  color: "#475569",
-                  lineHeight: 1.8,
-                }}
-              >
-                {product.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
+      <ProductPageClient product={product} />
+    </>
   );
 }

@@ -1,34 +1,70 @@
 {
   "header": {
-    "returnsDetails": "لديك 14 يومًا لإرجاع منتجاتك أو استبدالها.",
-    "favorites": "المفضلة",
-    "supportDetails": "فريقنا متاح يوميًا لمساعدتك.",
-    "search": "بحث",
-    "perfume": "عطور",
-    "cart": "سلة التسوق",
-    "support": "خدمة العملاء طوال أيام الأسبوع",
-    "men": "رجال",
+    "shipping": "توصيل مجاني ابتداءً من 200€ من المشتريات",
+    "shippingDetails": "توصيل مجاني في جميع أنحاء فرنسا ابتداءً من 200€.",
     "returns": "إرجاع واستبدال مجاني",
+    "returnsDetails": "لديك 14 يومًا لإرجاع المنتجات أو استبدالها.",
+    "support": "خدمة العملاء 7/7",
+    "supportDetails": "فريقنا متاح يوميًا لمساعدتك.",
+    "collection": "مجموعة SBI PARIS",
+    "men": "رجال",
+    "women": "نساء",
+    "kids": "أطفال",
+    "perfume": "عطور",
     "mobility": "التنقل الكهربائي",
     "promotions": "العروض والمنتجات الجديدة",
-    "women": "نساء",
     "openMenu": "فتح القائمة",
-    "collection": "مجموعة SBI PARIS",
-    "shipping": "توصيل مجاني للطلبات ابتداءً من 200 يورو",
-    "kids": "أطفال",
+    "search": "بحث",
     "account": "حسابي",
-    "shippingDetails": "توصيل مجاني في جميع أنحاء فرنسا للطلبات التي تتجاوز 200 يورو."
+    "favorites": "المفضلة",
+    "cart": "سلة التسوق"
+  },
+  "home": {
+    "history": {
+      "imageAlt": "متجر SBI PARIS",
+      "kicker": "قصتنا",
+      "description": "منذ عام 1994، تجسد SBI PARIS روح باريس: أناقة خالدة، وحرفية استثنائية، وسعي دائم نحو التميز. كل ابتكار، سواء كان في الأزياء أو الرياضة أو العطور أو التنقل، صُمم لتقديم تجربة فريدة يلتقي فيها الأسلوب بالابتكار.",
+      "stats": {
+        "collections": "المجموعات",
+        "countries": "الدول",
+        "satisfiedCustomers": "العملاء الراضون",
+        "quality": "الجودة",
+        "premium": "ممتازة"
+      }
+    },
+    "trust": {
+      "internationalDelivery": {
+        "title": "توصيل دولي",
+        "description": "شحن سريع وآمن إلى عدة دول."
+      },
+      "securePayment": {
+        "title": "دفع آمن 100%",
+        "description": "تتم حماية معاملاتك عبر وسائل دفع آمنة."
+      },
+      "customerSupport": {
+        "title": "فريق في خدمتك",
+        "description": "فريق متاح للإجابة عن جميع استفساراتك."
+      },
+      "selectedProducts": {
+        "title": "منتجات مختارة",
+        "description": "منتجات مختارة بعناية لضمان جودة عالية."
+      },
+      "availableStock": {
+        "title": "مخزون متوفر",
+        "description": "آلاف المنتجات متوفرة مع شحن سريع."
+      }
+    }
   },
   "espacePro": {
     "hero": {
       "imageAlt": "مساحة SBI PARIS للمحترفين",
       "kicker": "مساحة المحترفين",
       "title": {
-        "line1": "طوّر أعمالك",
+        "line1": "طوّر نشاطك",
         "line2": "مع شريك",
         "line3": "موثوق"
       },
-      "description": "استفد من الكتالوج الاحترافي، والأسعار الخاصة، والدعم المخصص، وخدمات الشحن الدولية المصممة للمحترفين.",
+      "description": "استفد من كتالوجنا الاحترافي، والأسعار التفضيلية، والدعم المخصص، والخدمات اللوجستية الدولية المناسبة للمحترفين.",
       "buttons": {
         "advantages": "اكتشف المزايا",
         "quote": "اطلب عرض سعر"
@@ -39,15 +75,15 @@
       "items": {
         "prices": {
           "title": "أسعار احترافية",
-          "description": "أسعار تنافسية لتجار الجملة والموزعين والبائعين."
+          "description": "أسعار تنافسية مناسبة لتجار الجملة والموزعين والبائعين."
         },
         "delivery": {
-          "title": "شحن دولي",
-          "description": "خدمات لوجستية موثوقة لتوصيل طلباتكم إلى جميع أنحاء العالم."
+          "title": "توصيل دولي",
+          "description": "خدمات لوجستية موثوقة لتوصيل طلباتكم إلى مختلف أنحاء العالم."
         },
         "support": {
           "title": "دعم مخصص",
-          "description": "فريق تجاري يرافقكم قبل وأثناء وبعد الطلب."
+          "description": "فريق تجاري يرافقكم قبل الطلب وأثناءه وبعده."
         },
         "quality": {
           "title": "جودة مضمونة",
@@ -61,7 +97,7 @@
         "men": "أزياء رجالية",
         "women": "أزياء نسائية",
         "children": "أزياء الأطفال",
-        "sport": "الرياضة",
+        "sport": "عالم الرياضة",
         "perfume": "العطور",
         "mobility": "التنقل الكهربائي"
       }
@@ -74,27 +110,27 @@
           "description": "املأ النموذج الاحترافي في بضع دقائق."
         },
         "quote": {
-          "title": "استلام العرض",
-          "description": "يقوم فريقنا بإعداد عرض يناسب احتياجاتكم."
+          "title": "استلم عرضك",
+          "description": "يُعد فريقنا عرضًا يناسب احتياجاتكم."
         },
         "order": {
-          "title": "تأكيد الطلب",
+          "title": "أكد طلبك",
           "description": "أكد طلبك واستفد من شروطنا الاحترافية."
         },
         "delivery": {
           "title": "توصيل سريع",
-          "description": "يتم تجهيز وشحن منتجاتكم بعناية."
+          "description": "يتم تجهيز منتجاتكم وشحنها بأقصى درجات العناية."
         }
       }
     },
     "stats": {
       "creation": "سنة التأسيس",
-      "countries": "الدول",
+      "countries": "الدول التي نخدمها",
       "collections": "المجموعات",
       "customers": "العملاء الراضون"
     },
     "form": {
-      "kicker": "اتصل بنا",
+      "kicker": "اتصال مهني",
       "title": {
         "line1": "لنتحدث",
         "line2": "عن مشروعك"
@@ -103,27 +139,27 @@
         "fullName": "الاسم الكامل",
         "company": "الشركة",
         "email": "البريد الإلكتروني",
-        "phone": "رقم الهاتف",
+        "phone": "الهاتف",
         "country": "الدولة",
         "city": "المدينة",
         "activity": "النشاط",
         "volume": "حجم الشراء",
-        "category": "الفئة",
+        "category": "الفئة المطلوبة",
         "website": "الموقع الإلكتروني",
         "message": "الرسالة"
       },
       "placeholders": {
         "fullName": "اسمك الكامل",
-        "company": "اسم الشركة",
+        "company": "اسم شركتك",
         "email": "name@company.com",
         "phone": "+216...",
-        "country": "الدولة",
-        "city": "المدينة",
+        "country": "دولتك",
+        "city": "مدينتك",
         "website": "https://...",
-        "message": "اكتب تفاصيل مشروعك أو احتياجاتك..."
+        "message": "اشرح مشروعك أو احتياجاتك..."
       },
       "activity": {
-        "placeholder": "اختر النشاط",
+        "placeholder": "اختر نشاطك",
         "grossiste": "تاجر جملة",
         "distributeur": "موزع",
         "importateur": "مستورد",
@@ -133,17 +169,17 @@
       },
       "volume": {
         "placeholder": "اختر حجم الشراء",
-        "less5000": "أقل من 5000 يورو",
-        "from5000to15000": "من 5000 إلى 15000 يورو",
-        "from15000to50000": "من 15000 إلى 50000 يورو",
-        "more50000": "أكثر من 50000 يورو"
+        "less5000": "أقل من 5 000 €",
+        "from5000to15000": "من 5 000 € إلى 15 000 €",
+        "from15000to50000": "من 15 000 € إلى 50 000 €",
+        "more50000": "أكثر من 50 000 €"
       },
       "category": {
         "placeholder": "اختر الفئة",
         "men": "أزياء رجالية",
         "women": "أزياء نسائية",
         "children": "أزياء الأطفال",
-        "sport": "الرياضة",
+        "sport": "عالم الرياضة",
         "perfume": "العطور",
         "mobility": "التنقل الكهربائي",
         "multiple": "عدة فئات"
@@ -151,8 +187,8 @@
       "submit": "إرسال الطلب",
       "imageAlt": "مستودع SBI PARIS",
       "badge": {
-        "title": "شحن دولي",
-        "description": "حلول لوجستية احترافية."
+        "title": "توصيل دولي",
+        "description": "خدمات لوجستية فعّالة للمحترفين."
       }
     },
     "partner": {
@@ -161,7 +197,7 @@
       "title": {
         "line1": "لنحقق نجاحك مع "
       },
-      "description": "انضم إلى شبكة شركائنا واستفد من علامة تجارية معروفة، ومجموعات حصرية، ودعم طويل الأمد.",
+      "description": "انضم إلى شبكة شركائنا واستفد من علامة معروفة، ومجموعات حصرية، ودعم مستمر.",
       "button": "تواصل معنا"
     }
   },
@@ -173,7 +209,7 @@
     "newsletter": {
       "kicker": "النشرة الإخبارية",
       "title": "انضم إلى عالم SBI PARIS",
-      "description": "اشترك لتصلك أحدث المجموعات والأخبار والعروض الحصرية.",
+      "description": "اشترك لتصلك أحدث المجموعات والمنتجات والعروض الحصرية.",
       "emailLabel": "بريدك الإلكتروني",
       "emailPlaceholder": "أدخل بريدك الإلكتروني",
       "submit": "اشتراك"
@@ -188,7 +224,7 @@
       }
     },
     "company": {
-      "title": "الشركة",
+      "title": "شركتنا",
       "links": {
         "about": "من نحن",
         "professional": "مساحة المحترفين",
@@ -200,19 +236,19 @@
       "title": "معلومات",
       "links": {
         "legal": "الإشعارات القانونية",
-        "terms": "شروط البيع",
+        "terms": "شروط البيع العامة",
         "privacy": "سياسة الخصوصية",
         "securePayment": "الدفع الآمن",
         "sizeGuide": "دليل المقاسات"
       }
     },
-    "copyright": "© 2026 SBI PARIS - جميع الحقوق محفوظة.",
+    "copyright": "© 2026 SBI PARIS — جميع الحقوق محفوظة.",
     "paymentsLabel": "وسائل الدفع المقبولة"
   },
   "catalog": {
     "home": "الرئيسية",
-    "catalog": "المنتجات",
-    "description": "اكتشف منتجات SBI PARIS. ستتم إضافة صور المنتجات لاحقًا.",
+    "catalog": "الكتالوج",
+    "description": "اكتشف منتجات SBI PARIS. ستتم إضافة الصور قريبًا.",
     "productCount": "{count} منتجات",
     "imageLater": "ستُضاف الصورة لاحقًا",
     "addFavorite": "إضافة إلى المفضلة",
@@ -317,7 +353,7 @@
     }
   },
   "mobiliteMenu": {
-    "electricScooters": "دراجات سكوتر كهربائية",
+    "electricScooters": "سكوترات كهربائية",
     "electricBikes": "دراجات كهربائية",
     "electricLuggage": "حقائب سفر كهربائية"
   },
@@ -336,9 +372,9 @@
     "subtitle": "قصتنا",
     "description": "منذ عام 1994، تقدم SBI PARIS مجموعات أنيقة ومختارة بعناية مستوحاة من الأسلوب الباريسي.",
     "stats": {
-      "collections": "مجموعة",
-      "countries": "دولة",
-      "customers": "عملاء راضون",
+      "collections": "المجموعات",
+      "countries": "الدول",
+      "customers": "العملاء الراضون",
       "qualityTitle": "ممتازة",
       "quality": "الجودة"
     }
@@ -360,21 +396,23 @@
     },
     "stats": {
       "paris": "روح باريس",
-      "collections": "مجموعة",
-      "countries": "دولة"
+      "collections": "المجموعات",
+      "countries": "الدول"
     }
   },
   "homeSport": {
     "kicker": "عالم الرياضة",
-    "title": "تحرك بأناقة",
+    "title": "تحرّك بأناقة",
     "viewAll": "عرض الكل",
-    "productCount": "{count} منتجًا",
+    "productCount": "{count} منتج",
     "discover": "اكتشف",
-    "football": "كرة القدم",
-    "basketball": "كرة السلة",
-    "tennis": "التنس",
-    "padel": "البادل",
-    "running": "الجري"
+    "sports": {
+      "football": "كرة القدم",
+      "basketball": "كرة السلة",
+      "tennis": "التنس",
+      "padel": "البادل",
+      "running": "الجري"
+    }
   },
   "parisUniverse": {
     "kicker": "عوالم SBI PARIS",
@@ -404,7 +442,7 @@
       },
       "mobility": {
         "category": "تنقل",
-        "title": "تنقل كهربائي"
+        "title": "التنقل الكهربائي"
       },
       "news": {
         "category": "جديد",
@@ -424,7 +462,7 @@
     "benefits": {
       "prices": {
         "title": "أسعار مهنية",
-        "description": "شروط تنافسية لنشاطك."
+        "description": "شروط تنافسية مناسبة لنشاطك."
       },
       "delivery": {
         "title": "توصيل دولي",
@@ -441,66 +479,66 @@
     }
   },
   "promotionsShowcase": {
-    "logoAlt": "SBI Paris logo",
-    "header": "Offers and new arrivals",
-    "discover": "Discover",
+    "logoAlt": "شعار SBI PARIS",
+    "header": "العروض والمنتجات الجديدة",
+    "discover": "اكتشف",
     "promotions": {
-      "kicker": "Exclusive offers",
+      "kicker": "عروض حصرية",
       "title": {
-        "line1": "Exceptional",
-        "line2": "promotions"
+        "line1": "تخفيضات",
+        "line2": "استثنائية"
       },
-      "description": "Enjoy selected offers for a limited time.",
-      "button": "View promotions",
-      "viewSelection": "View selection",
+      "description": "استفد من عروض مختارة لفترة محدودة.",
+      "button": "عرض التخفيضات",
+      "viewSelection": "عرض الاختيارات",
       "discount": {
-        "upTo": "Up to -50%",
-        "description": "On selected products"
+        "upTo": "خصم يصل إلى 50%",
+        "description": "على منتجات مختارة"
       },
       "items": {
         "perfume": {
-          "title": "Perfumes",
-          "subtitle": "Signature scents"
+          "title": "عطور",
+          "subtitle": "روائح مميزة"
         },
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "Elegant details"
+          "title": "إكسسوارات",
+          "subtitle": "تفاصيل أنيقة"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "Selected styles"
+          "title": "رجال",
+          "subtitle": "اختيارات مميزة"
         }
       }
     },
     "newItems": {
-      "kicker": "New arrivals",
+      "kicker": "وصل حديثًا",
       "title": {
-        "line1": "New season",
-        "line2": "new inspirations"
+        "line1": "موسم جديد",
+        "line2": "وإلهام جديد"
       },
-      "description": "Discover the latest SBI PARIS arrivals.",
-      "button": "See new arrivals",
-      "viewProduct": "View product",
+      "description": "اكتشف أحدث منتجات SBI PARIS.",
+      "button": "شاهد الجديد",
+      "viewProduct": "عرض المنتج",
       "items": {
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "New details"
+          "title": "إكسسوارات",
+          "subtitle": "تفاصيل جديدة"
         },
         "travelBag": {
-          "title": "Travel bag",
-          "subtitle": "Elegant travel"
+          "title": "حقيبة سفر",
+          "subtitle": "سفر بأناقة"
         },
         "women": {
-          "title": "Women",
-          "subtitle": "New collection"
+          "title": "نساء",
+          "subtitle": "مجموعة جديدة"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "New collection"
+          "title": "رجال",
+          "subtitle": "مجموعة جديدة"
         },
         "mobility": {
-          "title": "Mobility",
-          "subtitle": "Electric innovation"
+          "title": "تنقل",
+          "subtitle": "ابتكار كهربائي"
         }
       }
     }
@@ -513,41 +551,41 @@
     },
     "discover": "اكتشف",
     "sportUniverse": {
-      "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
+      "title1": "عالم",
+      "title2": "الرياضة",
+      "description": "أداء وأناقة في كل يوم.",
       "button": "اكتشف"
     },
     "sections": {
       "sportive": {
         "title": "أزياء رياضية",
-        "description": "Comfort and performance for an active lifestyle.",
+        "description": "راحة وأداء لأسلوب حياة نشط.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
+          "polosSport": "قمصان بولو رياضية",
+          "tankTops": "قمصان بلا أكمام",
           "shorts": "سراويل قصيرة",
-          "tracksuits": "Tracksuits",
-          "sportأحذية": "Sport shoes",
+          "tracksuits": "بدلات رياضية",
+          "sportShoes": "أحذية رياضية",
           "caps": "قبعات"
         }
       },
       "classique": {
         "title": "أزياء كلاسيكية",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "description": "قطع خالدة لخزانة ملابس أنيقة.",
         "items": {
           "polos": "قمصان بولو",
           "shirts": "قمصان",
           "trousers": "سراويل",
           "jackets": "سترات",
-          "cityأحذية": "City shoes"
+          "cityShoes": "أحذية كلاسيكية"
         }
       },
       "essentiels": {
         "title": "الأساسيات",
-        "description": "Everyday essentials.",
+        "description": "أساسيات يومية لا غنى عنها.",
         "items": {
           "socks": "جوارب",
-          "underwear": "Underwear"
+          "underwear": "ملابس داخلية"
         }
       }
     }
@@ -560,42 +598,42 @@
     },
     "discover": "اكتشف",
     "sportUniverse": {
-      "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
+      "title1": "عالم",
+      "title2": "الرياضة",
+      "description": "أداء وأناقة في كل يوم.",
       "button": "اكتشف"
     },
     "sections": {
       "sportive": {
         "title": "أزياء رياضية",
-        "description": "Comfort and performance for an active lifestyle.",
+        "description": "راحة وأداء لأسلوب حياة نشط.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
+          "polosSport": "قمصان بولو رياضية",
+          "tankTops": "قمصان بلا أكمام",
           "shorts": "سراويل قصيرة",
-          "tracksuits": "Tracksuits",
-          "sportأحذية": "Sport shoes",
+          "tracksuits": "بدلات رياضية",
+          "sportShoes": "أحذية رياضية",
           "caps": "قبعات"
         }
       },
       "classique": {
         "title": "أزياء كلاسيكية",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "description": "قطع خالدة لخزانة ملابس أنيقة.",
         "items": {
           "polos": "قمصان بولو",
           "shirts": "قمصان",
           "trousers": "سراويل",
           "jackets": "سترات",
-          "cityأحذية": "City shoes",
+          "cityShoes": "أحذية كلاسيكية",
           "dresses": "فساتين"
         }
       },
       "essentiels": {
         "title": "الأساسيات",
-        "description": "Everyday essentials.",
+        "description": "أساسيات يومية لا غنى عنها.",
         "items": {
           "socks": "جوارب",
-          "lingerie": "Lingerie"
+          "lingerie": "ملابس داخلية نسائية"
         }
       }
     }
@@ -609,8 +647,8 @@
     "discover": "اكتشف",
     "sections": {
       "boy": {
-        "title": "Boys",
-        "description": "Comfortable styles for boys.",
+        "title": "الأولاد",
+        "description": "أزياء مريحة وعملية للأولاد.",
         "items": {
           "polos": "قمصان بولو",
           "shorts": "سراويل قصيرة",
@@ -621,8 +659,8 @@
         }
       },
       "girl": {
-        "title": "Girls",
-        "description": "Elegant and comfortable styles for girls.",
+        "title": "البنات",
+        "description": "أزياء أنيقة ومريحة للبنات.",
         "items": {
           "dresses": "فساتين",
           "polos": "قمصان بولو",
@@ -638,27 +676,27 @@
     "pageTitle": "المجموعات",
     "breadcrumb": {
       "home": "الرئيسية",
-      "collection": "Collection"
+      "collection": "المجموعة"
     },
     "discover": "اكتشف",
-    "title": "The collection",
+    "title": "المجموعة",
     "sections": {
       "quotidien": {
-        "title": "Everyday universe",
-        "description": "الأساسيات selected for everyday life.",
+        "title": "عالم الحياة اليومية",
+        "description": "أساسيات مختارة للحياة اليومية.",
         "items": {
           "bags": "حقائب",
-          "leatherGoods": "Leather goods",
-          "luggage": "Luggage",
+          "leatherGoods": "منتجات جلدية",
+          "luggage": "حقائب سفر",
           "accessories": "إكسسوارات"
         }
       },
       "signature": {
-        "title": "SBI Paris signature",
-        "description": "Craftsmanship and traditional style.",
+        "title": "توقيع SBI PARIS",
+        "description": "حرفية وأسلوب تقليدي.",
         "items": {
-          "craftsmanship": "Craftsmanship",
-          "traditionalFashion": "Traditional fashion"
+          "craftsmanship": "الحرف اليدوية",
+          "traditionalFashion": "الأزياء التقليدية"
         }
       }
     }
@@ -672,98 +710,430 @@
     "discover": "اكتشف",
     "sections": {
       "men": {
-        "title": "For him",
-        "description": "Distinctive fragrances for men and boys.",
+        "title": "للرجال",
+        "description": "عطور مميزة للرجال والأولاد.",
         "items": {
-          "perfumes": "الرجال’s perfumes",
-          "boysالعطور": "Boys’ perfumes"
+          "perfumes": "عطور رجالية",
+          "boysPerfumes": "عطور للأولاد"
         }
       },
       "women": {
-        "title": "For her",
-        "description": "Elegant fragrances for women and girls.",
+        "title": "للنساء",
+        "description": "عطور أنيقة للنساء والبنات.",
         "items": {
-          "perfumes": "النساء’s perfumes",
-          "girlsالعطور": "Girls’ perfumes"
+          "perfumes": "عطور نسائية",
+          "girlsPerfumes": "عطور للبنات"
         }
       }
     }
   },
   "mobilitePage": {
-    "pageTitle": "Electric mobility",
+    "pageTitle": "التنقل الكهربائي",
     "breadcrumb": {
       "home": "الرئيسية",
       "mobility": "التنقل"
     },
     "discover": "اكتشف",
     "section": {
-      "title": "Electric mobility",
-      "description": "Practical and modern mobility solutions.",
+      "title": "التنقل الكهربائي",
+      "description": "حلول تنقل عملية وعصرية.",
       "items": {
-        "electricScooters": "Electric scooters",
-        "electricBikes": "Electric bikes",
-        "electricLuggage": "Electric luggage"
+        "electricScooters": "سكوترات كهربائية",
+        "electricBikes": "دراجات كهربائية",
+        "electricLuggage": "حقائب سفر كهربائية"
       }
     }
   },
   "promotionsPage": {
-    "pageTitle": "Offers and new arrivals",
+    "pageTitle": "العروض والمنتجات الجديدة",
     "breadcrumb": {
       "home": "الرئيسية",
-      "promotionsAndNews": "Offers and new arrivals"
+      "promotionsAndNews": "العروض والمنتجات الجديدة"
     },
     "discover": "اكتشف",
     "sections": {
       "promotions": {
         "title": "التخفيضات",
-        "description": "اكتشف our current special offers.",
+        "description": "اكتشف عروضنا الخاصة الحالية.",
         "items": {
-          "promotions": "Current promotions"
+          "promotions": "التخفيضات الحالية"
         }
       },
       "news": {
         "title": "وصل حديثًا",
-        "description": "Explore our latest products.",
+        "description": "اكتشف أحدث منتجاتنا.",
         "items": {
-          "news": "وصل حديثًا"
+          "news": "المنتجات الجديدة"
         }
       }
     }
   },
-  "home": {
-    "history": {
-      "imageAlt": "SBI PARIS store",
-      "kicker": "OUR STORY",
-      "description": "Since 1994, SBI PARIS has embodied the spirit of Paris: timeless elegance, exceptional craftsmanship and a constant pursuit of excellence. Every creation, whether dedicated to fashion, sport, perfume or mobility, is designed to offer a unique experience where style meets innovation.",
-      "stats": {
-        "collections": "COLLECTIONS",
-        "countries": "COUNTRIES",
-        "satisfiedCustomers": "SATISFIED CUSTOMERS",
-        "quality": "QUALITY",
-        "premium": "PREMIUM"
-      }
+  "contactPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "contact": "اتصل بنا"
     },
-    "trust": {
-      "internationalDelivery": {
-        "title": "International delivery",
-        "description": "Fast and secure shipping to several countries."
+    "kicker": "خدمة العملاء",
+    "title": "اتصل بنا",
+    "description": "فريقنا متاح للإجابة عن أسئلتكم المتعلقة بطلباتكم أو منتجاتنا أو خدماتنا.",
+    "contact": {
+      "phone": "الهاتف",
+      "whatsapp": "واتساب",
+      "email": "البريد الإلكتروني"
+    },
+    "backHome": "العودة إلى الصفحة الرئيسية",
+    "form": {
+      "title": "أرسل لنا رسالة",
+      "description": "املأ النموذج أدناه وسنرد عليك في أقرب وقت ممكن.",
+      "fields": {
+        "name": {
+          "label": "الاسم واللقب",
+          "placeholder": "أدخل اسمك ولقبك"
+        },
+        "email": {
+          "label": "البريد الإلكتروني",
+          "placeholder": "أدخل بريدك الإلكتروني"
+        },
+        "phone": {
+          "label": "الهاتف",
+          "placeholder": "أدخل رقم هاتفك"
+        },
+        "subject": {
+          "label": "الموضوع",
+          "placeholder": "موضوع رسالتك"
+        },
+        "message": {
+          "label": "الرسالة",
+          "placeholder": "اكتب رسالتك هنا..."
+        }
       },
-      "securePayment": {
-        "title": "100% secure payment",
-        "description": "Your transactions are protected through secure payment."
+      "submit": "إرسال الرسالة"
+    }
+  },
+  "faqPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "الأسئلة الشائعة"
+    },
+    "hero": {
+      "title": "الأسئلة الشائعة",
+      "line1": "ستجد أدناه إجابات عن أكثر الأسئلة شيوعًا.",
+      "line2": "إذا لم تجد إجابتك، فريقنا هنا لمساعدتك."
+    },
+    "help": {
+      "kicker": "هل تحتاج إلى مساعدة؟",
+      "title1": "نحن هنا",
+      "title2": "من أجلك.",
+      "description": "فريقنا متاح طوال أيام الأسبوع."
+    },
+    "contact": {
+      "phone": "الهاتف",
+      "whatsapp": "واتساب",
+      "email": "البريد الإلكتروني",
+      "button": "اتصل بنا"
+    },
+    "items": [
+      {
+        "question": "ما مدة التوصيل؟",
+        "answer": "يتم التوصيل عادة خلال 2 إلى 5 أيام عمل داخل فرنسا، وتختلف المدة دوليًا حسب الوجهة."
       },
-      "customerSupport": {
-        "title": "Advisers at your service",
-        "description": "A team available to answer all your questions."
+      {
+        "question": "هل يمكنني تتبع طلبي؟",
+        "answer": "نعم. بعد شحن الطلب ستصلك معلومات التتبع عبر البريد الإلكتروني."
       },
-      "selectedProducts": {
-        "title": "Selected products",
-        "description": "Carefully selected items to guarantee premium quality."
+      {
+        "question": "ما وسائل الدفع المقبولة؟",
+        "answer": "تعتمد وسائل الدفع المتاحة على الخدمات المفعلة عند إتمام الطلب."
       },
-      "availableStock": {
-        "title": "Available stock",
-        "description": "Thousands of products available with fast shipping."
+      {
+        "question": "هل يمكنني إرجاع أو استبدال منتج؟",
+        "answer": "يمكنك طلب الإرجاع أو الاستبدال خلال 30 يومًا من الاستلام وفق شروط الإرجاع."
+      },
+      {
+        "question": "كيف أختار المقاس المناسب؟",
+        "answer": "راجع دليل المقاسات وقارن قياساتك."
+      },
+      {
+        "question": "هل منتجات SBI PARIS أصلية؟",
+        "answer": "نعم، المنتجات المعروضة يتم اختيارها وبيعها من طرف SBI PARIS."
+      },
+      {
+        "question": "كيف أتواصل مع خدمة العملاء؟",
+        "answer": "يمكنك التواصل عبر الهاتف أو واتساب أو البريد الإلكتروني أو نموذج الاتصال."
+      }
+    ]
+  },
+  "trackingPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "تتبع الطلب"
+    },
+    "title": "تتبع الطلب",
+    "description": "أدخل رقم الطلب والبريد الإلكتروني المستخدم عند الشراء لمعرفة حالة طلبك.",
+    "form": {
+      "title": "تتبع طلبك",
+      "orderNumber": "رقم الطلب",
+      "orderPlaceholder": "مثال: SBIPARIS-123456",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "مثال: your@email.com",
+      "submit": "تتبع طلبي",
+      "help": "ستجد رقم الطلب في رسالة تأكيد الشراء."
+    },
+    "example": {
+      "title": "أين أجد رقم الطلب؟",
+      "description": "تم إرسال رقم الطلب إليك عبر البريد الإلكتروني عند تأكيد الشراء.",
+      "thanks": "شكرًا لطلبك!",
+      "orderNumberIs": "رقم طلبك هو:",
+      "date": "التاريخ: 14 مايو 2026",
+      "shippingUpdates": "سنطلعك على كل مرحلة من مراحل الشحن."
+    },
+    "features": {
+      "fast": {
+        "title": "توصيل سريع",
+        "text": "من 2 إلى 5 أيام عمل داخل فرنسا"
+      },
+      "realtime": {
+        "title": "تتبع مباشر",
+        "text": "تابع طردك في كل مرحلة"
+      },
+      "secure": {
+        "title": "دفع آمن",
+        "text": "معاملات محمية حسب الوسائل المفعلة"
+      },
+      "help": {
+        "title": "تحتاج مساعدة؟",
+        "text": "فريق خدمة العملاء هنا لمساعدتك"
       }
     }
+  },
+  "returnsPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "الإرجاع والاستبدال"
+    },
+    "title": "الإرجاع والاستبدال",
+    "description": "رضاكم أولويتنا. يمكنكم طلب الإرجاع أو الاستبدال خلال 30 يومًا بعد الاستلام.",
+    "cards": {
+      "delay": {
+        "title": "30 يومًا لتغيير رأيك",
+        "text": "يمكن الإرجاع خلال 30 يومًا من الاستلام."
+      },
+      "free": {
+        "title": "إرجاع مجاني",
+        "text": "الإرجاع مجاني داخل فرنسا القارية."
+      },
+      "exchange": {
+        "title": "استبدال سريع",
+        "text": "الاستبدال حسب التوفر."
+      },
+      "refund": {
+        "title": "استرداد المبلغ",
+        "text": "بعد استلام المرتجع والموافقة عليه."
+      }
+    },
+    "steps": {
+      "1": {
+        "title": "طلب الإرجاع",
+        "text": "تواصل مع فريقنا لبدء الإجراء."
+      },
+      "2": {
+        "title": "الشحن",
+        "text": "جهز الطرد وأرسله حسب التعليمات."
+      },
+      "3": {
+        "title": "الاستلام",
+        "text": "نقوم بفحص المرتجع بعد وصوله."
+      },
+      "4": {
+        "title": "الاسترداد",
+        "text": "يتم رد المبلغ بعد الموافقة."
+      },
+      "title": "كيف ترجع منتجًا؟"
+    },
+    "conditions": {
+      "title": "شروط الإرجاع",
+      "items": [
+        "المنتج جديد وغير مستعمل.",
+        "يجب توفر التغليف الأصلي.",
+        "يجب أن تبقى الملصقات موجودة.",
+        "المنتجات المخصصة لا تُرجع.",
+        "الإرجاع مجاني داخل فرنسا القارية."
+      ]
+    },
+    "help": {
+      "title": "تحتاج مساعدة؟",
+      "text": "فريقنا متاح طوال أيام الأسبوع."
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "من نحن"
+    },
+    "hero": {
+      "kicker": "قصتنا",
+      "title": "عن SBI PARIS",
+      "p1": "وُلدت SBI PARIS في قلب باريس وهي علامة فرنسية متخصصة في الأزياء والإكسسوارات والعطور والتنقل الكهربائي.",
+      "p2": "منذ 1994 نقدم منتجات أنيقة ومختارة بعناية.",
+      "p3": "هدفنا تقديم أسلوب راقٍ مع الحفاظ على الخبرة الفرنسية.",
+      "button": "اكتشف مجموعاتنا"
+    },
+    "experience": "سنوات من الخبرة",
+    "values": {
+      "title": "قيمنا",
+      "quality": {
+        "title": "الجودة",
+        "text": "منتجات مختارة بعناية كبيرة."
+      },
+      "trust": {
+        "title": "الثقة",
+        "text": "علاقة دائمة مع عملائنا."
+      },
+      "innovation": {
+        "title": "الابتكار",
+        "text": "نبحث دائمًا عن الأفكار والاتجاهات الجديدة."
+      },
+      "passion": {
+        "title": "الشغف",
+        "text": "فريق شغوف بخدمة رضا العملاء."
+      }
+    },
+    "stats": {
+      "experience": "سنوات من الخبرة",
+      "customers": "عملاء راضون",
+      "products": "منتجات مباعة",
+      "support": "خدمة العملاء"
+    }
+  },
+  "careersPage": {
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "current": "الوظائف"
+    },
+    "title": "الوظائف",
+    "description": "انضم إلى SBI PARIS وشارك في بناء قصة من الأناقة والشغف والابتكار.",
+    "values": {
+      "team": {
+        "title": "روح الفريق",
+        "text": "نؤمن بالتعاون والاحترام المتبادل."
+      },
+      "growth": {
+        "title": "التطور",
+        "text": "ندعم تطورك المهني."
+      },
+      "excellence": {
+        "title": "التميز",
+        "text": "نسعى للتميز في كل التفاصيل."
+      },
+      "innovation": {
+        "title": "الابتكار",
+        "text": "نشجع الأفكار الجديدة والإبداع."
+      },
+      "passion": {
+        "title": "الشغف",
+        "text": "نتشارك الشغف بالأزياء والخدمة."
+      }
+    },
+    "reasons": {
+      "title": "لماذا تنضم إلينا؟",
+      "items": {
+        "brand": {
+          "title": "علامة أنيقة وطموحة",
+          "text": "SBI PARIS علامة باريسية في نمو مستمر."
+        },
+        "environment": {
+          "title": "بيئة محفزة",
+          "text": "انضم إلى فرق شغوفة في بيئة ديناميكية."
+        },
+        "opportunities": {
+          "title": "فرص للتطور",
+          "text": "نوفر فرصًا حقيقية للتطور والتدريب."
+        },
+        "benefits": {
+          "title": "مزايا مهنية",
+          "text": "تختلف المزايا حسب الوظيفة والشروط المعمول بها."
+        }
+      }
+    },
+    "jobs": {
+      "title": "عروض العمل",
+      "viewAll": "عرض جميع الفرص",
+      "viewOffer": "عرض الوظيفة",
+      "items": {
+        "sales": {
+          "title": "مستشار مبيعات",
+          "category": "متاجر",
+          "location": "باريس، فرنسا",
+          "contract": "دوام دائم"
+        },
+        "manager": {
+          "title": "مدير متجر",
+          "category": "متاجر",
+          "location": "باريس، فرنسا",
+          "contract": "دوام دائم"
+        },
+        "ecommerce": {
+          "title": "مسؤول تجارة إلكترونية",
+          "category": "رقمي",
+          "location": "باريس، فرنسا",
+          "contract": "دوام دائم"
+        },
+        "marketing": {
+          "title": "مساعد تسويق",
+          "category": "تسويق",
+          "location": "باريس، فرنسا",
+          "contract": "دوام دائم"
+        },
+        "service": {
+          "title": "خدمة العملاء",
+          "category": "علاقات العملاء",
+          "location": "باريس، فرنسا",
+          "contract": "عقد محدد"
+        }
+      }
+    },
+    "spontaneous": {
+      "title": "لم تجد الوظيفة المناسبة؟",
+      "text": "أرسل لنا طلب توظيف تلقائي وسندرسه بعناية.",
+      "button": "إرسال طلبي"
+    }
+  },
+  "assistant": {
+    "header": {
+      "title": "SBI PARIS - المساعد",
+      "online": "متصل"
+    },
+    "welcome": "مرحبًا! 👋\nأنا مساعد SBI PARIS.\nكيف يمكنني مساعدتك؟",
+    "actions": {
+      "product": {
+        "label": "البحث عن منتج",
+        "prompt": "أبحث عن منتج من SBI PARIS."
+      },
+      "tracking": {
+        "label": "تتبع طلبي",
+        "prompt": "أريد تتبع طلبي."
+      },
+      "delivery": {
+        "label": "التوصيل والإرجاع",
+        "prompt": "أريد معلومات حول التوصيل والإرجاع."
+      },
+      "sport": {
+        "label": "عالم الرياضة",
+        "prompt": "أريد اكتشاف عالم الرياضة SBI PARIS."
+      },
+      "perfumes": {
+        "label": "العطور",
+        "prompt": "أبحث عن عطور SBI PARIS."
+      },
+      "mobility": {
+        "label": "التنقل",
+        "prompt": "أريد اكتشاف مجموعة التنقل SBI PARIS."
+      }
+    },
+    "composer": {
+      "placeholder": "مثال: أبحث عن حقيبة كهربائية..."
+    },
+    "send": "إرسال",
+    "demoReply": "شكرًا. أبحث لك عن أفضل إجابة."
   }
 }

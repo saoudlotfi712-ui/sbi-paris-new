@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import {useRouter} from "next/navigation";
+import {useEffect, useMemo, useState} from "react";
 import styles from "./page.module.css";
 
 type CheckoutProduct = {
@@ -23,9 +23,6 @@ export default function PaymentPage() {
 
   const [product, setProduct] =
     useState<CheckoutProduct | null>(null);
-
-  const [paymentMethod, setPaymentMethod] =
-    useState("card");
 
   useEffect(() => {
     const saved =
@@ -49,10 +46,10 @@ export default function PaymentPage() {
 
   const total = subtotal + shipping;
 
-  const handlePayment = () => {
+  const handleConfirmation = () => {
     localStorage.setItem(
       "orderCompleted",
-      "true"
+      "true",
     );
 
     router.push("/checkout/confirmation");
@@ -69,9 +66,7 @@ export default function PaymentPage() {
   return (
     <main className={styles.page}>
       <div className={styles.container}>
-
         <div className={styles.steps}>
-
           <div className={styles.done}>
             <span>✓</span>
             <p>Livraison</p>
@@ -79,153 +74,51 @@ export default function PaymentPage() {
 
           <div className={styles.active}>
             <span>2</span>
-            <p>Paiement</p>
+            <p>Validation</p>
           </div>
 
           <div className={styles.step}>
             <span>3</span>
             <p>Confirmation</p>
           </div>
-
         </div>
 
-
         <div className={styles.layout}>
-
           <section className={styles.paymentBox}>
-
             <h1>
-              Paiement sécurisé
+              Validation de la commande
             </h1>
 
             <p className={styles.subtitle}>
-              Choisissez votre moyen de paiement
+              Vérifiez votre commande avant de la confirmer.
             </p>
 
-
-            <button
-              type="button"
-              className={
-                paymentMethod === "card"
-                  ? styles.methodActive
-                  : styles.method
-              }
-              onClick={() =>
-                setPaymentMethod("card")
-              }
-            >
-              💳 Carte bancaire
-            </button>
-
-
-            {paymentMethod === "card" && (
-              <div className={styles.cardForm}>
-
-                <label>
-                  Numéro de carte
-                </label>
-
-                <input
-                  placeholder="1234 5678 9012 3456"
-                />
-
-
-                <div className={styles.grid}>
-
-                  <div>
-                    <label>
-                      Date expiration
-                    </label>
-
-                    <input
-                      placeholder="MM / AA"
-                    />
-                  </div>
-
-
-                  <div>
-                    <label>
-                      Code sécurité
-                    </label>
-
-                    <input
-                      placeholder="CVV"
-                    />
-                  </div>
-
-                </div>
-
-
-                <label>
-                  Nom sur la carte
-                </label>
-
-                <input
-                  placeholder="Nom complet"
-                />
-
-              </div>
-            )}
-
-
-            <button
-              type="button"
-              className={
-                paymentMethod === "paypal"
-                  ? styles.methodActive
-                  : styles.method
-              }
-              onClick={() =>
-                setPaymentMethod("paypal")
-              }
-            >
-              PayPal
-            </button>
-
-
-            <button
-              type="button"
-              className={
-                paymentMethod === "apple"
-                  ? styles.methodActive
-                  : styles.method
-              }
-              onClick={() =>
-                setPaymentMethod("apple")
-              }
-            >
-               Apple Pay
-            </button>
-
+            <p>
+              Aucun paiement en ligne n&apos;est effectué
+              à cette étape.
+            </p>
 
             <button
               type="button"
               className={styles.payButton}
-              onClick={handlePayment}
+              onClick={handleConfirmation}
             >
               <span>
-                Payer maintenant
+                Confirmer la commande
               </span>
 
               <strong>
                 {total.toFixed(2)} €
               </strong>
             </button>
-
-
           </section>
 
-
-
           <aside className={styles.summary}>
-
             <h2>
               Résumé de commande
             </h2>
 
-
             <div className={styles.product}>
-
               <Image
                 src={product.image}
                 alt={product.name}
@@ -233,9 +126,7 @@ export default function PaymentPage() {
                 height={90}
               />
 
-
               <div>
-
                 <h3>
                   {product.name}
                 </h3>
@@ -251,11 +142,8 @@ export default function PaymentPage() {
                 <p>
                   Qté : {product.quantity}
                 </p>
-
               </div>
-
             </div>
-
 
             <div className={styles.line}>
               <span>
@@ -266,7 +154,6 @@ export default function PaymentPage() {
                 {subtotal.toFixed(2)} €
               </strong>
             </div>
-
 
             <div className={styles.line}>
               <span>
@@ -280,7 +167,6 @@ export default function PaymentPage() {
               </strong>
             </div>
 
-
             <div className={styles.total}>
               <span>
                 Total
@@ -290,17 +176,8 @@ export default function PaymentPage() {
                 {total.toFixed(2)} €
               </strong>
             </div>
-
-
-            <div className={styles.secure}>
-              🔒 Paiement 100% sécurisé
-            </div>
-
-
           </aside>
-
         </div>
-
       </div>
     </main>
   );

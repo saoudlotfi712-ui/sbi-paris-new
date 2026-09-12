@@ -224,546 +224,916 @@
     "addedToCart": "已加入购物车 ✓"
   },
   "collectionMenu": {
-    "dailyUniverse": "Everyday universe",
-    "bags": "Bags",
-    "leatherGoods": "Leather goods",
-    "luggage": "Luggage",
-    "accessories": "Accessories",
-    "signature": "SBI Paris signature",
-    "craftsmanship": "Craftsmanship",
-    "traditionalFashion": "Traditional fashion"
+    "dailyUniverse": "日常生活系列",
+    "bags": "包袋",
+    "leatherGoods": "皮具",
+    "luggage": "行李箱包",
+    "accessories": "配饰",
+    "signature": "SBI PARIS 标志系列",
+    "craftsmanship": "工艺",
+    "traditionalFashion": "传统时尚"
   },
   "hommeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Men’s sport universe"
+      "title": "运动风格",
+      "polosSport": "运动 Polo 衫",
+      "tankTops": "背心",
+      "shorts": "短裤",
+      "tracksuits": "运动服",
+      "sportShoes": "运动鞋",
+      "caps": "帽子",
+      "universe": "男士运动世界"
     },
     "classic": {
-      "title": "Classic style",
-      "polos": "Polos",
-      "shirts": "Shirts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "title": "经典风格",
+      "polos": "Polo衫",
+      "shirts": "衬衫",
+      "trousers": "长裤",
+      "jackets": "夹克",
+      "cityShoes": "正装鞋"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "underwear": "Underwear"
+      "title": "基础单品",
+      "socks": "袜子",
+      "underwear": "内衣"
     }
   },
   "femmeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Women’s sport universe"
+      "title": "运动风格",
+      "polosSport": "运动 Polo 衫",
+      "tankTops": "背心",
+      "shorts": "短裤",
+      "tracksuits": "运动服",
+      "sportShoes": "运动鞋",
+      "caps": "帽子",
+      "universe": "女士运动世界"
     },
     "classic": {
-      "title": "Classic style",
-      "polos": "Polos",
-      "shirts": "Shirts",
-      "dresses": "Dresses",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "title": "经典风格",
+      "polos": "Polo衫",
+      "shirts": "衬衫",
+      "dresses": "连衣裙",
+      "trousers": "长裤",
+      "jackets": "夹克",
+      "cityShoes": "正装鞋"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "lingerie": "Lingerie"
+      "title": "基础单品",
+      "socks": "袜子",
+      "lingerie": "女士内衣"
     }
   },
   "enfantMenu": {
     "boy": {
-      "title": "Boys",
-      "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes",
-      "caps": "Caps"
+      "title": "男童",
+      "polos": "Polo衫",
+      "shorts": "短裤",
+      "trousers": "长裤",
+      "jackets": "夹克",
+      "shoes": "鞋履",
+      "caps": "帽子"
     },
     "girl": {
-      "title": "Girls",
-      "dresses": "Dresses",
-      "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes"
+      "title": "女童",
+      "dresses": "连衣裙",
+      "polos": "Polo衫",
+      "shorts": "短裤",
+      "trousers": "长裤",
+      "jackets": "夹克",
+      "shoes": "鞋履"
     }
   },
   "parfumMenu": {
     "men": {
-      "title": "For him",
-      "perfumes": "Men’s perfumes",
-      "boysPerfumes": "Boys’ perfumes"
+      "title": "男士",
+      "perfumes": "男士香水",
+      "boysPerfumes": "男童香水"
     },
     "women": {
-      "title": "For her",
-      "perfumes": "Women’s perfumes",
-      "girlsPerfumes": "Girls’ perfumes"
+      "title": "女士",
+      "perfumes": "女士香水",
+      "girlsPerfumes": "女童香水"
     }
   },
   "mobiliteMenu": {
-    "electricScooters": "Electric scooters",
-    "electricBikes": "Electric bikes",
-    "electricLuggage": "Electric luggage"
+    "electricScooters": "电动滑板车",
+    "electricBikes": "电动自行车",
+    "electricLuggage": "电动行李箱"
   },
   "promotionsMenu": {
     "promotions": {
-      "title": "Promotions",
-      "label": "Current offers"
+      "title": "优惠活动",
+      "label": "当前优惠"
     },
     "newArrivals": {
-      "title": "New arrivals",
-      "label": "Discover what’s new"
+      "title": "新品",
+      "label": "探索新品"
     }
   },
   "history": {
-    "imageAlt": "SBI Paris store",
-    "subtitle": "Our story",
-    "description": "Since 1994, SBI PARIS has offered elegant, carefully selected collections inspired by Parisian style.",
+    "imageAlt": "SBI PARIS 门店",
+    "subtitle": "我们的故事",
+    "description": "自1994年以来，SBI PARIS 一直提供优雅、精心挑选并受巴黎风格启发的系列。",
     "stats": {
-      "collections": "Collections",
-      "countries": "Countries",
-      "customers": "Satisfied customers",
-      "qualityTitle": "Premium",
-      "quality": "Quality"
+      "collections": "系列",
+      "countries": "国家",
+      "customers": "满意客户",
+      "qualityTitle": "高端",
+      "quality": "品质"
     }
   },
   "hero": {
-    "imageAlt": "SBI Paris collection",
+    "imageAlt": "SBI PARIS 系列",
     "title": {
-      "line1": "Parisian elegance",
-      "line2": "for every day",
+      "line1": "巴黎优雅",
+      "line2": "融入每一天",
       "line3": "SBI PARIS"
     },
     "description": {
-      "line1": "Discover refined collections",
-      "line2": "designed for every style."
+      "line1": "探索精致系列",
+      "line2": "为每一种风格而设计。"
     },
     "buttons": {
-      "collection": "Discover the collection",
-      "news": "See new arrivals"
+      "collection": "探索系列",
+      "news": "查看新品"
     },
     "stats": {
-      "paris": "Parisian spirit",
-      "collections": "Collections",
-      "countries": "Countries"
+      "paris": "巴黎精神",
+      "collections": "系列",
+      "countries": "国家"
     }
   },
   "homeSport": {
-    "kicker": "Sport universe",
-    "title": "Move in style",
-    "viewAll": "View all",
-    "productCount": "{count} products",
-    "discover": "Discover",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "padel": "Padel",
-    "running": "Running"
+    "kicker": "运动世界",
+    "title": "动感与风格同行",
+    "viewAll": "查看全部",
+    "productCount": "{count} 件商品",
+    "discover": "探索",
+    "sports": {
+      "football": "足球",
+      "basketball": "篮球",
+      "tennis": "网球",
+      "padel": "板式网球",
+      "running": "跑步"
+    }
   },
   "parisUniverse": {
-    "kicker": "SBI PARIS universes",
+    "kicker": "SBI PARIS 多元世界",
     "title": {
-      "line1": "A style for",
-      "line2": "every moment"
+      "line1": "每一刻都有",
+      "line2": "适合的风格"
     },
-    "description": "Explore our fashion, fragrance and mobility universes.",
-    "button": "View all collections",
-    "discover": "Discover",
+    "description": "探索我们的时装、香水与电动出行世界。",
+    "button": "查看全部系列",
+    "discover": "探索",
     "cards": {
       "women": {
-        "category": "Women",
-        "title": "Elegant women’s fashion"
+        "category": "女士",
+        "title": "优雅女装"
       },
       "men": {
-        "category": "Men",
-        "title": "Modern men’s fashion"
+        "category": "男士",
+        "title": "现代男装"
       },
       "perfume": {
-        "category": "Perfume",
-        "title": "Signature fragrances"
+        "category": "香水",
+        "title": "标志性香氛"
       },
       "kids": {
-        "category": "Kids",
-        "title": "Style for children"
+        "category": "儿童",
+        "title": "儿童时尚风格"
       },
       "mobility": {
-        "category": "Mobility",
-        "title": "Electric mobility"
+        "category": "出行",
+        "title": "电动出行"
       },
       "news": {
-        "category": "New",
-        "title": "Latest arrivals"
+        "category": "新品",
+        "title": "最新上新"
       }
     }
   },
   "wholesale": {
-    "kicker": "Professional space",
+    "kicker": "专业合作空间",
     "title": {
-      "line1": "Grow your business",
-      "line2": "with SBI PARIS"
+      "line1": "与 SBI PARIS 一起",
+      "line2": "发展您的业务"
     },
-    "description": "Benefit from professional pricing, reliable delivery and dedicated support.",
-    "button": "Become a partner",
-    "imageAlt": "SBI Paris professional service",
+    "description": "享受专业价格、可靠配送和专属支持。",
+    "button": "成为合作伙伴",
+    "imageAlt": "SBI PARIS 专业服务",
     "benefits": {
       "prices": {
-        "title": "Professional prices",
-        "description": "Competitive conditions for your business."
+        "title": "专业价格",
+        "description": "适合您业务的竞争性条件。"
       },
       "delivery": {
-        "title": "International delivery",
-        "description": "Reliable logistics solutions."
+        "title": "国际配送",
+        "description": "可靠的物流解决方案。"
       },
       "support": {
-        "title": "Dedicated support",
-        "description": "A team at your service."
+        "title": "专属支持",
+        "description": "专业团队为您服务。"
       },
       "quality": {
-        "title": "Selected quality",
-        "description": "Products chosen with care."
+        "title": "精选品质",
+        "description": "用心挑选的商品。"
       }
     }
   },
   "promotionsShowcase": {
-    "logoAlt": "SBI Paris logo",
-    "header": "Offers and new arrivals",
-    "discover": "Discover",
+    "logoAlt": "SBI PARIS 标志",
+    "header": "优惠与新品",
+    "discover": "探索",
     "promotions": {
-      "kicker": "Exclusive offers",
+      "kicker": "专属优惠",
       "title": {
-        "line1": "Exceptional",
-        "line2": "promotions"
+        "line1": "精彩",
+        "line2": "促销"
       },
-      "description": "Enjoy selected offers for a limited time.",
-      "button": "View promotions",
-      "viewSelection": "View selection",
+      "description": "限时享受精选优惠。",
+      "button": "查看促销",
+      "viewSelection": "查看精选",
       "discount": {
-        "upTo": "Up to -50%",
-        "description": "On selected products"
+        "upTo": "最高 -50%",
+        "description": "适用于精选商品"
       },
       "items": {
         "perfume": {
-          "title": "Perfumes",
-          "subtitle": "Signature scents"
+          "title": "香水",
+          "subtitle": "标志性香氛"
         },
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "Elegant details"
+          "title": "配饰",
+          "subtitle": "优雅细节"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "Selected styles"
+          "title": "男士",
+          "subtitle": "精选风格"
         }
       }
     },
     "newItems": {
-      "kicker": "New arrivals",
+      "kicker": "新品",
       "title": {
-        "line1": "New season",
-        "line2": "new inspirations"
+        "line1": "新季节",
+        "line2": "新灵感"
       },
-      "description": "Discover the latest SBI PARIS arrivals.",
-      "button": "See new arrivals",
-      "viewProduct": "View product",
+      "description": "探索 SBI PARIS 最新上新。",
+      "button": "查看新品",
+      "viewProduct": "查看商品",
       "items": {
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "New details"
+          "title": "配饰",
+          "subtitle": "全新细节"
         },
         "travelBag": {
-          "title": "Travel bag",
-          "subtitle": "Elegant travel"
+          "title": "旅行包",
+          "subtitle": "优雅出行"
         },
         "women": {
-          "title": "Women",
-          "subtitle": "New collection"
+          "title": "女士",
+          "subtitle": "全新系列"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "New collection"
+          "title": "男士",
+          "subtitle": "全新系列"
         },
         "mobility": {
-          "title": "Mobility",
-          "subtitle": "Electric innovation"
+          "title": "出行",
+          "subtitle": "电动创新"
         }
       }
     }
   },
   "hommePage": {
-    "pageTitle": "Men",
+    "pageTitle": "男士",
     "breadcrumb": {
-      "home": "Home",
-      "men": "Men"
+      "home": "首页",
+      "men": "男士"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "sportUniverse": {
-      "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title1": "运动",
+      "title2": "世界",
+      "description": "每天兼具性能与风格。",
+      "button": "探索"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "运动风格",
+        "description": "为积极生活方式带来舒适与性能。",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "运动 Polo 衫",
+          "tankTops": "背心",
+          "shorts": "短裤",
+          "tracksuits": "运动服",
+          "sportShoes": "运动鞋",
+          "caps": "帽子"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "经典风格",
+        "description": "为优雅衣橱精选的经典单品。",
         "items": {
-          "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes"
+          "polos": "Polo衫",
+          "shirts": "衬衫",
+          "trousers": "长裤",
+          "jackets": "夹克",
+          "cityShoes": "正装鞋"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "基础单品",
+        "description": "日常必备单品。",
         "items": {
-          "socks": "Socks",
-          "underwear": "Underwear"
+          "socks": "袜子",
+          "underwear": "内衣"
         }
       }
     }
   },
   "femmePage": {
-    "pageTitle": "Women",
+    "pageTitle": "女士",
     "breadcrumb": {
-      "home": "Home",
-      "women": "Women"
+      "home": "首页",
+      "women": "女士"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "sportUniverse": {
-      "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title1": "运动",
+      "title2": "世界",
+      "description": "每天兼具性能与风格。",
+      "button": "探索"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "运动风格",
+        "description": "为积极生活方式带来舒适与性能。",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "运动 Polo 衫",
+          "tankTops": "背心",
+          "shorts": "短裤",
+          "tracksuits": "运动服",
+          "sportShoes": "运动鞋",
+          "caps": "帽子"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "经典风格",
+        "description": "为优雅衣橱精选的经典单品。",
         "items": {
-          "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes",
-          "dresses": "Dresses"
+          "polos": "Polo衫",
+          "shirts": "衬衫",
+          "trousers": "长裤",
+          "jackets": "夹克",
+          "cityShoes": "正装鞋",
+          "dresses": "连衣裙"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "基础单品",
+        "description": "日常必备单品。",
         "items": {
-          "socks": "Socks",
-          "lingerie": "Lingerie"
+          "socks": "袜子",
+          "lingerie": "女士内衣"
         }
       }
     }
   },
   "enfantPage": {
-    "pageTitle": "Kids",
+    "pageTitle": "儿童",
     "breadcrumb": {
-      "home": "Home",
-      "children": "Kids"
+      "home": "首页",
+      "children": "儿童"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "sections": {
       "boy": {
-        "title": "Boys",
-        "description": "Comfortable styles for boys.",
+        "title": "男童",
+        "description": "舒适的男童风格。",
         "items": {
-          "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes",
-          "caps": "Caps"
+          "polos": "Polo衫",
+          "shorts": "短裤",
+          "trousers": "长裤",
+          "jackets": "夹克",
+          "shoes": "鞋履",
+          "caps": "帽子"
         }
       },
       "girl": {
-        "title": "Girls",
-        "description": "Elegant and comfortable styles for girls.",
+        "title": "女童",
+        "description": "优雅舒适的女童风格。",
         "items": {
-          "dresses": "Dresses",
-          "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes"
+          "dresses": "连衣裙",
+          "polos": "Polo衫",
+          "shorts": "短裤",
+          "trousers": "长裤",
+          "jackets": "夹克",
+          "shoes": "鞋履"
         }
       }
     }
   },
   "collectionPage": {
-    "pageTitle": "Collections",
+    "pageTitle": "系列",
     "breadcrumb": {
-      "home": "Home",
-      "collection": "Collection"
+      "home": "首页",
+      "collection": "系列"
     },
-    "discover": "Discover",
-    "title": "The collection",
+    "discover": "探索",
+    "title": "系列精选",
     "sections": {
       "quotidien": {
-        "title": "Everyday universe",
-        "description": "Essentials selected for everyday life.",
+        "title": "日常生活系列",
+        "description": "为日常生活精选的必备单品。",
         "items": {
-          "bags": "Bags",
-          "leatherGoods": "Leather goods",
-          "luggage": "Luggage",
-          "accessories": "Accessories"
+          "bags": "包袋",
+          "leatherGoods": "皮具",
+          "luggage": "行李箱包",
+          "accessories": "配饰"
         }
       },
       "signature": {
-        "title": "SBI Paris signature",
-        "description": "Craftsmanship and traditional style.",
+        "title": "SBI PARIS 标志系列",
+        "description": "工艺与传统风格。",
         "items": {
-          "craftsmanship": "Craftsmanship",
-          "traditionalFashion": "Traditional fashion"
+          "craftsmanship": "工艺",
+          "traditionalFashion": "传统时尚"
         }
       }
     }
   },
   "parfumPage": {
-    "pageTitle": "Perfumes",
+    "pageTitle": "香水",
     "breadcrumb": {
-      "home": "Home",
-      "perfume": "Perfumes"
+      "home": "首页",
+      "perfume": "香水"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "sections": {
       "men": {
-        "title": "For him",
-        "description": "Distinctive fragrances for men and boys.",
+        "title": "男士",
+        "description": "为男士和男童打造的独特香氛。",
         "items": {
-          "perfumes": "Men’s perfumes",
-          "boysPerfumes": "Boys’ perfumes"
+          "perfumes": "男士香水",
+          "boysPerfumes": "男童香水"
         }
       },
       "women": {
-        "title": "For her",
-        "description": "Elegant fragrances for women and girls.",
+        "title": "女士",
+        "description": "为女士和女童打造的优雅香氛。",
         "items": {
-          "perfumes": "Women’s perfumes",
-          "girlsPerfumes": "Girls’ perfumes"
+          "perfumes": "女士香水",
+          "girlsPerfumes": "女童香水"
         }
       }
     }
   },
   "mobilitePage": {
-    "pageTitle": "Electric mobility",
+    "pageTitle": "电动出行",
     "breadcrumb": {
-      "home": "Home",
-      "mobility": "Mobility"
+      "home": "首页",
+      "mobility": "出行"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "section": {
-      "title": "Electric mobility",
-      "description": "Practical and modern mobility solutions.",
+      "title": "电动出行",
+      "description": "实用现代的出行解决方案。",
       "items": {
-        "electricScooters": "Electric scooters",
-        "electricBikes": "Electric bikes",
-        "electricLuggage": "Electric luggage"
+        "electricScooters": "电动滑板车",
+        "electricBikes": "电动自行车",
+        "electricLuggage": "电动行李箱"
       }
     }
   },
   "promotionsPage": {
-    "pageTitle": "Offers and new arrivals",
+    "pageTitle": "优惠与新品",
     "breadcrumb": {
-      "home": "Home",
-      "promotionsAndNews": "Offers and new arrivals"
+      "home": "首页",
+      "promotionsAndNews": "优惠与新品"
     },
-    "discover": "Discover",
+    "discover": "探索",
     "sections": {
       "promotions": {
-        "title": "Promotions",
-        "description": "Discover our current special offers.",
+        "title": "优惠活动",
+        "description": "探索我们当前的特别优惠。",
         "items": {
-          "promotions": "Current promotions"
+          "promotions": "当前促销"
         }
       },
       "news": {
-        "title": "New arrivals",
-        "description": "Explore our latest products.",
+        "title": "新品",
+        "description": "探索我们的最新产品。",
         "items": {
-          "news": "New arrivals"
+          "news": "新品"
         }
       }
     }
   },
   "home": {
     "history": {
-      "imageAlt": "SBI PARIS store",
-      "kicker": "OUR STORY",
-      "description": "Since 1994, SBI PARIS has embodied the spirit of Paris: timeless elegance, exceptional craftsmanship and a constant pursuit of excellence. Every creation, whether dedicated to fashion, sport, perfume or mobility, is designed to offer a unique experience where style meets innovation.",
+      "imageAlt": "SBI PARIS 门店",
+      "kicker": "我们的故事",
+      "description": "自1994年以来，SBI PARIS 始终诠释巴黎精神：永恒的优雅、卓越的工艺以及对品质的不懈追求。无论时装、运动、香水还是电动出行，每一件作品都旨在带来风格与创新相遇的独特体验。",
       "stats": {
-        "collections": "COLLECTIONS",
-        "countries": "COUNTRIES",
-        "satisfiedCustomers": "SATISFIED CUSTOMERS",
-        "quality": "QUALITY",
-        "premium": "PREMIUM"
+        "collections": "系列",
+        "countries": "国家",
+        "satisfiedCustomers": "满意客户",
+        "quality": "品质",
+        "premium": "高端"
       }
     },
     "trust": {
       "internationalDelivery": {
-        "title": "International delivery",
-        "description": "Fast and secure shipping to several countries."
+        "title": "国际配送",
+        "description": "快速、安全地配送至多个国家。"
       },
       "securePayment": {
-        "title": "100% secure payment",
-        "description": "Your transactions are protected through secure payment."
+        "title": "100% 安全支付",
+        "description": "通过安全支付保护您的交易。"
       },
       "customerSupport": {
-        "title": "Advisers at your service",
-        "description": "A team available to answer all your questions."
+        "title": "专业顾问为您服务",
+        "description": "团队随时解答您的问题。"
       },
       "selectedProducts": {
-        "title": "Selected products",
-        "description": "Carefully selected items to guarantee premium quality."
+        "title": "精选商品",
+        "description": "精心挑选商品，保证高端品质。"
       },
       "availableStock": {
-        "title": "Available stock",
-        "description": "Thousands of products available with fast shipping."
+        "title": "现货供应",
+        "description": "数千款商品现货可供快速发货。"
       }
     }
+  },
+  "contactPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "contact": "联系我们"
+    },
+    "kicker": "客户服务",
+    "title": "联系我们",
+    "description": "我们的团队随时为您解答有关订单、产品或服务的问题。",
+    "contact": {
+      "phone": "电话",
+      "whatsapp": "WhatsApp",
+      "email": "电子邮箱"
+    },
+    "backHome": "返回首页",
+    "form": {
+      "title": "给我们留言",
+      "description": "请填写以下表格，我们会尽快回复您。",
+      "fields": {
+        "name": {
+          "label": "姓名",
+          "placeholder": "请输入您的姓名"
+        },
+        "email": {
+          "label": "电子邮箱",
+          "placeholder": "请输入您的电子邮箱"
+        },
+        "phone": {
+          "label": "电话",
+          "placeholder": "请输入您的电话号码"
+        },
+        "subject": {
+          "label": "主题",
+          "placeholder": "请输入留言主题"
+        },
+        "message": {
+          "label": "留言",
+          "placeholder": "请在此输入您的留言..."
+        }
+      },
+      "submit": "发送留言"
+    }
+  },
+  "faqPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "current": "常见问题"
+    },
+    "hero": {
+      "title": "常见问题",
+      "line1": "这里可以找到最常见问题的答案。",
+      "line2": "如果仍有疑问，我们的团队会帮助您。"
+    },
+    "help": {
+      "kicker": "需要帮助？",
+      "title1": "我们随时",
+      "title2": "为您服务。",
+      "description": "我们的团队每天都为您提供帮助。"
+    },
+    "contact": {
+      "phone": "电话",
+      "whatsapp": "WhatsApp",
+      "email": "电子邮箱",
+      "button": "联系我们"
+    },
+    "items": [
+      {
+        "question": "配送需要多长时间？",
+        "answer": "法国本土订单通常在 2 至 5 个工作日内送达。国际配送时间因目的地而异。"
+      },
+      {
+        "question": "我可以跟踪订单吗？",
+        "answer": "可以。订单发货后，您会通过电子邮件收到物流跟踪信息。"
+      },
+      {
+        "question": "接受哪些付款方式？",
+        "answer": "可用的付款方式取决于结账时启用的服务。"
+      },
+      {
+        "question": "我可以退货或换货吗？",
+        "answer": "收货后 30 天内可申请退货或换货，具体以退货条件为准。"
+      },
+      {
+        "question": "如何选择合适的尺码？",
+        "answer": "查看我们的尺码指南并对照您的测量数据。"
+      },
+      {
+        "question": "SBI PARIS 的产品是正品吗？",
+        "answer": "是的。我们网站上的产品均由 SBI PARIS 精选并销售。"
+      },
+      {
+        "question": "如何联系客服？",
+        "answer": "您可以通过电话、WhatsApp、电子邮件或联系表单与我们联系。"
+      }
+    ]
+  },
+  "trackingPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "current": "订单跟踪"
+    },
+    "title": "订单跟踪",
+    "description": "输入订单号和购买时使用的电子邮箱以查看订单状态。",
+    "form": {
+      "title": "跟踪您的订单",
+      "orderNumber": "订单号",
+      "orderPlaceholder": "示例：SBIPARIS-123456",
+      "email": "电子邮箱",
+      "emailPlaceholder": "示例：your@email.com",
+      "submit": "跟踪我的订单",
+      "help": "您可以在购买后收到的确认邮件中找到订单号。"
+    },
+    "example": {
+      "title": "在哪里可以找到订单号？",
+      "description": "购买确认后，订单号已通过电子邮件发送给您。",
+      "thanks": "感谢您的订单！",
+      "orderNumberIs": "您的订单号是：",
+      "date": "日期：2026年5月14日",
+      "shippingUpdates": "我们会在每个配送阶段向您更新进度。"
+    },
+    "features": {
+      "fast": {
+        "title": "快速配送",
+        "text": "法国境内 2 至 5 个工作日"
+      },
+      "realtime": {
+        "title": "实时跟踪",
+        "text": "全程跟踪您的包裹"
+      },
+      "secure": {
+        "title": "安全支付",
+        "text": "根据启用的付款方式提供交易保护"
+      },
+      "help": {
+        "title": "需要帮助吗？",
+        "text": "我们的客服团队随时为您提供帮助"
+      }
+    }
+  },
+  "returnsPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "current": "退货与换货"
+    },
+    "title": "退货与换货",
+    "description": "您的满意是我们的首要任务。收到商品后30天内可申请退货或换货。",
+    "cards": {
+      "delay": {
+        "title": "30 天无忧考虑",
+        "text": "收货后 30 天内可退货。"
+      },
+      "free": {
+        "title": "免费退货",
+        "text": "法国本土退货免费。"
+      },
+      "exchange": {
+        "title": "快速换货",
+        "text": "换货视库存情况而定。"
+      },
+      "refund": {
+        "title": "退款",
+        "text": "收到并审核退货后处理退款。"
+      }
+    },
+    "steps": {
+      "1": {
+        "title": "退货申请",
+        "text": "联系我们的团队开始退货流程。"
+      },
+      "2": {
+        "title": "寄回商品",
+        "text": "按照收到的说明准备并寄出包裹。"
+      },
+      "3": {
+        "title": "收货",
+        "text": "收到退货后我们会进行检查。"
+      },
+      "4": {
+        "title": "退款",
+        "text": "审核通过后处理退款。"
+      },
+      "title": "如何退货？"
+    },
+    "conditions": {
+      "title": "退货条件",
+      "items": [
+        "商品必须为全新且未使用。",
+        "必须保留原包装。",
+        "吊牌必须完整保留。",
+        "定制商品不可退货。",
+        "法国本土可免费退货。"
+      ]
+    },
+    "help": {
+      "title": "需要帮助吗？",
+      "text": "我们的团队每周 7 天为您服务。"
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "current": "关于我们"
+    },
+    "hero": {
+      "kicker": "我们的故事",
+      "title": "关于 SBI PARIS",
+      "p1": "SBI PARIS 诞生于巴黎中心，是一个专注于时尚、配饰、香氛和电动出行的法国品牌。",
+      "p2": "自 1994 年以来，我们一直提供优雅且精心挑选的产品。",
+      "p3": "我们的目标是在传承法国工艺的同时，让精致风格更易触达。",
+      "button": "探索我们的系列"
+    },
+    "experience": "年经验",
+    "values": {
+      "title": "我们的价值观",
+      "quality": {
+        "title": "品质",
+        "text": "精心挑选的产品。"
+      },
+      "trust": {
+        "title": "信任",
+        "text": "与客户建立长久关系。"
+      },
+      "innovation": {
+        "title": "创新",
+        "text": "不断探索新的创意与趋势。"
+      },
+      "passion": {
+        "title": "热情",
+        "text": "一支充满热情、致力于客户满意的团队。"
+      }
+    },
+    "stats": {
+      "experience": "年行业经验",
+      "customers": "满意客户",
+      "products": "已售商品",
+      "support": "客服服务"
+    }
+  },
+  "careersPage": {
+    "breadcrumb": {
+      "home": "首页",
+      "current": "加入我们"
+    },
+    "title": "加入我们",
+    "description": "加入 SBI PARIS，共同书写优雅、热情与创新的故事。",
+    "values": {
+      "team": {
+        "title": "团队精神",
+        "text": "我们重视协作与相互尊重。"
+      },
+      "growth": {
+        "title": "成长",
+        "text": "我们支持您的职业发展。"
+      },
+      "excellence": {
+        "title": "卓越",
+        "text": "我们在每一个细节中追求卓越。"
+      },
+      "innovation": {
+        "title": "创新",
+        "text": "我们鼓励新想法与创造力。"
+      },
+      "passion": {
+        "title": "热情",
+        "text": "我们共同热爱时尚与服务。"
+      }
+    },
+    "reasons": {
+      "title": "为什么加入我们？",
+      "items": {
+        "brand": {
+          "title": "一个优雅而富有抱负的品牌",
+          "text": "SBI PARIS 是一个不断发展的巴黎品牌。"
+        },
+        "environment": {
+          "title": "充满活力的工作环境",
+          "text": "加入充满热情的团队，在活力十足的环境中工作。"
+        },
+        "opportunities": {
+          "title": "职业发展机会",
+          "text": "我们提供切实的成长与培训机会。"
+        },
+        "benefits": {
+          "title": "有吸引力的福利",
+          "text": "职业福利取决于岗位和适用条件。"
+        }
+      }
+    },
+    "jobs": {
+      "title": "招聘职位",
+      "viewAll": "查看全部职位",
+      "viewOffer": "查看职位",
+      "items": {
+        "sales": {
+          "title": "销售顾问",
+          "category": "零售",
+          "location": "法国巴黎",
+          "contract": "长期合同"
+        },
+        "manager": {
+          "title": "门店经理",
+          "category": "零售",
+          "location": "法国巴黎",
+          "contract": "长期合同"
+        },
+        "ecommerce": {
+          "title": "电商专员",
+          "category": "数字业务",
+          "location": "法国巴黎",
+          "contract": "长期合同"
+        },
+        "marketing": {
+          "title": "市场助理",
+          "category": "市场营销",
+          "location": "法国巴黎",
+          "contract": "长期合同"
+        },
+        "service": {
+          "title": "客户服务",
+          "category": "客户关系",
+          "location": "法国巴黎",
+          "contract": "固定期限合同"
+        }
+      }
+    },
+    "spontaneous": {
+      "title": "没找到合适的职位？",
+      "text": "向我们发送自荐申请，我们会认真审核。",
+      "button": "发送我的申请"
+    }
+  },
+  "assistant": {
+    "header": {
+      "title": "SBI PARIS - 助手",
+      "online": "在线"
+    },
+    "welcome": "您好！👋\n我是 SBI PARIS 助手。\n有什么可以帮助您？",
+    "actions": {
+      "product": {
+        "label": "查找产品",
+        "prompt": "我正在查找 SBI PARIS 产品。"
+      },
+      "tracking": {
+        "label": "追踪订单",
+        "prompt": "我想追踪我的订单。"
+      },
+      "delivery": {
+        "label": "配送与退货",
+        "prompt": "我想了解配送与退货信息。"
+      },
+      "sport": {
+        "label": "运动世界",
+        "prompt": "我想了解 SBI PARIS 运动世界。"
+      },
+      "perfumes": {
+        "label": "香水",
+        "prompt": "我正在查找 SBI PARIS 香水。"
+      },
+      "mobility": {
+        "label": "出行",
+        "prompt": "我想了解 SBI PARIS 出行系列。"
+      }
+    },
+    "composer": {
+      "placeholder": "例如：我正在查找电动行李箱..."
+    },
+    "send": "发送",
+    "demoReply": "谢谢。我正在为您寻找最佳答案。"
   }
 }

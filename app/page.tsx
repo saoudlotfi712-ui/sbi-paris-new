@@ -31,7 +31,7 @@ export default async function HomePage() {
     {
       title: t("trust.customerSupport.title"),
       description: t("trust.customerSupport.description"),
-      phone: "+33 7 43 59 41 59",
+      phone: "",
       phoneHref: "tel:+33743594159",
       icon: Headphones,
     },
@@ -43,7 +43,7 @@ export default async function HomePage() {
     {
       title: t("trust.availableStock.title"),
       description: t("trust.availableStock.description"),
-      phone: "+33 6 22 19 68 58",
+      phone: "",
       phoneHref: "tel:+33622196858",
       icon: PackageCheck,
     },
@@ -303,19 +303,10 @@ function HistorySection({
               borderTop: "1px solid #e5e7eb",
             }}
           >
-            <Stat
-              value="150+"
-              label={t("history.stats.collections")}
-            />
 
             <Stat
               value="30"
               label={t("history.stats.countries")}
-            />
-
-            <Stat
-              value="98%"
-              label={t("history.stats.satisfiedCustomers")}
             />
 
             <Stat

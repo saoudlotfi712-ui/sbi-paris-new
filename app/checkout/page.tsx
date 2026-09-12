@@ -1,7 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import {
+  FormEvent,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
+
+import { supabase } from "@/lib/supabase";
 import styles from "./page.module.css";
 
 type CheckoutProduct = {
@@ -9,8 +16,8 @@ type CheckoutProduct = {
   name: string;
   image: string;
   price: number;
-  size: number;
-  color: string;
+  size?: string | number;
+  color?: string;
   quantity: number;
 };
 
@@ -35,22 +42,33 @@ export default function CheckoutPage() {
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("France");
 
-  const [cardName, setCardName] = useState("");
-  const [cardNumber, setCardNumber] = useState("");
-  const [expiryDate, setExpiryDate] = useState("");
-  const [securityCode, setSecurityCode] = useState("");
-
   const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] =
+    useState(false);
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("checkoutProduct");
+      const saved = localStorage.getItem(
+        "checkoutProduct",
+      );
 
       if (!saved) {
         return;
       }
 
-      const parsedProduct = JSON.parse(saved);
+      const parsedProduct = JSON.parse(
+        saved,
+      ) as CheckoutProduct;
+
+      if (
+        !parsedProduct ||
+        !parsedProduct.id ||
+        !parsedProduct.name ||
+        typeof parsedProduct.price !== "number" ||
+        typeof parsedProduct.quantity !== "number"
+      ) {
+        return;
+      }
 
       setProduct(parsedProduct);
     } catch (storageError) {
@@ -70,6 +88,10 @@ export default function CheckoutPage() {
   }, [product]);
 
   const shipping = useMemo(() => {
+    if (subtotal <= 0) {
+      return 0;
+    }
+
     return subtotal >= FREE_DELIVERY_FROM
       ? 0
       : DELIVERY_PRICE;
@@ -101,8 +123,13 @@ export default function CheckoutPage() {
       return false;
     }
 
-    if (!email.includes("@")) {
-      setError("Veuillez saisir une adresse e-mail valide.");
+    const emailPattern =
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email.trim())) {
+      setError(
+        "Veuillez saisir une adresse e-mail valide.",
+      );
 
       return false;
     }
@@ -111,7 +138,9 @@ export default function CheckoutPage() {
     return true;
   }
 
-  function continueToPayment(event: FormEvent<HTMLFormElement>) {
+  function continueToConfirmation(
+    event: FormEvent<HTMLFormElement>,
+  ) {
     event.preventDefault();
 
     if (!validateDeliveryInformation()) {
@@ -119,71 +148,129 @@ export default function CheckoutPage() {
     }
 
     setCurrentStep(2);
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
 
-  function confirmPayment(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-
-    if (
-      !cardName.trim() ||
-      !cardNumber.trim() ||
-      !expiryDate.trim() ||
-      !securityCode.trim()
-    ) {
-      setError(
-        "Veuillez remplir toutes les informations de paiement.",
-      );
-
+  async function confirmOrder() {
+    if (!product || isSubmitting) {
       return;
     }
 
+    setIsSubmitting(true);
     setError("");
 
-    const order = {
-      product,
-      customer: {
-        firstName,
-        lastName,
-        email,
-        phone,
-        address,
-        postalCode,
-        city,
-        country,
-      },
-      payment: {
-        cardName,
-        cardNumberLastDigits: cardNumber.slice(-4),
-      },
-      subtotal,
-      shipping,
-      total,
-      createdAt: new Date().toISOString(),
-    };
+    try {
+      const { error: orderError } = await supabase
+        .from("orders")
+        .insert({
+          first_name: firstName.trim(),
+          last_name: lastName.trim(),
+          email: email.trim(),
+          phone: phone.trim() || null,
+          address: address.trim(),
+          postal_code: postalCode.trim(),
+          city: city.trim(),
+          country: country.trim(),
+          product_id: product.id,
+          product_name: product.name,
+          size: product.size !== undefined ? String(product.size) : null,
+          quantity: product.quantity,
+          subtotal,
+          shipping,
+          total,
+          status: "pending",
+        });
 
-    localStorage.setItem(
-      "lastOrder",
-      JSON.stringify(order),
-    );
+      if (orderError) {
+        console.error(
+          "Order creation error:",
+          orderError,
+        );
 
-    localStorage.removeItem("checkoutProduct");
+        setError(
+          `Erreur lors de l'enregistrement de la commande : ${orderError.message}`,
+        );
 
-    setCurrentStep(3);
+        return;
+      }
 
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+      const { error: stockError } =
+        await supabase.rpc(
+          "decrease_product_stock",
+          {
+            p_product_id: product.id,
+            p_quantity: product.quantity,
+          },
+        );
+
+      if (stockError) {
+        console.error(
+          "Stock update error:",
+          stockError,
+        );
+
+        setError(
+          `La commande a été enregistrée, mais une erreur de stock est survenue : ${stockError.message}`,
+        );
+
+        return;
+      }
+
+      const lastOrder = {
+        product,
+        customer: {
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          email: email.trim(),
+          phone: phone.trim(),
+          address: address.trim(),
+          postalCode: postalCode.trim(),
+          city: city.trim(),
+          country: country.trim(),
+        },
+        subtotal,
+        shipping,
+        total,
+        createdAt: new Date().toISOString(),
+      };
+
+      localStorage.setItem(
+        "lastOrder",
+        JSON.stringify(lastOrder),
+      );
+
+      localStorage.removeItem(
+        "checkoutProduct",
+      );
+
+      setCurrentStep(3);
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } catch (unknownError) {
+      console.error(
+        "Unexpected checkout error:",
+        unknownError,
+      );
+
+      setError(
+        "Une erreur inattendue est survenue. Veuillez réessayer.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (!product && currentStep !== 3) {
     return (
       <main className={styles.loading}>
-        Chargement...
+        Produit indisponible ou panier vide.
       </main>
     );
   }
@@ -211,7 +298,7 @@ export default function CheckoutPage() {
             }
           >
             <span>2</span>
-            <p>Paiement</p>
+            <p>Validation</p>
           </div>
 
           <div
@@ -230,70 +317,92 @@ export default function CheckoutPage() {
           {currentStep === 1 && (
             <form
               className={styles.formSection}
-              onSubmit={continueToPayment}
+              onSubmit={continueToConfirmation}
             >
-              <h1>Informations de livraison</h1>
+              <h1>
+                Informations de livraison
+              </h1>
 
               <div className={styles.grid2}>
                 <div className={styles.field}>
-                  <label htmlFor="firstName">Prénom</label>
+                  <label htmlFor="firstName">
+                    Prénom
+                  </label>
 
                   <input
                     id="firstName"
                     type="text"
                     value={firstName}
                     onChange={(event) =>
-                      setFirstName(event.target.value)
+                      setFirstName(
+                        event.target.value,
+                      )
                     }
                     placeholder="Jean"
                     autoComplete="given-name"
+                    required
                   />
                 </div>
 
                 <div className={styles.field}>
-                  <label htmlFor="lastName">Nom</label>
+                  <label htmlFor="lastName">
+                    Nom
+                  </label>
 
                   <input
                     id="lastName"
                     type="text"
                     value={lastName}
                     onChange={(event) =>
-                      setLastName(event.target.value)
+                      setLastName(
+                        event.target.value,
+                      )
                     }
                     placeholder="Dupont"
                     autoComplete="family-name"
+                    required
                   />
                 </div>
               </div>
 
               <div className={styles.grid2}>
                 <div className={styles.field}>
-                  <label htmlFor="email">E-mail</label>
+                  <label htmlFor="email">
+                    E-mail
+                  </label>
 
                   <input
                     id="email"
                     type="email"
                     value={email}
                     onChange={(event) =>
-                      setEmail(event.target.value)
+                      setEmail(
+                        event.target.value,
+                      )
                     }
                     placeholder="jean@email.com"
                     autoComplete="email"
+                    required
                   />
                 </div>
 
                 <div className={styles.field}>
-                  <label htmlFor="phone">Téléphone</label>
+                  <label htmlFor="phone">
+                    Téléphone
+                  </label>
 
                   <input
                     id="phone"
                     type="tel"
                     value={phone}
                     onChange={(event) =>
-                      setPhone(event.target.value)
+                      setPhone(
+                        event.target.value,
+                      )
                     }
                     placeholder="+33 6 00 00 00 00"
                     autoComplete="tel"
+                    required
                   />
                 </div>
               </div>
@@ -308,10 +417,13 @@ export default function CheckoutPage() {
                   type="text"
                   value={address}
                   onChange={(event) =>
-                    setAddress(event.target.value)
+                    setAddress(
+                      event.target.value,
+                    )
                   }
                   placeholder="12 rue de Paris, appartement 4"
                   autoComplete="street-address"
+                  required
                 />
               </div>
 
@@ -326,46 +438,67 @@ export default function CheckoutPage() {
                     type="text"
                     value={postalCode}
                     onChange={(event) =>
-                      setPostalCode(event.target.value)
+                      setPostalCode(
+                        event.target.value,
+                      )
                     }
                     placeholder="75001"
                     autoComplete="postal-code"
+                    required
                   />
                 </div>
 
                 <div className={styles.field}>
-                  <label htmlFor="city">Ville</label>
+                  <label htmlFor="city">
+                    Ville
+                  </label>
 
                   <input
                     id="city"
                     type="text"
                     value={city}
                     onChange={(event) =>
-                      setCity(event.target.value)
+                      setCity(
+                        event.target.value,
+                      )
                     }
                     placeholder="Paris"
                     autoComplete="address-level2"
+                    required
                   />
                 </div>
               </div>
 
               <div className={styles.field}>
-                <label htmlFor="country">Pays</label>
+                <label htmlFor="country">
+                  Pays
+                </label>
 
                 <select
                   id="country"
                   value={country}
                   onChange={(event) =>
-                    setCountry(event.target.value)
+                    setCountry(
+                      event.target.value,
+                    )
                   }
                   autoComplete="country-name"
                 >
-                  <option value="France">France</option>
-                  <option value="Belgique">Belgique</option>
+                  <option value="France">
+                    France
+                  </option>
+
+                  <option value="Belgique">
+                    Belgique
+                  </option>
+
                   <option value="Luxembourg">
                     Luxembourg
                   </option>
-                  <option value="Suisse">Suisse</option>
+
+                  <option value="Suisse">
+                    Suisse
+                  </option>
                 </select>
               </div>
 
@@ -373,7 +506,7 @@ export default function CheckoutPage() {
                 <p
                   style={{
                     color: "#c62828",
-                    marginBottom: "14px",
+                    marginBottom: 14,
                     fontWeight: 600,
                   }}
                 >
@@ -383,105 +516,75 @@ export default function CheckoutPage() {
 
               <button
                 type="submit"
-                className={styles.continueButton}
+                className={
+                  styles.continueButton
+                }
               >
-                Continuer vers le paiement
+                Continuer
               </button>
             </form>
           )}
 
-          {currentStep === 2 && (
-            <form
+          {currentStep === 2 && product && (
+            <section
               className={styles.formSection}
-              onSubmit={confirmPayment}
             >
-              <h1>Paiement sécurisé</h1>
+              <h1>Valider la commande</h1>
 
-              <div className={styles.field}>
-                <label htmlFor="cardName">
-                  Nom sur la carte
-                </label>
+              <p>
+                Vérifiez vos informations avant
+                de confirmer votre commande.
+              </p>
 
-                <input
-                  id="cardName"
-                  type="text"
-                  value={cardName}
-                  onChange={(event) =>
-                    setCardName(event.target.value)
-                  }
-                  placeholder="Jean Dupont"
-                  autoComplete="cc-name"
-                />
-              </div>
+              <div
+                style={{
+                  marginTop: 24,
+                  marginBottom: 24,
+                  lineHeight: 1.8,
+                }}
+              >
+                <p>
+                  <strong>Client :</strong>{" "}
+                  {firstName} {lastName}
+                </p>
 
-              <div className={styles.field}>
-                <label htmlFor="cardNumber">
-                  Numéro de carte
-                </label>
+                <p>
+                  <strong>E-mail :</strong>{" "}
+                  {email}
+                </p>
 
-                <input
-                  id="cardNumber"
-                  type="text"
-                  inputMode="numeric"
-                  value={cardNumber}
-                  onChange={(event) =>
-                    setCardNumber(
-                      event.target.value
-                        .replace(/\D/g, "")
-                        .slice(0, 16),
-                    )
-                  }
-                  placeholder="1234 5678 9012 3456"
-                  autoComplete="cc-number"
-                />
-              </div>
+                <p>
+                  <strong>Téléphone :</strong>{" "}
+                  {phone}
+                </p>
 
-              <div className={styles.grid2}>
-                <div className={styles.field}>
-                  <label htmlFor="expiryDate">
-                    Date d’expiration
-                  </label>
+                <p>
+                  <strong>Adresse :</strong>{" "}
+                  {address}, {postalCode} {city},{" "}
+                  {country}
+                </p>
 
-                  <input
-                    id="expiryDate"
-                    type="text"
-                    value={expiryDate}
-                    onChange={(event) =>
-                      setExpiryDate(event.target.value)
-                    }
-                    placeholder="MM/AA"
-                    autoComplete="cc-exp"
-                  />
-                </div>
+                <p>
+                  <strong>Produit :</strong>{" "}
+                  {product.name}
+                </p>
 
-                <div className={styles.field}>
-                  <label htmlFor="securityCode">
-                    Cryptogramme
-                  </label>
+                <p>
+                  <strong>Quantité :</strong>{" "}
+                  {product.quantity}
+                </p>
 
-                  <input
-                    id="securityCode"
-                    type="password"
-                    inputMode="numeric"
-                    value={securityCode}
-                    onChange={(event) =>
-                      setSecurityCode(
-                        event.target.value
-                          .replace(/\D/g, "")
-                          .slice(0, 4),
-                      )
-                    }
-                    placeholder="123"
-                    autoComplete="cc-csc"
-                  />
-                </div>
+                <p>
+                  <strong>Total :</strong>{" "}
+                  {formatPrice(total)}
+                </p>
               </div>
 
               {error && (
                 <p
                   style={{
                     color: "#c62828",
-                    marginBottom: "14px",
+                    marginBottom: 14,
                     fontWeight: 600,
                   }}
                 >
@@ -490,10 +593,16 @@ export default function CheckoutPage() {
               )}
 
               <button
-                type="submit"
-                className={styles.continueButton}
+                type="button"
+                className={
+                  styles.continueButton
+                }
+                onClick={confirmOrder}
+                disabled={isSubmitting}
               >
-                Payer {formatPrice(total)}
+                {isSubmitting
+                  ? "Enregistrement..."
+                  : "Confirmer la commande"}
               </button>
 
               <button
@@ -502,8 +611,9 @@ export default function CheckoutPage() {
                   setError("");
                   setCurrentStep(1);
                 }}
+                disabled={isSubmitting}
                 style={{
-                  marginTop: "12px",
+                  marginTop: 12,
                   width: "100%",
                   border: "none",
                   background: "transparent",
@@ -511,28 +621,32 @@ export default function CheckoutPage() {
                   textDecoration: "underline",
                 }}
               >
-                Retour aux informations de livraison
+                Modifier mes informations
               </button>
-            </form>
+            </section>
           )}
 
           {currentStep === 3 && (
-            <section className={styles.formSection}>
+            <section
+              className={styles.formSection}
+            >
               <h1>Commande confirmée ✓</h1>
 
               <p>
-                Merci {firstName}. Votre commande a bien été
-                enregistrée.
+                Merci {firstName}. Votre commande
+                a bien été enregistrée.
               </p>
 
               <p>
-                Un message de confirmation sera envoyé à{" "}
-                <strong>{email}</strong>.
+                Votre commande sera traitée par
+                SBI PARIS.
               </p>
 
               <button
                 type="button"
-                className={styles.continueButton}
+                className={
+                  styles.continueButton
+                }
                 onClick={() => {
                   window.location.href = "/";
                 }}
@@ -547,24 +661,64 @@ export default function CheckoutPage() {
               <h2>Résumé de la commande</h2>
 
               <div className={styles.product}>
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={90}
-                  height={90}
-                />
+                {product.image &&
+                product.image.trim() !== "" ? (
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={90}
+                    height={90}
+                    unoptimized
+                    style={{
+                      objectFit: "contain",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: 90,
+                      height: 90,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "#f1f5f9",
+                      borderRadius: 8,
+                      fontSize: 12,
+                      color: "#64748b",
+                      textAlign: "center",
+                    }}
+                  >
+                    Sans image
+                  </div>
+                )}
 
                 <div>
                   <h3>{product.name}</h3>
-                  <p>Taille : {product.size}</p>
-                  <p>Couleur : {product.color}</p>
-                  <p>Quantité : {product.quantity}</p>
+
+                  {product.size !== undefined && (
+                    <p>
+                      Taille : {product.size}
+                    </p>
+                  )}
+
+                  {product.color && (
+                    <p>
+                      Couleur : {product.color}
+                    </p>
+                  )}
+
+                  <p>
+                    Quantité : {product.quantity}
+                  </p>
                 </div>
               </div>
 
               <div className={styles.line}>
                 <span>Sous-total</span>
-                <strong>{formatPrice(subtotal)}</strong>
+
+                <strong>
+                  {formatPrice(subtotal)}
+                </strong>
               </div>
 
               <div className={styles.line}>
@@ -579,18 +733,30 @@ export default function CheckoutPage() {
 
               <div className={styles.total}>
                 <span>Total</span>
-                <strong>{formatPrice(total)}</strong>
+
+                <strong>
+                  {formatPrice(total)}
+                </strong>
               </div>
 
               {shipping === 0 ? (
-                <div className={styles.freeShipping}>
-                  🎉 Livraison offerte pour toute commande
-                  supérieure ou égale à 200 €.
+                <div
+                  className={
+                    styles.freeShipping
+                  }
+                >
+                  🎉 Livraison offerte pour toute
+                  commande supérieure ou égale à
+                  200 €.
                 </div>
               ) : (
-                <div className={styles.shippingInfo}>
-                  Livraison à 29 €. Elle devient gratuite dès
-                  200 € d’achat.
+                <div
+                  className={
+                    styles.shippingInfo
+                  }
+                >
+                  Livraison à 29 €. Elle devient
+                  gratuite dès 200 € d’achat.
                 </div>
               )}
             </aside>

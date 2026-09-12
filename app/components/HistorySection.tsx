@@ -30,19 +30,10 @@ export default function HistorySection() {
           </p>
 
           <div className={styles.stats}>
-            <div>
-              <h4>150+</h4>
-              <span>{t("stats.collections")}</span>
-            </div>
 
             <div>
               <h4>30</h4>
               <span>{t("stats.countries")}</span>
-            </div>
-
-            <div>
-              <h4>98%</h4>
-              <span>{t("stats.customers")}</span>
             </div>
 
             <div>

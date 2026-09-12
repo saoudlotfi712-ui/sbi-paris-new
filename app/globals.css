@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    1. GLOBAL SYSTEM & RESETS
    ========================================================================== */
 :root {
@@ -675,7 +675,7 @@ body {
   bottom: -10px;
   width: 180px;
   height: 250px;
-  background: url("/eiffel.png") center/contain no-repeat;
+  background: none;
   opacity: .06;
   pointer-events: none;
 }
@@ -1430,4 +1430,27 @@ input, textarea, select, button { max-width: 100%; font: inherit; }
 
 @media (max-width: 380px) {
   .productGrid { grid-template-columns: 1fr; }
+}
+
+
+
+/* SBI PARIS Assistant - floating robot */
+.sbiAssistantFloat {
+  animation: sbiAssistantFloating 3s ease-in-out infinite;
+}
+
+@keyframes sbiAssistantFloating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sbiAssistantFloat {
+    animation: none;
+  }
 }

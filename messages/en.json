@@ -406,11 +406,13 @@
     "viewAll": "View all",
     "productCount": "{count} products",
     "discover": "Discover",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "padel": "Padel",
-    "running": "Running"
+    "sports": {
+      "football": "Football",
+      "basketball": "Basketball",
+      "tennis": "Tennis",
+      "padel": "Padel",
+      "running": "Running"
+    }
   },
   "parisUniverse": {
     "kicker": "SBI PARIS universes",
@@ -765,5 +767,373 @@
         }
       }
     }
+  },
+  "contactPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact us"
+    },
+    "kicker": "CUSTOMER SERVICE",
+    "title": "Contact us",
+    "description": "Our team is available to answer your questions about your orders, our products or our services.",
+    "contact": {
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail"
+    },
+    "backHome": "Back to home",
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill in the form below and we will get back to you as soon as possible.",
+      "fields": {
+        "name": {
+          "label": "Full name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Your e-mail address"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Your phone number"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Subject of your message"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here..."
+        }
+      },
+      "submit": "SEND MESSAGE"
+    }
+  },
+  "faqPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "FAQ"
+    },
+    "hero": {
+      "title": "Frequently asked questions",
+      "line1": "Find answers to the most common questions below.",
+      "line2": "If you cannot find your answer, our team is here to help."
+    },
+    "help": {
+      "kicker": "NEED HELP?",
+      "title1": "We are here",
+      "title2": "for you.",
+      "description": "Our team is available every day of the week."
+    },
+    "contact": {
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "button": "CONTACT US"
+    },
+    "items": [
+      {
+        "question": "What are the delivery times?",
+        "answer": "Orders are generally delivered within 2 to 5 business days in metropolitan France. International delivery times vary by destination."
+      },
+      {
+        "question": "Can I track my order?",
+        "answer": "Yes. Once your order ships, you will receive tracking information by e-mail."
+      },
+      {
+        "question": "Which payment methods are accepted?",
+        "answer": "Available payment methods depend on the services enabled at checkout."
+      },
+      {
+        "question": "Can I return or exchange an item?",
+        "answer": "You can request a return or exchange within 30 days after delivery, subject to the return conditions."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Check our size guide and compare your measurements."
+      },
+      {
+        "question": "Are SBI PARIS products authentic?",
+        "answer": "Yes. Products offered on our website are selected and sold by SBI PARIS."
+      },
+      {
+        "question": "How can I contact customer service?",
+        "answer": "You can reach us by phone, WhatsApp, e-mail or through the contact form."
+      }
+    ]
+  },
+  "trackingPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Order tracking"
+    },
+    "title": "Order tracking",
+    "description": "Enter your order number and the e-mail address used for your purchase to check your order status.",
+    "form": {
+      "title": "Track your order",
+      "orderNumber": "Order number",
+      "orderPlaceholder": "Example: SBIPARIS-123456",
+      "email": "E-mail",
+      "emailPlaceholder": "Example: your@email.com",
+      "submit": "TRACK MY ORDER",
+      "help": "You can find your order number in the confirmation e-mail sent after your purchase."
+    },
+    "example": {
+      "title": "Where can I find my order number?",
+      "description": "Your order number was sent by e-mail when your purchase was confirmed.",
+      "thanks": "Thank you for your order!",
+      "orderNumberIs": "Your order number is:",
+      "date": "Date: 14 May 2026",
+      "shippingUpdates": "We will keep you informed at each shipping stage."
+    },
+    "features": {
+      "fast": {
+        "title": "Fast delivery",
+        "text": "2 to 5 business days in France"
+      },
+      "realtime": {
+        "title": "Real-time tracking",
+        "text": "Track your parcel at every stage"
+      },
+      "secure": {
+        "title": "Secure payment",
+        "text": "Protected transactions depending on enabled methods"
+      },
+      "help": {
+        "title": "Need help?",
+        "text": "Our customer service team is here to help"
+      }
+    }
+  },
+  "returnsPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Returns & exchanges"
+    },
+    "title": "Returns & exchanges",
+    "description": "Your satisfaction is our priority. You have 30 days after delivery to request a return or exchange.",
+    "cards": {
+      "delay": {
+        "title": "30 days to change your mind",
+        "text": "Returns available within 30 days after delivery."
+      },
+      "free": {
+        "title": "Free returns",
+        "text": "Returns are free in metropolitan France."
+      },
+      "exchange": {
+        "title": "Fast exchanges",
+        "text": "Exchange subject to availability."
+      },
+      "refund": {
+        "title": "Refund",
+        "text": "Processed after the return is received and approved."
+      }
+    },
+    "steps": {
+      "1": {
+        "title": "Return request",
+        "text": "Contact our team to start the return process."
+      },
+      "2": {
+        "title": "Shipping",
+        "text": "Prepare and ship your parcel according to the instructions received."
+      },
+      "3": {
+        "title": "Reception",
+        "text": "We inspect your return after receipt."
+      },
+      "4": {
+        "title": "Refund",
+        "text": "The refund is processed after approval."
+      },
+      "title": "How to return an item?"
+    },
+    "conditions": {
+      "title": "Return conditions",
+      "items": [
+        "Item must be new and unused.",
+        "Original packaging required.",
+        "Tags must still be attached.",
+        "Personalized items cannot be returned.",
+        "Free returns in metropolitan France."
+      ]
+    },
+    "help": {
+      "title": "Need help?",
+      "text": "Our team is available 7 days a week."
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "About us"
+    },
+    "hero": {
+      "kicker": "OUR STORY",
+      "title": "About SBI PARIS",
+      "p1": "Born in the heart of Paris, SBI PARIS is a French brand focused on fashion, accessories, fragrances and electric mobility.",
+      "p2": "Since 1994, we have offered elegant, carefully selected products.",
+      "p3": "Our goal is to make refined style accessible while preserving French know-how.",
+      "button": "DISCOVER OUR COLLECTIONS"
+    },
+    "experience": "Years of experience",
+    "values": {
+      "title": "OUR VALUES",
+      "quality": {
+        "title": "QUALITY",
+        "text": "Products selected with great care."
+      },
+      "trust": {
+        "title": "TRUST",
+        "text": "Long-lasting relationships with our customers."
+      },
+      "innovation": {
+        "title": "INNOVATION",
+        "text": "Always looking for new ideas and trends."
+      },
+      "passion": {
+        "title": "PASSION",
+        "text": "A passionate team dedicated to customer satisfaction."
+      }
+    },
+    "stats": {
+      "experience": "Years of experience",
+      "customers": "Satisfied customers",
+      "products": "Products sold",
+      "support": "Customer service availability"
+    }
+  },
+  "careersPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Careers"
+    },
+    "title": "Careers",
+    "description": "Join the SBI PARIS adventure and help build a story of elegance, passion and innovation.",
+    "values": {
+      "team": {
+        "title": "Team spirit",
+        "text": "We believe in collaboration and mutual respect."
+      },
+      "growth": {
+        "title": "Growth",
+        "text": "We support your professional development."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "text": "We aim for excellence in every detail."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "text": "We encourage new ideas and creativity."
+      },
+      "passion": {
+        "title": "Passion",
+        "text": "We share a passion for fashion and service."
+      }
+    },
+    "reasons": {
+      "title": "Why join us?",
+      "items": {
+        "brand": {
+          "title": "An elegant and ambitious brand",
+          "text": "SBI PARIS is a growing Parisian brand."
+        },
+        "environment": {
+          "title": "A stimulating environment",
+          "text": "Join passionate teams in a dynamic environment."
+        },
+        "opportunities": {
+          "title": "Career opportunities",
+          "text": "We offer real development and training opportunities."
+        },
+        "benefits": {
+          "title": "Attractive benefits",
+          "text": "Professional benefits depend on the role and applicable conditions."
+        }
+      }
+    },
+    "jobs": {
+      "title": "Job openings",
+      "viewAll": "View all openings",
+      "viewOffer": "VIEW OFFER",
+      "items": {
+        "sales": {
+          "title": "Sales advisor",
+          "category": "Retail",
+          "location": "Paris, France",
+          "contract": "Permanent"
+        },
+        "manager": {
+          "title": "Store manager",
+          "category": "Retail",
+          "location": "Paris, France",
+          "contract": "Permanent"
+        },
+        "ecommerce": {
+          "title": "E-commerce specialist",
+          "category": "Digital",
+          "location": "Paris, France",
+          "contract": "Permanent"
+        },
+        "marketing": {
+          "title": "Marketing assistant",
+          "category": "Marketing",
+          "location": "Paris, France",
+          "contract": "Permanent"
+        },
+        "service": {
+          "title": "Customer service",
+          "category": "Customer relations",
+          "location": "Paris, France",
+          "contract": "Fixed-term"
+        }
+      }
+    },
+    "spontaneous": {
+      "title": "Can't find the right role?",
+      "text": "Send us a spontaneous application and we will review it carefully.",
+      "button": "SEND MY APPLICATION"
+    }
+  },
+  "assistant": {
+    "header": {
+      "title": "SBI PARIS - Assistant",
+      "online": "Online"
+    },
+    "welcome": "Hello! 👋\nI'm the SBI PARIS assistant.\nHow can I help you?",
+    "actions": {
+      "product": {
+        "label": "Find a product",
+        "prompt": "I'm looking for an SBI PARIS product."
+      },
+      "tracking": {
+        "label": "Track my order",
+        "prompt": "I want to track my order."
+      },
+      "delivery": {
+        "label": "Delivery & returns",
+        "prompt": "I would like information about delivery and returns."
+      },
+      "sport": {
+        "label": "Sport Universe",
+        "prompt": "I want to discover SBI PARIS Sport Universe."
+      },
+      "perfumes": {
+        "label": "Perfumes",
+        "prompt": "I'm looking for SBI PARIS perfumes."
+      },
+      "mobility": {
+        "label": "Mobility",
+        "prompt": "I want to discover the SBI PARIS Mobility range."
+      }
+    },
+    "composer": {
+      "placeholder": "Example: I'm looking for an electric suitcase..."
+    },
+    "send": "Send",
+    "demoReply": "Thank you. I'm looking for the best answer for you."
   }
 }

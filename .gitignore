@@ -4,3 +4,30 @@ out/
 .env*
 *.log
 tsconfig.tsbuildinfo
+.vercel
+
+# SBI PARIS local backups / temporary files
+app-BACKUP-BEFORE-I18N/
+app-before-hreflang/
+messages-BACKUP-BEFORE-I18N/
+messages-BACKUP-HOME/
+messages-backup-before-correction/
+messages-corrected-temp/
+
+*.bak
+*.before-*
+*.backup.*
+*.backup-before-*
+*.clean-before-*
+*.zip
+
+build-error.txt
+cloudflared.exe
+pace-pro q
+pages-to-translate.txt
+
+add-sbi-assistant-translations.cjs
+apply-batch1-messages.cjs
+apply-batch1-pages.cjs
+fix-home-translations.cjs
+fix-i18n.cjs

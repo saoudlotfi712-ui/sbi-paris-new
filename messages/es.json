@@ -1,73 +1,73 @@
 {
   "header": {
-    "returnsDetails": "Dispones de 14 dÃ­as para devolver o cambiar tus artÃ­culos.",
+    "returnsDetails": "Dispones de 14 días para devolver o cambiar tus artículos.",
     "favorites": "Mis favoritos",
-    "supportDetails": "Nuestro equipo estÃ¡ disponible todos los dÃ­as para ayudarte.",
+    "supportDetails": "Nuestro equipo está disponible todos los días para ayudarte.",
     "search": "Buscar",
     "perfume": "Perfume",
     "cart": "Mi carrito",
-    "support": "AtenciÃ³n al cliente 7 dÃ­as a la semana",
+    "support": "Atención al cliente 7 días a la semana",
     "men": "Hombre",
     "returns": "Devoluciones y cambios gratuitos",
-    "mobility": "Movilidad elÃ©ctrica",
+    "mobility": "Movilidad eléctrica",
     "promotions": "Promociones & Novedades",
     "women": "Mujer",
-    "openMenu": "Abrir menÃº",
-    "collection": "ColecciÃ³n SBI PARIS",
-    "shipping": "EnvÃ­o gratuito a partir de 200 â‚¬",
-    "kids": "NiÃ±os",
+    "openMenu": "Abrir menú",
+    "collection": "Colección SBI PARIS",
+    "shipping": "Envío gratuito a partir de 200 €",
+    "kids": "Niños",
     "account": "Mi cuenta",
-    "shippingDetails": "EnvÃ­o gratuito en Francia para pedidos superiores a 200 â‚¬."
+    "shippingDetails": "Envío gratuito en Francia para pedidos superiores a 200 €."
   },
   "espacePro": {
     "hero": {
-      "imageAlt": "Ãrea profesional SBI PARIS",
-      "kicker": "ÃREA PROFESIONAL",
+      "imageAlt": "Área profesional SBI PARIS",
+      "kicker": "ÁREA PROFESIONAL",
       "title": {
         "line1": "Haz crecer tu negocio",
         "line2": "con un socio",
         "line3": "de confianza"
       },
-      "description": "Accede a nuestro catÃ¡logo profesional, disfruta de precios exclusivos, asistencia personalizada y logÃ­stica internacional para profesionales.",
+      "description": "Accede a nuestro catálogo profesional, disfruta de precios exclusivos, asistencia personalizada y logística internacional para profesionales.",
       "buttons": {
         "advantages": "Descubrir las ventajas",
         "quote": "Solicitar presupuesto"
       }
     },
     "advantages": {
-      "title": "Â¿Por quÃ© elegir SBI PARIS?",
+      "title": "¿Por qué elegir SBI PARIS?",
       "items": {
         "prices": {
           "title": "Precios profesionales",
           "description": "Precios competitivos para mayoristas, distribuidores y revendedores."
         },
         "delivery": {
-          "title": "EnvÃ­o internacional",
-          "description": "LogÃ­stica fiable para entregar tus pedidos en todo el mundo."
+          "title": "Envío internacional",
+          "description": "Logística fiable para entregar tus pedidos en todo el mundo."
         },
         "support": {
           "title": "Asistencia personalizada",
-          "description": "Un equipo comercial a tu disposiciÃ³n antes, durante y despuÃ©s del pedido."
+          "description": "Un equipo comercial a tu disposición antes, durante y después del pedido."
         },
         "quality": {
           "title": "Calidad garantizada",
-          "description": "Productos cuidadosamente seleccionados segÃºn los estÃ¡ndares de calidad de SBI PARIS."
+          "description": "Productos cuidadosamente seleccionados según los estándares de calidad de SBI PARIS."
         }
       }
     },
     "universes": {
-      "title": "Nuestras categorÃ­as profesionales",
+      "title": "Nuestras categorías profesionales",
       "items": {
         "men": "Moda Hombre",
         "women": "Moda Mujer",
         "children": "Moda Infantil",
         "sport": "Deporte",
         "perfume": "Perfume",
-        "mobility": "Movilidad elÃ©ctrica"
+        "mobility": "Movilidad eléctrica"
       }
     },
     "steps": {
-      "title": "Â¿CÃ³mo convertirse en socio?",
+      "title": "¿Cómo convertirse en socio?",
       "items": {
         "account": {
           "title": "Enviar la solicitud",
@@ -82,14 +82,14 @@
           "description": "Confirma tu pedido y disfruta de nuestras condiciones para profesionales."
         },
         "delivery": {
-          "title": "Entrega rÃ¡pida",
-          "description": "Tus productos se preparan y envÃ­an con el mÃ¡ximo cuidado."
+          "title": "Entrega rápida",
+          "description": "Tus productos se preparan y envían con el máximo cuidado."
         }
       }
     },
     "stats": {
-      "creation": "FundaciÃ³n",
-      "countries": "PaÃ­ses atendidos",
+      "creation": "Fundación",
+      "countries": "Países atendidos",
       "collections": "Colecciones",
       "customers": "Clientes satisfechos"
     },
@@ -102,13 +102,13 @@
       "fields": {
         "fullName": "Nombre completo",
         "company": "Empresa",
-        "email": "Correo electrÃ³nico",
-        "phone": "TelÃ©fono",
-        "country": "PaÃ­s",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "country": "País",
         "city": "Ciudad",
         "activity": "Actividad",
         "volume": "Volumen de compra",
-        "category": "CategorÃ­a",
+        "category": "Categoría",
         "website": "Sitio web",
         "message": "Mensaje"
       },
@@ -117,7 +117,7 @@
         "company": "Nombre de la empresa",
         "email": "nombre@empresa.com",
         "phone": "+34...",
-        "country": "Tu paÃ­s",
+        "country": "Tu país",
         "city": "Tu ciudad",
         "website": "https://...",
         "message": "Describe tu proyecto o tus necesidades..."
@@ -128,60 +128,60 @@
         "distributeur": "Distribuidor",
         "importateur": "Importador",
         "boutique": "Tienda",
-        "marketplace": "Marketplace",
+        "marketplace": "Mercado en línea",
         "other": "Otro"
       },
       "volume": {
         "placeholder": "Selecciona un volumen de compra",
-        "less5000": "Menos de 5.000 â‚¬",
-        "from5000to15000": "5.000 â‚¬ - 15.000 â‚¬",
-        "from15000to50000": "15.000 â‚¬ - 50.000 â‚¬",
-        "more50000": "MÃ¡s de 50.000 â‚¬"
+        "less5000": "Menos de 5.000 €",
+        "from5000to15000": "5.000 € - 15.000 €",
+        "from15000to50000": "15.000 € - 50.000 €",
+        "more50000": "Más de 50.000 €"
       },
       "category": {
-        "placeholder": "Elige una categorÃ­a",
+        "placeholder": "Elige una categoría",
         "men": "Moda Hombre",
         "women": "Moda Mujer",
         "children": "Moda Infantil",
         "sport": "Deporte",
         "perfume": "Perfume",
-        "mobility": "Movilidad elÃ©ctrica",
-        "multiple": "Varias categorÃ­as"
+        "mobility": "Movilidad eléctrica",
+        "multiple": "Varias categorías"
       },
       "submit": "Enviar solicitud",
-      "imageAlt": "AlmacÃ©n SBI PARIS",
+      "imageAlt": "Almacén SBI PARIS",
       "badge": {
-        "title": "EnvÃ­o internacional",
-        "description": "LogÃ­stica profesional para empresas."
+        "title": "Envío internacional",
+        "description": "Logística profesional para empresas."
       }
     },
     "partner": {
-      "imageAlt": "AsociaciÃ³n SBI PARIS",
+      "imageAlt": "Asociación SBI PARIS",
       "kicker": "HAZTE SOCIO",
       "title": {
-        "line1": "Construyamos tu Ã©xito con "
+        "line1": "Construyamos tu éxito con "
       },
-      "description": "Ãšnete a nuestra red de socios y disfruta de una marca reconocida, colecciones exclusivas y apoyo a largo plazo.",
-      "button": "ContÃ¡ctanos"
+      "description": "Únete a nuestra red de socios y disfruta de una marca reconocida, colecciones exclusivas y apoyo a largo plazo.",
+      "button": "Contáctanos"
     }
   },
   "footer": {
     "brand": {
       "line1": "La elegancia parisina",
-      "line2": "al servicio de tu dÃ­a a dÃ­a."
+      "line2": "al servicio de tu día a día."
     },
     "newsletter": {
-      "kicker": "BOLETÃN INFORMATIVO",
-      "title": "ÃšNETE AL UNIVERSO SBI PARIS",
-      "description": "SuscrÃ­bete para recibir nuestras Ãºltimas colecciones, novedades y ofertas exclusivas.",
-      "emailLabel": "Tu direcciÃ³n de correo electrÃ³nico",
-      "emailPlaceholder": "Tu direcciÃ³n de correo electrÃ³nico",
+      "kicker": "BOLETÍN INFORMATIVO",
+      "title": "ÚNETE AL UNIVERSO SBI PARIS",
+      "description": "Suscríbete para recibir nuestras últimas colecciones, novedades y ofertas exclusivas.",
+      "emailLabel": "Tu dirección de correo electrónico",
+      "emailPlaceholder": "Tu dirección de correo electrónico",
       "submit": "SUSCRIBIRSE"
     },
     "service": {
-      "title": "ATENCIÃ“N AL CLIENTE",
+      "title": "ATENCIÓN AL CLIENTE",
       "links": {
-        "contact": "ContÃ¡ctanos",
+        "contact": "Contáctanos",
         "faq": "Preguntas frecuentes",
         "orderTracking": "Seguimiento del pedido",
         "returns": "Devoluciones y cambios"
@@ -190,475 +190,477 @@
     "company": {
       "title": "LA EMPRESA",
       "links": {
-        "about": "QuiÃ©nes somos",
-        "professional": "Ãrea profesional",
+        "about": "Quiénes somos",
+        "professional": "Área profesional",
         "stores": "Nuestras tiendas",
         "careers": "Empleo"
       }
     },
     "information": {
-      "title": "INFORMACIÃ“N",
+      "title": "INFORMACIÓN",
       "links": {
         "legal": "Aviso legal",
         "terms": "Condiciones generales de venta",
-        "privacy": "PolÃ­tica de privacidad",
+        "privacy": "Política de privacidad",
         "securePayment": "Pago seguro",
-        "sizeGuide": "GuÃ­a de tallas"
+        "sizeGuide": "Guía de tallas"
       }
     },
-    "copyright": "Â© 2026 SBI PARIS â€” Todos los derechos reservados.",
-    "paymentsLabel": "MÃ©todos de pago aceptados"
+    "copyright": "© 2026 SBI PARIS — Todos los derechos reservados.",
+    "paymentsLabel": "Métodos de pago aceptados"
   },
   "catalog": {
     "home": "Inicio",
-    "catalog": "Catálogo",
-    "description": "Descubre nuestros productos SBI PARIS. Las imágenes se añadirán próximamente.",
+    "catalog": "Cat�logo",
+    "description": "Descubre nuestros productos SBI PARIS. Las im�genes se a�adir�n pr�ximamente.",
     "productCount": "{count} productos",
-    "imageLater": "Imagen próximamente",
-    "addFavorite": "Añadir a favoritos",
+    "imageLater": "Imagen pr�ximamente",
+    "addFavorite": "A�adir a favoritos",
     "badges": {
       "new": "Nuevo",
-      "bestseller": "Más vendido"
+      "bestseller": "M�s vendido"
     },
-    "addToCart": "Añadir al carrito",
-    "addedToCart": "Añadido al carrito ✓"
+    "addToCart": "A�adir al carrito",
+    "addedToCart": "A�adido al carrito ?"
   },
   "collectionMenu": {
-    "dailyUniverse": "Everyday universe",
-    "bags": "Bags",
-    "leatherGoods": "Leather goods",
-    "luggage": "Luggage",
-    "accessories": "Accessories",
-    "signature": "SBI Paris signature",
-    "craftsmanship": "Craftsmanship",
-    "traditionalFashion": "Traditional fashion"
+    "dailyUniverse": "Universo cotidiano",
+    "bags": "Bolsos",
+    "leatherGoods": "Marroquinería",
+    "luggage": "Equipaje",
+    "accessories": "Accesorios",
+    "signature": "Firma SBI PARIS",
+    "craftsmanship": "Artesanía",
+    "traditionalFashion": "Moda tradicional"
   },
   "hommeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Men’s sport universe"
+      "title": "Estilo deportivo",
+      "polosSport": "Polos deportivos",
+      "tankTops": "Camisetas sin mangas",
+      "shorts": "Pantalones cortos",
+      "tracksuits": "Chándales",
+      "sportShoes": "Zapatillas deportivas",
+      "caps": "Gorras",
+      "universe": "Men�s sport universe"
     },
     "classic": {
-      "title": "Classic style",
+      "title": "Estilo clásico",
       "polos": "Polos",
-      "shirts": "Shirts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "shirts": "Camisas",
+      "trousers": "Pantalones",
+      "jackets": "Chaquetas",
+      "cityShoes": "Zapatos de vestir"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "underwear": "Underwear"
+      "title": "Esenciales",
+      "socks": "Calcetines",
+      "underwear": "Ropa interior"
     }
   },
   "femmeMenu": {
     "sport": {
-      "title": "Sport style",
-      "polosSport": "Sport polos",
-      "tankTops": "Tank tops",
-      "shorts": "Shorts",
-      "tracksuits": "Tracksuits",
-      "sportShoes": "Sport shoes",
-      "caps": "Caps",
-      "universe": "Women’s sport universe"
+      "title": "Estilo deportivo",
+      "polosSport": "Polos deportivos",
+      "tankTops": "Camisetas sin mangas",
+      "shorts": "Pantalones cortos",
+      "tracksuits": "Chándales",
+      "sportShoes": "Zapatillas deportivas",
+      "caps": "Gorras",
+      "universe": "Women�s sport universe"
     },
     "classic": {
-      "title": "Classic style",
+      "title": "Estilo clásico",
       "polos": "Polos",
-      "shirts": "Shirts",
-      "dresses": "Dresses",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "cityShoes": "City shoes"
+      "shirts": "Camisas",
+      "dresses": "Vestidos",
+      "trousers": "Pantalones",
+      "jackets": "Chaquetas",
+      "cityShoes": "Zapatos de vestir"
     },
     "essentials": {
-      "title": "Essentials",
-      "socks": "Socks",
-      "lingerie": "Lingerie"
+      "title": "Esenciales",
+      "socks": "Calcetines",
+      "lingerie": "Lencería"
     }
   },
   "enfantMenu": {
     "boy": {
-      "title": "Boys",
+      "title": "Niños",
       "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes",
-      "caps": "Caps"
+      "shorts": "Pantalones cortos",
+      "trousers": "Pantalones",
+      "jackets": "Chaquetas",
+      "shoes": "Zapatos",
+      "caps": "Gorras"
     },
     "girl": {
-      "title": "Girls",
-      "dresses": "Dresses",
+      "title": "Niñas",
+      "dresses": "Vestidos",
       "polos": "Polos",
-      "shorts": "Shorts",
-      "trousers": "Trousers",
-      "jackets": "Jackets",
-      "shoes": "Shoes"
+      "shorts": "Pantalones cortos",
+      "trousers": "Pantalones",
+      "jackets": "Chaquetas",
+      "shoes": "Zapatos"
     }
   },
   "parfumMenu": {
     "men": {
-      "title": "For him",
-      "perfumes": "Men’s perfumes",
-      "boysPerfumes": "Boys’ perfumes"
+      "title": "Para él",
+      "perfumes": "Men�s perfumes",
+      "boysPerfumes": "Boys� perfumes"
     },
     "women": {
-      "title": "For her",
-      "perfumes": "Women’s perfumes",
-      "girlsPerfumes": "Girls’ perfumes"
+      "title": "Para ella",
+      "perfumes": "Women�s perfumes",
+      "girlsPerfumes": "Girls� perfumes"
     }
   },
   "mobiliteMenu": {
-    "electricScooters": "Electric scooters",
-    "electricBikes": "Electric bikes",
-    "electricLuggage": "Electric luggage"
+    "electricScooters": "Patinetes eléctricos",
+    "electricBikes": "Bicicletas eléctricas",
+    "electricLuggage": "Equipaje eléctrico"
   },
   "promotionsMenu": {
     "promotions": {
-      "title": "Promotions",
-      "label": "Current offers"
+      "title": "Promociones",
+      "label": "Ofertas actuales"
     },
     "newArrivals": {
-      "title": "New arrivals",
-      "label": "Discover what’s new"
+      "title": "Novedades",
+      "label": "Discover what�s new"
     }
   },
   "history": {
-    "imageAlt": "SBI Paris store",
-    "subtitle": "Our story",
-    "description": "Since 1994, SBI PARIS has offered elegant, carefully selected collections inspired by Parisian style.",
+    "imageAlt": "Tienda SBI PARIS",
+    "subtitle": "Nuestra historia",
+    "description": "Desde 1994, SBI PARIS ofrece colecciones elegantes y cuidadosamente seleccionadas, inspiradas en el estilo parisino.",
     "stats": {
-      "collections": "Collections",
-      "countries": "Countries",
-      "customers": "Satisfied customers",
+      "collections": "Colecciones",
+      "countries": "Pa�ses",
+      "customers": "Clientes satisfechos",
       "qualityTitle": "Premium",
-      "quality": "Quality"
+      "quality": "Calidad"
     }
   },
   "hero": {
-    "imageAlt": "SBI Paris collection",
+    "imageAlt": "Colecci�n SBI PARIS",
     "title": {
-      "line1": "Parisian elegance",
-      "line2": "for every day",
+      "line1": "Elegancia parisina",
+      "line2": "para cada d�a",
       "line3": "SBI PARIS"
     },
     "description": {
-      "line1": "Discover refined collections",
-      "line2": "designed for every style."
+      "line1": "Descubre colecciones refinadas",
+      "line2": "pensadas para todos los estilos."
     },
     "buttons": {
-      "collection": "Discover the collection",
-      "news": "See new arrivals"
+      "collection": "Descubrir la colecci�n",
+      "news": "Ver novedades"
     },
     "stats": {
-      "paris": "Parisian spirit",
-      "collections": "Collections",
-      "countries": "Countries"
+      "paris": "Esp�ritu parisino",
+      "collections": "Colecciones",
+      "countries": "Pa�ses"
     }
   },
   "homeSport": {
-    "kicker": "Sport universe",
-    "title": "Move in style",
-    "viewAll": "View all",
-    "productCount": "{count} products",
-    "discover": "Discover",
-    "football": "Football",
-    "basketball": "Basketball",
-    "tennis": "Tennis",
-    "padel": "Padel",
-    "running": "Running"
+    "kicker": "Universo deportivo",
+    "title": "Mu�vete con estilo",
+    "viewAll": "Ver todo",
+    "productCount": "{count} productos",
+    "discover": "Descubrir",
+    "sports": {
+      "football": "F�tbol",
+      "basketball": "Baloncesto",
+      "tennis": "Tenis",
+      "padel": "P�del",
+      "running": "Running"
+    }
   },
   "parisUniverse": {
-    "kicker": "SBI PARIS universes",
+    "kicker": "Los universos SBI PARIS",
     "title": {
-      "line1": "A style for",
-      "line2": "every moment"
+      "line1": "Un estilo para",
+      "line2": "cada momento"
     },
-    "description": "Explore our fashion, fragrance and mobility universes.",
-    "button": "View all collections",
-    "discover": "Discover",
+    "description": "Explora nuestros universos de moda, perfume y movilidad.",
+    "button": "Ver todas las colecciones",
+    "discover": "Descubrir",
     "cards": {
       "women": {
-        "category": "Women",
-        "title": "Elegant women’s fashion"
+        "category": "Mujer",
+        "title": "Moda femenina elegante"
       },
       "men": {
-        "category": "Men",
-        "title": "Modern men’s fashion"
+        "category": "Hombre",
+        "title": "Moda masculina moderna"
       },
       "perfume": {
         "category": "Perfume",
-        "title": "Signature fragrances"
+        "title": "Perfumes exclusivos"
       },
       "kids": {
-        "category": "Kids",
-        "title": "Style for children"
+        "category": "Ni�os",
+        "title": "Estilo para ni�os"
       },
       "mobility": {
-        "category": "Mobility",
-        "title": "Electric mobility"
+        "category": "Movilidad",
+        "title": "Movilidad el�ctrica"
       },
       "news": {
-        "category": "New",
-        "title": "Latest arrivals"
+        "category": "Novedades",
+        "title": "�ltimas novedades"
       }
     }
   },
   "wholesale": {
-    "kicker": "Professional space",
+    "kicker": "Espacio profesional",
     "title": {
-      "line1": "Grow your business",
-      "line2": "with SBI PARIS"
+      "line1": "Haz crecer tu negocio",
+      "line2": "con SBI PARIS"
     },
-    "description": "Benefit from professional pricing, reliable delivery and dedicated support.",
-    "button": "Become a partner",
-    "imageAlt": "SBI Paris professional service",
+    "description": "Disfruta de tarifas profesionales, entrega fiable y acompa�amiento dedicado.",
+    "button": "Hazte socio",
+    "imageAlt": "Servicio profesional SBI PARIS",
     "benefits": {
       "prices": {
-        "title": "Professional prices",
-        "description": "Competitive conditions for your business."
+        "title": "Tarifas profesionales",
+        "description": "Condiciones competitivas para tu actividad."
       },
       "delivery": {
-        "title": "International delivery",
-        "description": "Reliable logistics solutions."
+        "title": "Entrega internacional",
+        "description": "Soluciones log�sticas fiables."
       },
       "support": {
-        "title": "Dedicated support",
-        "description": "A team at your service."
+        "title": "Acompa�amiento dedicado",
+        "description": "Un equipo a tu servicio."
       },
       "quality": {
-        "title": "Selected quality",
-        "description": "Products chosen with care."
+        "title": "Calidad seleccionada",
+        "description": "Productos elegidos con cuidado."
       }
     }
   },
   "promotionsShowcase": {
-    "logoAlt": "SBI Paris logo",
-    "header": "Offers and new arrivals",
-    "discover": "Discover",
+    "logoAlt": "Logo SBI PARIS",
+    "header": "Promociones y novedades",
+    "discover": "Descubrir",
     "promotions": {
-      "kicker": "Exclusive offers",
+      "kicker": "Ofertas exclusivas",
       "title": {
-        "line1": "Exceptional",
-        "line2": "promotions"
+        "line1": "Promociones",
+        "line2": "excepcionales"
       },
-      "description": "Enjoy selected offers for a limited time.",
-      "button": "View promotions",
-      "viewSelection": "View selection",
+      "description": "Disfruta de ofertas seleccionadas por tiempo limitado.",
+      "button": "Ver promociones",
+      "viewSelection": "Ver selecci�n",
       "discount": {
-        "upTo": "Up to -50%",
-        "description": "On selected products"
+        "upTo": "Hasta -50%",
+        "description": "En productos seleccionados"
       },
       "items": {
         "perfume": {
           "title": "Perfumes",
-          "subtitle": "Signature scents"
+          "subtitle": "Fragancias exclusivas"
         },
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "Elegant details"
+          "title": "Accesorios",
+          "subtitle": "Detalles elegantes"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "Selected styles"
+          "title": "Hombre",
+          "subtitle": "Estilos seleccionados"
         }
       }
     },
     "newItems": {
-      "kicker": "New arrivals",
+      "kicker": "Novedades",
       "title": {
-        "line1": "New season",
-        "line2": "new inspirations"
+        "line1": "Nueva temporada",
+        "line2": "nuevas inspiraciones"
       },
-      "description": "Discover the latest SBI PARIS arrivals.",
-      "button": "See new arrivals",
-      "viewProduct": "View product",
+      "description": "Descubre las �ltimas novedades de SBI PARIS.",
+      "button": "Ver novedades",
+      "viewProduct": "Ver producto",
       "items": {
         "accessories": {
-          "title": "Accessories",
-          "subtitle": "New details"
+          "title": "Accesorios",
+          "subtitle": "Nuevos detalles"
         },
         "travelBag": {
-          "title": "Travel bag",
-          "subtitle": "Elegant travel"
+          "title": "Bolsa de viaje",
+          "subtitle": "Viajar con elegancia"
         },
         "women": {
-          "title": "Women",
-          "subtitle": "New collection"
+          "title": "Mujer",
+          "subtitle": "Nueva colecci�n"
         },
         "men": {
-          "title": "Men",
-          "subtitle": "New collection"
+          "title": "Hombre",
+          "subtitle": "Nueva colecci�n"
         },
         "mobility": {
-          "title": "Mobility",
-          "subtitle": "Electric innovation"
+          "title": "Movilidad",
+          "subtitle": "Innovaci�n el�ctrica"
         }
       }
     }
   },
   "hommePage": {
-    "pageTitle": "Men",
+    "pageTitle": "Hombre",
     "breadcrumb": {
-      "home": "Home",
-      "men": "Men"
+      "home": "Inicio",
+      "men": "Hombre"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "sportUniverse": {
       "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title2": "universo",
+      "description": "Rendimiento y estilo cada día.",
+      "button": "Descubrir"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "Estilo deportivo",
+        "description": "Comodidad y rendimiento para un estilo de vida activo.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "Polos deportivos",
+          "tankTops": "Camisetas sin mangas",
+          "shorts": "Pantalones cortos",
+          "tracksuits": "Chándales",
+          "sportShoes": "Zapatillas deportivas",
+          "caps": "Gorras"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "Estilo clásico",
+        "description": "Prendas atemporales para un armario elegante.",
         "items": {
           "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes"
+          "shirts": "Camisas",
+          "trousers": "Pantalones",
+          "jackets": "Chaquetas",
+          "cityShoes": "Zapatos de vestir"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "Esenciales",
+        "description": "Esenciales para el día a día.",
         "items": {
-          "socks": "Socks",
-          "underwear": "Underwear"
+          "socks": "Calcetines",
+          "underwear": "Ropa interior"
         }
       }
     }
   },
   "femmePage": {
-    "pageTitle": "Women",
+    "pageTitle": "Mujer",
     "breadcrumb": {
-      "home": "Home",
-      "women": "Women"
+      "home": "Inicio",
+      "women": "Mujer"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "sportUniverse": {
       "title1": "Sport",
-      "title2": "universe",
-      "description": "Performance and style every day.",
-      "button": "Discover"
+      "title2": "universo",
+      "description": "Rendimiento y estilo cada día.",
+      "button": "Descubrir"
     },
     "sections": {
       "sportive": {
-        "title": "Sport style",
-        "description": "Comfort and performance for an active lifestyle.",
+        "title": "Estilo deportivo",
+        "description": "Comodidad y rendimiento para un estilo de vida activo.",
         "items": {
-          "polosSport": "Sport polos",
-          "tankTops": "Tank tops",
-          "shorts": "Shorts",
-          "tracksuits": "Tracksuits",
-          "sportShoes": "Sport shoes",
-          "caps": "Caps"
+          "polosSport": "Polos deportivos",
+          "tankTops": "Camisetas sin mangas",
+          "shorts": "Pantalones cortos",
+          "tracksuits": "Chándales",
+          "sportShoes": "Zapatillas deportivas",
+          "caps": "Gorras"
         }
       },
       "classique": {
-        "title": "Classic style",
-        "description": "Timeless pieces for an elegant wardrobe.",
+        "title": "Estilo clásico",
+        "description": "Prendas atemporales para un armario elegante.",
         "items": {
           "polos": "Polos",
-          "shirts": "Shirts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "cityShoes": "City shoes",
-          "dresses": "Dresses"
+          "shirts": "Camisas",
+          "trousers": "Pantalones",
+          "jackets": "Chaquetas",
+          "cityShoes": "Zapatos de vestir",
+          "dresses": "Vestidos"
         }
       },
       "essentiels": {
-        "title": "Essentials",
-        "description": "Everyday essentials.",
+        "title": "Esenciales",
+        "description": "Esenciales para el día a día.",
         "items": {
-          "socks": "Socks",
-          "lingerie": "Lingerie"
+          "socks": "Calcetines",
+          "lingerie": "Lencería"
         }
       }
     }
   },
   "enfantPage": {
-    "pageTitle": "Kids",
+    "pageTitle": "Niños",
     "breadcrumb": {
-      "home": "Home",
-      "children": "Kids"
+      "home": "Inicio",
+      "children": "Niños"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "sections": {
       "boy": {
-        "title": "Boys",
-        "description": "Comfortable styles for boys.",
+        "title": "Niños",
+        "description": "Estilos cómodos para niños.",
         "items": {
           "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes",
-          "caps": "Caps"
+          "shorts": "Pantalones cortos",
+          "trousers": "Pantalones",
+          "jackets": "Chaquetas",
+          "shoes": "Zapatos",
+          "caps": "Gorras"
         }
       },
       "girl": {
-        "title": "Girls",
-        "description": "Elegant and comfortable styles for girls.",
+        "title": "Niñas",
+        "description": "Estilos elegantes y cómodos para niñas.",
         "items": {
-          "dresses": "Dresses",
+          "dresses": "Vestidos",
           "polos": "Polos",
-          "shorts": "Shorts",
-          "trousers": "Trousers",
-          "jackets": "Jackets",
-          "shoes": "Shoes"
+          "shorts": "Pantalones cortos",
+          "trousers": "Pantalones",
+          "jackets": "Chaquetas",
+          "shoes": "Zapatos"
         }
       }
     }
   },
   "collectionPage": {
-    "pageTitle": "Collections",
+    "pageTitle": "Colecciones",
     "breadcrumb": {
-      "home": "Home",
-      "collection": "Collection"
+      "home": "Inicio",
+      "collection": "Colección"
     },
-    "discover": "Discover",
-    "title": "The collection",
+    "discover": "Descubrir",
+    "title": "La colección",
     "sections": {
       "quotidien": {
-        "title": "Everyday universe",
-        "description": "Essentials selected for everyday life.",
+        "title": "Universo cotidiano",
+        "description": "Esenciales seleccionados para el día a día.",
         "items": {
-          "bags": "Bags",
-          "leatherGoods": "Leather goods",
-          "luggage": "Luggage",
-          "accessories": "Accessories"
+          "bags": "Bolsos",
+          "leatherGoods": "Marroquinería",
+          "luggage": "Equipaje",
+          "accessories": "Accesorios"
         }
       },
       "signature": {
-        "title": "SBI Paris signature",
-        "description": "Craftsmanship and traditional style.",
+        "title": "Firma SBI PARIS",
+        "description": "Artesanía y estilo tradicional.",
         "items": {
-          "craftsmanship": "Craftsmanship",
-          "traditionalFashion": "Traditional fashion"
+          "craftsmanship": "Artesanía",
+          "traditionalFashion": "Moda tradicional"
         }
       }
     }
@@ -666,104 +668,472 @@
   "parfumPage": {
     "pageTitle": "Perfumes",
     "breadcrumb": {
-      "home": "Home",
+      "home": "Inicio",
       "perfume": "Perfumes"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "sections": {
       "men": {
-        "title": "For him",
-        "description": "Distinctive fragrances for men and boys.",
+        "title": "Para él",
+        "description": "Fragancias distintivas para hombres y niños.",
         "items": {
-          "perfumes": "Men’s perfumes",
-          "boysPerfumes": "Boys’ perfumes"
+          "perfumes": "Men�s perfumes",
+          "boysPerfumes": "Boys� perfumes"
         }
       },
       "women": {
-        "title": "For her",
-        "description": "Elegant fragrances for women and girls.",
+        "title": "Para ella",
+        "description": "Fragancias elegantes para mujeres y niñas.",
         "items": {
-          "perfumes": "Women’s perfumes",
-          "girlsPerfumes": "Girls’ perfumes"
+          "perfumes": "Women�s perfumes",
+          "girlsPerfumes": "Girls� perfumes"
         }
       }
     }
   },
   "mobilitePage": {
-    "pageTitle": "Electric mobility",
+    "pageTitle": "Movilidad eléctrica",
     "breadcrumb": {
-      "home": "Home",
-      "mobility": "Mobility"
+      "home": "Inicio",
+      "mobility": "Movilidad"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "section": {
-      "title": "Electric mobility",
-      "description": "Practical and modern mobility solutions.",
+      "title": "Movilidad eléctrica",
+      "description": "Soluciones de movilidad prácticas y modernas.",
       "items": {
-        "electricScooters": "Electric scooters",
-        "electricBikes": "Electric bikes",
-        "electricLuggage": "Electric luggage"
+        "electricScooters": "Patinetes eléctricos",
+        "electricBikes": "Bicicletas eléctricas",
+        "electricLuggage": "Equipaje eléctrico"
       }
     }
   },
   "promotionsPage": {
-    "pageTitle": "Offers and new arrivals",
+    "pageTitle": "Ofertas y novedades",
     "breadcrumb": {
-      "home": "Home",
-      "promotionsAndNews": "Offers and new arrivals"
+      "home": "Inicio",
+      "promotionsAndNews": "Ofertas y novedades"
     },
-    "discover": "Discover",
+    "discover": "Descubrir",
     "sections": {
       "promotions": {
-        "title": "Promotions",
-        "description": "Discover our current special offers.",
+        "title": "Promociones",
+        "description": "Descubre nuestras ofertas especiales actuales.",
         "items": {
-          "promotions": "Current promotions"
+          "promotions": "Promociones actuales"
         }
       },
       "news": {
-        "title": "New arrivals",
-        "description": "Explore our latest products.",
+        "title": "Novedades",
+        "description": "Explora nuestros últimos productos.",
         "items": {
-          "news": "New arrivals"
+          "news": "Novedades"
         }
       }
     }
   },
   "home": {
     "history": {
-      "imageAlt": "SBI PARIS store",
-      "kicker": "OUR STORY",
-      "description": "Since 1994, SBI PARIS has embodied the spirit of Paris: timeless elegance, exceptional craftsmanship and a constant pursuit of excellence. Every creation, whether dedicated to fashion, sport, perfume or mobility, is designed to offer a unique experience where style meets innovation.",
+      "imageAlt": "Tienda SBI PARIS",
+      "kicker": "NUESTRA HISTORIA",
+      "description": "Desde 1994, SBI PARIS encarna el esp�ritu de Par�s: elegancia atemporal, saber hacer excepcional y una b�squeda constante de la excelencia. Cada creaci�n, ya sea de moda, deporte, perfume o movilidad, est� pensada para ofrecer una experiencia �nica donde el estilo se une a la innovaci�n.",
       "stats": {
-        "collections": "COLLECTIONS",
-        "countries": "COUNTRIES",
-        "satisfiedCustomers": "SATISFIED CUSTOMERS",
-        "quality": "QUALITY",
+        "collections": "COLECCIONES",
+        "countries": "PA�SES",
+        "satisfiedCustomers": "CLIENTES SATISFECHOS",
+        "quality": "CALIDAD",
         "premium": "PREMIUM"
       }
     },
     "trust": {
       "internationalDelivery": {
-        "title": "International delivery",
-        "description": "Fast and secure shipping to several countries."
+        "title": "Entrega internacional",
+        "description": "Env�o r�pido y seguro a varios pa�ses."
       },
       "securePayment": {
-        "title": "100% secure payment",
-        "description": "Your transactions are protected through secure payment."
+        "title": "Pago 100% seguro",
+        "description": "Tus transacciones est�n protegidas mediante un pago seguro."
       },
       "customerSupport": {
-        "title": "Advisers at your service",
-        "description": "A team available to answer all your questions."
+        "title": "Asesores a tu disposici�n",
+        "description": "Un equipo disponible para responder a todas tus preguntas."
       },
       "selectedProducts": {
-        "title": "Selected products",
-        "description": "Carefully selected items to guarantee premium quality."
+        "title": "Productos seleccionados",
+        "description": "Art�culos cuidadosamente elegidos para garantizar una calidad premium."
       },
       "availableStock": {
-        "title": "Available stock",
-        "description": "Thousands of products available with fast shipping."
+        "title": "Stock disponible",
+        "description": "Miles de referencias disponibles con env�o r�pido."
       }
     }
+  },
+  "contactPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "contact": "Cont�ctanos"
+    },
+    "kicker": "ATENCI�N AL CLIENTE",
+    "title": "Cont�ctanos",
+    "description": "Nuestro equipo est� disponible para responder a tus preguntas sobre tus pedidos, nuestros productos o nuestros servicios.",
+    "contact": {
+      "phone": "Tel�fono",
+      "whatsapp": "WhatsApp",
+      "email": "Correo electr�nico"
+    },
+    "backHome": "Volver al inicio",
+    "form": {
+      "title": "Env�anos un mensaje",
+      "description": "Completa el formulario y te responderemos lo antes posible.",
+      "fields": {
+        "name": {
+          "label": "Nombre y apellidos",
+          "placeholder": "Tu nombre y apellidos"
+        },
+        "email": {
+          "label": "Correo electr�nico",
+          "placeholder": "Tu correo electr�nico"
+        },
+        "phone": {
+          "label": "Tel�fono",
+          "placeholder": "Tu n�mero de tel�fono"
+        },
+        "subject": {
+          "label": "Asunto",
+          "placeholder": "Asunto de tu mensaje"
+        },
+        "message": {
+          "label": "Mensaje",
+          "placeholder": "Escribe tu mensaje aqu�..."
+        }
+      },
+      "submit": "ENVIAR MENSAJE"
+    }
+  },
+  "faqPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "FAQ"
+    },
+    "hero": {
+      "title": "Preguntas frecuentes",
+      "line1": "Encuentra aqu� respuestas a las preguntas m�s frecuentes.",
+      "line2": "Si no encuentras tu respuesta, nuestro equipo est� aqu� para ayudarte."
+    },
+    "help": {
+      "kicker": "�NECESITAS AYUDA?",
+      "title1": "Estamos aqu�",
+      "title2": "para ayudarte.",
+      "description": "Nuestro equipo est� disponible todos los d�as."
+    },
+    "contact": {
+      "phone": "Tel�fono",
+      "whatsapp": "WhatsApp",
+      "email": "Correo electr�nico",
+      "button": "CONT�CTANOS"
+    },
+    "items": [
+      {
+        "question": "¿Cuáles son los plazos de entrega?",
+        "answer": "Los pedidos se entregan generalmente en un plazo de 2 a 5 días laborables en Francia metropolitana. Para envíos internacionales, el plazo varía según el destino."
+      },
+      {
+        "question": "¿Puedo hacer seguimiento de mi pedido?",
+        "answer": "Sí. Cuando se envíe tu pedido, recibirás la información de seguimiento por correo electrónico."
+      },
+      {
+        "question": "¿Qué métodos de pago se aceptan?",
+        "answer": "Los métodos de pago disponibles dependen de los servicios activados al finalizar la compra."
+      },
+      {
+        "question": "¿Puedo devolver o cambiar un artículo?",
+        "answer": "Puedes solicitar una devolución o un cambio dentro de los 30 días posteriores a la entrega, sujeto a las condiciones de devolución."
+      },
+      {
+        "question": "¿Cómo elijo la talla correcta?",
+        "answer": "Consulta nuestra guía de tallas y compara tus medidas."
+      },
+      {
+        "question": "¿Son auténticos los productos SBI PARIS?",
+        "answer": "Sí. Los productos ofrecidos en nuestro sitio web son seleccionados y vendidos por SBI PARIS."
+      },
+      {
+        "question": "¿Cómo puedo contactar con atención al cliente?",
+        "answer": "Puedes contactarnos por teléfono, WhatsApp, correo electrónico o mediante el formulario de contacto."
+      }
+    ]
+  },
+  "trackingPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Seguimiento del pedido"
+    },
+    "title": "Seguimiento del pedido",
+    "description": "Introduce tu n�mero de pedido y el correo utilizado en la compra para consultar su estado.",
+    "form": {
+      "title": "Seguir tu pedido",
+      "orderNumber": "Número de pedido",
+      "orderPlaceholder": "Ejemplo: SBIPARIS-123456",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ejemplo: tu@email.com",
+      "submit": "SEGUIR MI PEDIDO",
+      "help": "Encontrarás tu número de pedido en el correo de confirmación recibido después de la compra."
+    },
+    "example": {
+      "title": "¿Dónde encuentro mi número de pedido?",
+      "description": "Tu número de pedido se envió por correo electrónico cuando se confirmó la compra.",
+      "thanks": "¡Gracias por tu pedido!",
+      "orderNumberIs": "Tu número de pedido es:",
+      "date": "Fecha: 14 de mayo de 2026",
+      "shippingUpdates": "Te mantendremos informado en cada etapa del envío."
+    },
+    "features": {
+      "fast": {
+        "title": "Entrega rápida",
+        "text": "De 2 a 5 días laborables en Francia"
+      },
+      "realtime": {
+        "title": "Seguimiento en tiempo real",
+        "text": "Sigue tu paquete en cada etapa"
+      },
+      "secure": {
+        "title": "Pago seguro",
+        "text": "Transacciones protegidas según los métodos habilitados"
+      },
+      "help": {
+        "title": "¿Necesitas ayuda?",
+        "text": "Nuestro equipo de atención al cliente está aquí para ayudarte"
+      }
+    }
+  },
+  "returnsPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Devoluciones y cambios"
+    },
+    "title": "Devoluciones y cambios",
+    "description": "Tu satisfacci�n es nuestra prioridad. Puedes solicitar una devoluci�n o cambio dentro de los 30 d�as posteriores a la entrega.",
+    "cards": {
+      "delay": {
+        "title": "30 días para cambiar de opinión",
+        "text": "Devoluciones disponibles dentro de los 30 días posteriores a la entrega."
+      },
+      "free": {
+        "title": "Devoluciones gratuitas",
+        "text": "Las devoluciones son gratuitas en Francia metropolitana."
+      },
+      "exchange": {
+        "title": "Cambios rápidos",
+        "text": "Cambio sujeto a disponibilidad."
+      },
+      "refund": {
+        "title": "Reembolso",
+        "text": "Se procesa tras recibir y aprobar la devolución."
+      }
+    },
+    "steps": {
+      "1": {
+        "title": "Solicitud de devolución",
+        "text": "Contacta con nuestro equipo para iniciar el proceso de devolución."
+      },
+      "2": {
+        "title": "Envío",
+        "text": "Prepara y envía tu paquete según las instrucciones recibidas."
+      },
+      "3": {
+        "title": "Recepción",
+        "text": "Revisamos tu devolución después de recibirla."
+      },
+      "4": {
+        "title": "Reembolso",
+        "text": "El reembolso se procesa tras la aprobación."
+      },
+      "title": "¿Cómo devolver un artículo?"
+    },
+    "conditions": {
+      "title": "Condiciones de devolución",
+      "items": [
+        "El artículo debe estar nuevo y sin usar.",
+        "Se requiere el embalaje original.",
+        "Las etiquetas deben seguir puestas.",
+        "Los artículos personalizados no se pueden devolver.",
+        "Devoluciones gratuitas en Francia metropolitana."
+      ]
+    },
+    "help": {
+      "title": "¿Necesitas ayuda?",
+      "text": "Nuestro equipo está disponible los 7 días de la semana."
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Sobre nosotros"
+    },
+    "hero": {
+      "kicker": "NUESTRA HISTORIA",
+      "title": "Sobre SBI PARIS",
+      "p1": "Nacida en el corazón de París, SBI PARIS es una marca francesa especializada en moda, accesorios, fragancias y movilidad eléctrica.",
+      "p2": "Desde 1994 ofrecemos productos elegantes y cuidadosamente seleccionados.",
+      "p3": "Nuestro objetivo es hacer accesible un estilo refinado, preservando al mismo tiempo el saber hacer francés.",
+      "button": "DESCUBRE NUESTRAS COLECCIONES"
+    },
+    "experience": "A�os de experiencia",
+    "values": {
+      "title": "NUESTROS VALORES",
+      "quality": {
+        "title": "CALIDAD",
+        "text": "Productos seleccionados con el máximo cuidado."
+      },
+      "trust": {
+        "title": "CONFIANZA",
+        "text": "Relaciones duraderas con nuestros clientes."
+      },
+      "innovation": {
+        "title": "INNOVACIÓN",
+        "text": "Siempre en busca de nuevas ideas y tendencias."
+      },
+      "passion": {
+        "title": "PASIÓN",
+        "text": "Un equipo apasionado dedicado a tu satisfacción."
+      }
+    },
+    "stats": {
+      "experience": "Años de experiencia",
+      "customers": "Clientes satisfechos",
+      "products": "Productos vendidos",
+      "support": "Disponibilidad de atención al cliente"
+    }
+  },
+  "careersPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Empleo"
+    },
+    "title": "Empleo",
+    "description": "�nete a SBI PARIS y forma parte de una historia de elegancia, pasi�n e innovaci�n.",
+    "values": {
+      "team": {
+        "title": "Espíritu de equipo",
+        "text": "Creemos en la colaboración y el respeto mutuo."
+      },
+      "growth": {
+        "title": "Crecimiento",
+        "text": "Apoyamos tu desarrollo profesional."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "text": "Buscamos la excelencia en cada detalle."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "text": "Fomentamos nuevas ideas y creatividad."
+      },
+      "passion": {
+        "title": "Pasión",
+        "text": "Compartimos la pasión por la moda y el servicio."
+      }
+    },
+    "reasons": {
+      "title": "¿Por qué unirte a nosotros?",
+      "items": {
+        "brand": {
+          "title": "Una marca elegante y ambiciosa",
+          "text": "SBI PARIS es una marca parisina en crecimiento."
+        },
+        "environment": {
+          "title": "Un entorno estimulante",
+          "text": "Únete a equipos apasionados en un entorno dinámico."
+        },
+        "opportunities": {
+          "title": "Oportunidades profesionales",
+          "text": "Ofrecemos oportunidades reales de desarrollo y formación."
+        },
+        "benefits": {
+          "title": "Beneficios atractivos",
+          "text": "Los beneficios profesionales dependen del puesto y de las condiciones aplicables."
+        }
+      }
+    },
+    "jobs": {
+      "title": "Ofertas de empleo",
+      "viewAll": "Ver todas las ofertas",
+      "viewOffer": "VER OFERTA",
+      "items": {
+        "sales": {
+          "title": "Asesor/a de ventas",
+          "category": "Venta minorista",
+          "location": "París, Francia",
+          "contract": "Indefinido"
+        },
+        "manager": {
+          "title": "Responsable de tienda",
+          "category": "Venta minorista",
+          "location": "París, Francia",
+          "contract": "Indefinido"
+        },
+        "ecommerce": {
+          "title": "Especialista en comercio electrónico",
+          "category": "Digital",
+          "location": "París, Francia",
+          "contract": "Indefinido"
+        },
+        "marketing": {
+          "title": "Asistente de marketing",
+          "category": "Marketing",
+          "location": "París, Francia",
+          "contract": "Indefinido"
+        },
+        "service": {
+          "title": "Atención al cliente",
+          "category": "Relaciones con clientes",
+          "location": "París, Francia",
+          "contract": "Temporal"
+        }
+      }
+    },
+    "spontaneous": {
+      "title": "¿No encuentras el puesto adecuado?",
+      "text": "Envíanos una candidatura espontánea y la revisaremos con atención.",
+      "button": "ENVIAR MI CANDIDATURA"
+    }
+  },
+  "assistant": {
+    "header": {
+      "title": "SBI PARIS - Asistente",
+      "online": "En línea"
+    },
+    "welcome": "¡Hola! 👋\nSoy el asistente de SBI PARIS.\n¿Cómo puedo ayudarte?",
+    "actions": {
+      "product": {
+        "label": "Buscar un producto",
+        "prompt": "Busco un producto SBI PARIS."
+      },
+      "tracking": {
+        "label": "Seguir mi pedido",
+        "prompt": "Quiero seguir mi pedido."
+      },
+      "delivery": {
+        "label": "Entrega y devoluciones",
+        "prompt": "Quiero información sobre entrega y devoluciones."
+      },
+      "sport": {
+        "label": "Universo Sport",
+        "prompt": "Quiero descubrir Universo Sport SBI PARIS."
+      },
+      "perfumes": {
+        "label": "Perfumes",
+        "prompt": "Busco perfumes SBI PARIS."
+      },
+      "mobility": {
+        "label": "Movilidad",
+        "prompt": "Quiero descubrir la gama Movilidad SBI PARIS."
+      }
+    },
+    "composer": {
+      "placeholder": "Ej.: Busco una maleta eléctrica..."
+    },
+    "send": "Enviar",
+    "demoReply": "Gracias. Estoy buscando la mejor respuesta para ti."
   }
 }

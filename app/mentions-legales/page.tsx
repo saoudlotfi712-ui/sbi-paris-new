@@ -191,8 +191,8 @@ export default function MentionsLegalesPage() {
               <div>
                 <dt>Adresse électronique</dt>
                 <dd>
-                  <a href="mailto:contact@sbiparis.com">
-                    contact@sbiparis.com
+                  <a href="mailto:contactsbiparis@gmail.com">
+                    contactsbiparis@gmail.com
                   </a>
                 </dd>
               </div>
@@ -374,12 +374,12 @@ export default function MentionsLegalesPage() {
             </p>
 
             <div className={styles.contactGrid}>
-              <a href="mailto:contact@sbiparis.com">
+              <a href="mailto:contactsbiparis@gmail.com">
                 <Mail size={22} strokeWidth={1.6} aria-hidden="true" />
 
                 <span>
                   <strong>E-mail</strong>
-                  <small>contact@sbiparis.com</small>
+                  <small>contactsbiparis@gmail.com</small>
                 </span>
               </a>
 

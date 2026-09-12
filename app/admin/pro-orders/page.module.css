@@ -1,0 +1,316 @@
+.page {
+  min-height: 100vh;
+  padding: 40px 24px;
+  background: #f8fafc;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.backLink {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.backLink:hover {
+  color: #0f172a;
+}
+
+.header {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.kicker {
+  margin: 0 0 7px;
+  color: #b38b3f;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.description {
+  margin: 0;
+  color: #64748b;
+}
+
+.messageBox {
+  padding: 45px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  text-align: center;
+  color: #475569;
+}
+
+.errorBox {
+  padding: 22px;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  color: #991b1b;
+}
+
+.ordersGrid {
+  display: grid;
+  gap: 22px;
+}
+
+.orderCard {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+.orderHeader {
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.companyRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.companyName {
+  margin: 0;
+  color: #0f172a;
+  font-size: 21px;
+}
+
+.requestNumber {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.priceBlock {
+  text-align: right;
+}
+
+.totalPrice {
+  display: block;
+  color: #0f172a;
+  font-size: 21px;
+}
+
+.date {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.content {
+  padding: 22px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.infoTitle {
+  color: #0f172a;
+}
+
+.infoText {
+  margin: 7px 0 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.tableWrapper {
+  margin-bottom: 24px;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.table thead tr {
+  background: #f8fafc;
+}
+
+.table th {
+  padding: 13px 15px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.productReference {
+  margin-top: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.summaryLabel {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.summaryValue {
+  display: block;
+  color: #334155;
+  font-size: 16px;
+}
+
+.finalTotal {
+  color: #0f172a;
+  font-size: 19px;
+}
+
+.extraInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.extraText {
+  margin: 7px 0 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.actions {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.invoiceStatus {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rejectButton {
+  padding: 11px 17px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #991b1b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.rejectButton:hover:not(:disabled) {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+.approveButton {
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.approveButton:hover:not(:disabled) {
+  background: #1e293b;
+}
+
+.rejectButton:disabled,
+.approveButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 24px 14px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .orderHeader {
+    padding: 18px;
+  }
+
+  .content {
+    padding: 18px;
+  }
+
+  .priceBlock {
+    text-align: left;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .rejectButton,
+  .approveButton {
+    width: 100%;
+  }
+}

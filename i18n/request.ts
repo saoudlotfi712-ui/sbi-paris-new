@@ -1,18 +1,19 @@
-import {cookies} from "next/headers";
+﻿import {headers} from "next/headers";
 import {getRequestConfig} from "next-intl/server";
 
 import {
   defaultLocale,
   isLocale,
-  localeCookieName,
 } from "./routing";
 
 export default getRequestConfig(async () => {
-  const cookieStore = await cookies();
-  const savedLocale = cookieStore.get(localeCookieName)?.value;
+  const requestHeaders = await headers();
 
-  const locale = isLocale(savedLocale)
-    ? savedLocale
+  const requestedLocale =
+    requestHeaders.get("x-sbi-locale") ?? undefined;
+
+  const locale = isLocale(requestedLocale)
+    ? requestedLocale
     : defaultLocale;
 
   const messages = (

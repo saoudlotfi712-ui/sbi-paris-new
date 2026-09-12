@@ -53,7 +53,7 @@ export default function LuxuryHero() {
 
         <div className={styles.stats}>
           <Stat value="1994" label={t("stats.paris")} />
-          <Stat value="150+" label={t("stats.collections")} />
+          
           <Stat value="30" label={t("stats.countries")} />
         </div>
       </div>

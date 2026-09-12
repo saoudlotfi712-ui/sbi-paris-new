@@ -1,0 +1,387 @@
+.page {
+  min-height: 100vh;
+  padding: 0 5% 60px;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7f9fc 100%
+    );
+}
+
+.breadcrumb {
+  width: min(1380px, 100%);
+  min-height: 64px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #667184;
+  font-size: 13px;
+}
+
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #071a3d;
+  text-decoration: none;
+}
+
+.breadcrumb strong {
+  color: #e30624;
+  font-weight: 600;
+}
+
+.hero {
+  width: min(900px, 100%);
+  margin: 10px auto 36px;
+  text-align: center;
+}
+
+.kicker {
+  color: #e30624;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.hero h1 {
+  margin: 14px 0 0;
+
+  color: #071a3d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(46px, 6vw, 76px);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.titleLine {
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: #e30624;
+}
+
+.hero p {
+  margin: 18px auto 0;
+  color: #5f6a7c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.categoryNav {
+  width: min(1180px, 100%);
+  margin: 0 auto 28px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.categoryNav a {
+  min-height: 82px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: 1px solid #e2e7ee;
+  border-radius: 12px;
+
+  background: #ffffff;
+  color: #071a3d;
+
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  box-shadow: 0 8px 24px rgba(7, 26, 61, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.categoryNav a:hover {
+  transform: translateY(-3px);
+  border-color: #e30624;
+  color: #e30624;
+}
+
+.guideCard {
+  width: min(1180px, 100%);
+  margin: 0 auto 22px;
+  padding: 24px;
+
+  border: 1px solid #e2e7ee;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 12px 30px rgba(7, 26, 61, 0.06);
+}
+
+.guideHeader {
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.guideIcon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e30624;
+  border-radius: 50%;
+
+  color: #e30624;
+}
+
+.guideHeader > div > span {
+  color: #071a3d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.guideHeader h2 {
+  margin: 4px 0 0;
+
+  color: #071a3d;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+
+  border: 1px solid #e3e7ed;
+  border-radius: 9px;
+}
+
+.table {
+  width: 100%;
+  min-width: 620px;
+
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.table thead {
+  background:
+    linear-gradient(
+      90deg,
+      #03122b 0%,
+      #071a3d 100%
+    );
+}
+
+.table th {
+  padding: 13px 16px;
+
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.table th:last-child {
+  border-right: 0;
+}
+
+.table td {
+  padding: 11px 14px;
+
+  color: #071a3d;
+  font-size: 13px;
+  text-align: center;
+
+  border-right: 1px solid #e7ebf0;
+  border-bottom: 1px solid #e7ebf0;
+}
+
+.table td:last-child {
+  border-right: 0;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.doubleGrid {
+  width: min(1180px, 100%);
+  margin: 0 auto 22px;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.doubleGrid .guideCard {
+  width: 100%;
+  margin: 0;
+}
+
+.accessoryGrid {
+  width: min(1180px, 100%);
+  margin: 0 auto 22px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.accessoryGrid article {
+  min-height: 190px;
+  padding: 26px;
+
+  border: 1px solid #e2e7ee;
+  border-radius: 14px;
+
+  background: #ffffff;
+  color: #071a3d;
+
+  box-shadow: 0 10px 28px rgba(7, 26, 61, 0.05);
+}
+
+.accessoryGrid article > svg {
+  color: #e30624;
+}
+
+.accessoryGrid h2 {
+  margin: 18px 0 0;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.accessoryGrid p {
+  margin: 10px 0 0;
+
+  color: #647084;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.adviceBox {
+  width: min(920px, 100%);
+  margin: 28px auto 0;
+  padding: 22px 26px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #020d20 0%,
+      #071a3d 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow: 0 14px 30px rgba(7, 26, 61, 0.16);
+}
+
+.adviceBox > svg {
+  flex: 0 0 auto;
+  color: #e30624;
+}
+
+.adviceBox h2 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.adviceBox p {
+  margin: 7px 0 0;
+
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .categoryNav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .doubleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .accessoryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 0 16px 36px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .categoryNav {
+    grid-template-columns: 1fr;
+  }
+
+  .guideCard {
+    padding: 18px;
+  }
+
+  .guideHeader {
+    align-items: flex-start;
+  }
+
+  .guideIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .guideHeader h2 {
+    font-size: 24px;
+  }
+
+  .adviceBox {
+    padding: 20px;
+  }
+}

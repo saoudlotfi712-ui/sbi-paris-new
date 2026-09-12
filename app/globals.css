@@ -1,0 +1,1433 @@
+/* ==========================================================================
+   1. GLOBAL SYSTEM & RESETS
+   ========================================================================== */
+:root {
+  --primary: #0a1931;
+  --primary-light: #15305b;
+  --accent: #e52e37;
+  --accent-hover: #b81d24;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+  --shadow-md: 0 10px 25px -5px rgba(10,25,49,0.08), 0 8px 16px -6px rgba(10,25,49,0.05);
+  --shadow-lg: 0 20px 40px -10px rgba(10,25,49,0.12);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ==========================================================================
+   2. MEGA MENU (.hommeMenu)
+   ========================================================================== */
+.hommeMenu {
+  display: none;
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: min(94vw, 1150px);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  padding: 40px 50px;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 45px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.navItem:hover .hommeMenu {
+  display: grid;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hommeMenu h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.hommeMenu a {
+  font-size: 18px;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.hmColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hmColumn h2 {
+  color: var(--primary);
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0 0 40px;
+  position: relative;
+}
+
+.hmColumn h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 45px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.hmColumn a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 50px;
+  color: var(--text-main);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+}
+
+.hmColumn a:hover {
+  background: rgba(10, 25, 49, 0.04);
+  color: var(--accent);
+  padding-left: 20px;
+}
+
+.hmIcon {
+  width: 46px;
+  height: 46px;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: var(--transition);
+  background: rgba(10, 25, 49, 0.05);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.hmColumn a:hover .hmIcon {
+  color: #fff;
+  background: var(--accent);
+  transform: scale(1.1);
+}
+
+.hmDivider {
+  width: 1px;
+  background: var(--border-color);
+}
+
+/* ==========================================================================
+   3. HERO & HERO CATEGORY
+   ========================================================================== */
+.categoryHero {
+  height: 280px;
+  background: radial-gradient(circle at top right, var(--primary-light), var(--primary));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.categoryHero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.categoryHero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+}
+
+.categoryContent {
+  padding: 50px 40px;
+}
+
+.categoryContent h2 {
+  font-size: 32px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   4. HOMME PAGE & LAYOUT
+   ========================================================================== */
+.hommePage {
+  background: var(--bg-main);
+}
+
+.hommeHero {
+  height: 260px;
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hommeHeroText {
+  max-width: 600px;
+}
+
+.breadcrumb {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hommeHero h1 {
+  font-size: 46px;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.hommeHero p:last-child {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.hommeLayout {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 40px;
+  padding: 50px;
+}
+
+/* Sidebar Styling */
+.hommeSidebar {
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  position: sticky;
+  top: 30px;
+  height: fit-content;
+  box-shadow: var(--shadow-md);
+}
+
+.hommeSidebar h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.hommeSidebar a {
+  display: block;
+  padding: 14px 18px;
+  margin-bottom: 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  transition: var(--transition);
+}
+
+.hommeSidebar a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding-left: 24px;
+}
+
+.hommeSidebar .active {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 800;
+  box-shadow: var(--shadow-sm);
+}
+
+.filters {
+  margin-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+}
+
+.filters h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.filters p {
+  padding: 14px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filters p:hover {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   5. PRODUCTS GRID & PREMIUM CARDS
+   ========================================================================== */
+.hommeProducts {
+  width: 100%;
+}
+
+.productsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  background: var(--bg-card);
+  padding: 20px 30px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.productsHeader h2 {
+  font-size: 32px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.productsHeader p {
+  margin-top: 5px;
+  color: var(--text-muted);
+}
+
+.productsHeader select {
+  padding: 12px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+}
+
+.productsHeader select:focus {
+  border-color: var(--primary);
+}
+
+.productGrid, 
+.hommeProductGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.productCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(10, 25, 49, 0.15);
+}
+
+.productPhoto {
+  height: 240px;
+  background: #f1f5f9;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.productCard:hover .productPhoto {
+  background: #e2e8f0;
+}
+
+.badge {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(229, 46, 55, 0.3);
+}
+
+.productCard h3 {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.productCard p {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.modeTabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.modeTabs button {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.modeTabs button:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+/* ==========================================================================
+   6. LUXURY ACCORDION BOX
+   ========================================================================== */
+.hommeLuxuryPage {
+  background: var(--bg-main);
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.hommeLuxuryLayout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 45px;
+}
+
+.hommeAccordionBox {
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 35px;
+  box-shadow: var(--shadow-lg);
+  height: fit-content;
+  position: sticky;
+  top: 40px;
+}
+
+.hommeAccordionBox h1 {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.hommeAccordionBox h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--accent);
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+.accordionSection {
+  margin-bottom: 15px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.accordionSection button {
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.accordionSection button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.accordionSection.open button {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fff;
+  color: var(--primary);
+}
+
+.accordionSection.open .accordionContent {
+  max-height: 700px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.accordionContent a {
+  display: block;
+  padding: 12px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.accordionContent a:hover {
+  color: var(--accent);
+  padding-left: 32px;
+  background: rgba(10, 25, 49, 0.03);
+}
+
+/* Luxury Content Dynamic Area */
+.hommeLuxuryContent {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 50px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.hommeBreadcrumb {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.hommeLuxuryContent h2 {
+  font-size: 42px;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.hommeLuxuryContent h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.hommeDescription {
+  margin-top: 25px;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* Luxury Category Cards Grid */
+.categoryCards {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.categoryCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 30px 25px;
+  background: #fff;
+  transition: var(--transition);
+  cursor: pointer;
+  text-align: center;
+}
+
+.categoryCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.categoryIcon {
+  font-size: 40px;
+  color: var(--primary);
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.categoryCard:hover .categoryIcon {
+  transform: scale(1.1);
+  color: var(--accent);
+}
+
+.categoryCard h3 {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.categoryCard span {
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   7. UNIVERS SPORT SECTION
+   ========================================================================== */
+.universSport {
+  padding: 35px 45px;
+  background: #fff;
+  margin-top: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.universSport div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.universSport .hmIcon {
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  background: rgba(10,25,49,0.05);
+}
+
+.universSport strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.universSport b {
+  color: var(--accent);
+  font-size: 46px;
+  font-weight: 300;
+}
+
+.universSportCard {
+  position: relative;
+  margin-top: 35px;
+  padding: 35px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(145deg, var(--primary), #020914);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.universSportCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+}
+
+.universOverlay {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 180px;
+  height: 250px;
+  background: url("/eiffel.png") center/contain no-repeat;
+  opacity: .06;
+  pointer-events: none;
+}
+
+.universSportCard h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.universSportCard .red {
+  color: var(--accent);
+}
+
+.universSportCard p {
+  margin: 20px 0 30px;
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.universSportCard button {
+  width: 100%;
+  height: 55px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: var(--transition);
+}
+
+.universSportCard button:hover {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+/* Univers Inner Page Details */
+.universHero {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.universText h1 {
+  color: var(--primary);
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.universText p {
+  margin-top: 15px;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.universBanner {
+  height: 350px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.universBanner img,
+.sportImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.sportsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.sportCard {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.sportCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(10,25,49,0.1);
+}
+
+.sportImage {
+  height: 200px;
+  overflow: hidden;
+}
+
+.sportCard:hover .sportImage img {
+  transform: scale(1.08);
+}
+
+.sportCard h3 {
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: 800;
+  padding: 22px 22px 6px;
+}
+
+.sportCard span {
+  display: block;
+  color: var(--text-muted);
+  padding: 0 22px 22px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ==========================================================================
+   8. PREMIUM FOOTER
+   ========================================================================== */
+.footerSbi {
+  background: var(--primary);
+  color: #fff;
+  padding: 70px 50px 30px;
+  margin-top: 60px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 50px;
+}
+
+.footerLogo {
+  width: 110px;
+  margin-bottom: 20px;
+}
+
+.footerTop h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #fff;
+  position: relative;
+}
+
+.footerTop h3::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 8px;
+}
+
+.footerTop a {
+  display: block;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.footerTop a:hover {
+  color: var(--accent);
+  padding-left: 5px;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 50px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ==========================================================================
+   9. PERFECT RESPONSIVE DESIGN
+   ========================================================================== */
+@media(max-width:1024px) {
+  .hommeLayout, 
+  .hommeLuxuryLayout {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  
+  .hommeSidebar, 
+  .hommeAccordionBox {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media(max-width:768px) {
+  .universHero {
+    grid-template-columns: 1fr;
+  }
+  
+  .productsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .footerTop {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .universSport {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}.mainContent {
+  min-height: 70vh;
+}/* ======================================================
+   HEADER PREMIUM
+====================================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+.topBar {
+  background: #0a1931;
+  color: #fff;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  white-space: nowrap;
+  height: 42px;
+}
+
+.item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item summary::-webkit-details-marker {
+  display: none;
+}
+
+.item p {
+  position: absolute;
+  background: #fff;
+  color: #1e293b;
+  padding: 14px 18px;
+  margin-top: 12px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+  z-index: 9999;
+  max-width: 320px;
+}
+
+.hero {
+  height: 90px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  width: auto;
+  height: 130px;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.iconBtn {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.iconBtn:hover {
+  background: #0a1931;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.cartBtn {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e52e37;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar {
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navItem>a {
+  color: #0a1931;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.navItem>a:hover {
+  color: #e52e37;
+}
+
+.promo>a {
+  color: #e52e37;
+}
+
+.collection>a {
+  font-weight: 800;
+}/* FIX OLD ENFANT MEGA MENU */
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 760px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 25px 60px rgba(9, 27, 69, 0.18);
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(14px);
+  transition: 0.25s ease;
+}
+
+.navItem:hover .megaMenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menuColumn h3 {
+  font-size: 24px;
+  color: #091b45;
+  font-weight: 900;
+-bottom: 15px;
+}
+
+.menuColumn a {
+  text-decoration: none;
+  color: #091b45;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.menuColumn a:hover {
+  color: #d91f32;
+}
+.megaLine {
+  width: 1px;
+  background: #e5e7eb;
+}
+
+.bannerHero {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.bannerHero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bannerText {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.bannerText h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 72px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.blue {
+  color: #091b45;
+}
+
+.red {
+  color: #d91f32;
+}
+
+.bannerText p {
+  margin-top: 35px;
+  font-size:   margin28px;
+  font-weight: 900;
+  color: #091b45;
+}
+
+.redSmall {
+  color: #d91f32;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  height: 62px;
+  padding: 0 34px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: #091b45;
+  color: #fff;
+  border: 2px solid #091b45;
+}.btnSecondary {
+  background: #fff;
+  color: #091b45;
+  border: 2px solid #091b45;
+}
+
+.sportPage {
+  padding: 55px 4% !important;
+}
+
+.sportHero {
+  display: grid !important;
+  grid-template-columns: 0.75fr 1.6fr !important;
+  gap: 42px !important;
+  align-items: center !important;
+  margin-bottom: 34px !important;
+}
+
+.sportGrid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 26px !important;
+}
+
+.sportImagePlaceholder {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+.sportCard:nth-child(5) {
+  grid-column: 1 / 2 !important;
+}.hommeLuxuryPage {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.hommeLuxuryLayout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 45px;
+}
+
+.hommeAccordionBox {
+  background: #0a1931;
+  color: white;
+  border-radius: 24px;
+  padding: 35px;
+  height: fit-content;
+}
+
+.hommeAccordionBox h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.accordionSection {
+  margin-bottom: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.accordionSection button {
+  width: 100%;
+  border: none;
+  background: rgba(255,255,255,.08);
+  color: white;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.accordionSection.open button {
+  background: white;
+  color: #0a1931;
+}
+
+.accordionContent {
+  display: none;
+  background: white;
+}
+
+.accordionSection.open .accordionContent {
+  display: block;
+  padding: 10px 0;
+}
+
+.accordionContent a {
+  display: block;
+  padding: 12px 24px;
+  color: #0a1931;
+  font-weight: 700;
+}
+
+.hommeLuxuryContent {
+  background: white;
+  border-radius: 24px;
+  padding: 50px;
+  border: 1px solid #e2e8f0;
+}
+
+.hommeBreadcrumb {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.hommeLuxuryContent h2 {
+  color: #0a1931;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.hommeDescription {
+  margin-top: 22px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.categoryCards {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.categoryCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.categoryIcon {
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.categoryCard h3 {
+  color: #0a1931;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.categoryCard span {
+  display: block;
+  margin-top: 12px;
+  color: #e52e37;
+  font-weight: 900;
+}.universButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 18px;
+  padding: 14px 24px;
+
+  background: #d61f26;
+  color: #fff;
+
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .05em;
+
+  transition: all .3s ease;
+}
+
+.universButton:hover {
+  background: #061a44;
+  transform: translateY(-2px);
+}
+
+.universButton span {
+  transition: transform .3s ease;
+}
+
+.universButton:hover span {
+  transform: translateX(5px);
+}
+.categoryCard {
+  text-decoration: none;
+  color: inherit;
+}
+
+[class*="Menu_item"] { text-decoration: none; }
+
+
+/* Global mobile safety and contact shortcuts */
+*, *::before, *::after { box-sizing: border-box; }
+html { overflow-x: hidden; scroll-behavior: smooth; }
+body { margin: 0; overflow-x: hidden; }
+img, video, svg { max-width: 100%; height: auto; }
+input, textarea, select, button { max-width: 100%; font: inherit; }
+
+.whatsappFloat,
+.emailContactFloat {
+  position: fixed;
+  right: 20px;
+  z-index: 9999;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,.24);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.whatsappFloat { bottom: 20px; background: #25d366; }
+.emailContactFloat { bottom: 88px; background: #0a1931; font-size: 27px; }
+.whatsappFloat:hover, .emailContactFloat:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(0,0,0,.28); }
+
+[dir="rtl"] .whatsappFloat,
+[dir="rtl"] .emailContactFloat { right: auto; left: 20px; }
+
+@media (max-width: 768px) {
+  .categoryHero { height: auto; min-height: 210px; padding: 38px 18px; }
+  .categoryHero h1 { font-size: clamp(30px, 10vw, 42px); }
+  .categoryContent { padding: 32px 16px; }
+  .hommeHero { height: auto; min-height: 210px; padding: 36px 18px; }
+  .hommeHero h1 { font-size: clamp(30px, 10vw, 42px); }
+  .hommeLayout { grid-template-columns: 1fr; gap: 22px; padding: 24px 14px 44px; }
+  .hommeSidebar { position: static; padding: 20px; }
+  .productsHeader { align-items: flex-start; flex-direction: column; padding: 18px; }
+  .productGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .whatsappFloat, .emailContactFloat { right: 12px; width: 50px; height: 50px; }
+  .whatsappFloat { bottom: 12px; }
+  .emailContactFloat { bottom: 70px; font-size: 23px; }
+  [dir="rtl"] .whatsappFloat, [dir="rtl"] .emailContactFloat { right: auto; left: 12px; }
+}
+
+@media (max-width: 380px) {
+  .productGrid { grid-template-columns: 1fr; }
+}

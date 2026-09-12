@@ -1,0 +1,345 @@
+.page{
+  background:#f7f8fb;
+  min-height:100vh;
+  padding-bottom:70px;
+}
+
+.breadcrumb{
+  max-width:1350px;
+  margin:auto;
+  padding:24px 20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:14px;
+  color:#777;
+}
+
+.breadcrumb a{
+  color:#777;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.breadcrumb strong{
+  color:#d90429;
+}
+
+.hero{
+  max-width:900px;
+  margin:0 auto 50px;
+  text-align:center;
+}
+
+.kicker{
+  color:#d90429;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+
+.hero h1{
+  margin:12px 0;
+  font-family:Georgia,serif;
+  font-size:58px;
+  font-weight:500;
+  color:#08172d;
+}
+
+.titleLine{
+  display:block;
+  width:70px;
+  height:4px;
+  background:#d90429;
+  border-radius:20px;
+  margin:16px auto 22px;
+}
+
+.hero p{
+  color:#666;
+  font-size:16px;
+  line-height:1.8;
+}
+
+.layout{
+  max-width:1350px;
+  margin:auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:290px 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+.sidebar{
+  background:#fff;
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  position:sticky;
+  top:25px;
+}
+
+.sidebarHeader h2{
+  margin:0;
+  font-size:23px;
+  color:#08172d;
+}
+
+.sidebarHeader span{
+  display:block;
+  width:45px;
+  height:3px;
+  margin:14px 0 18px;
+  background:#d90429;
+}
+
+.sidebar nav{
+  display:flex;
+  flex-direction:column;
+}
+
+.sidebar nav a{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:15px 0;
+  text-decoration:none;
+  color:#555;
+  border-bottom:1px solid #eee;
+  transition:.25s;
+}
+
+.sidebar nav a:hover,
+.activeLink{
+  color:#d90429 !important;
+  padding-left:6px;
+}
+
+.policyCard{
+  background:#fff;
+  border-radius:16px;
+  padding:35px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.policySection{
+  padding:28px 0;
+  border-bottom:1px solid #ececec;
+}
+
+.policySection:last-child{
+  border-bottom:none;
+}
+
+.sectionHeading{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.sectionHeading span{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  background:#d90429;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+}
+
+.sectionHeading h2{
+  margin:0;
+  font-size:28px;
+  color:#08172d;
+}
+
+.sectionContent{
+  padding-left:48px;
+}
+
+.sectionContent p{
+  color:#555;
+  line-height:1.9;
+  margin-bottom:16px;
+}
+
+.sectionContent a{
+  color:#d90429;
+  text-decoration:none;
+}
+
+.list{
+  padding-left:20px;
+}
+
+.list li{
+  margin-bottom:12px;
+  line-height:1.8;
+  color:#555;
+}
+
+.companyDetails{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.companyDetails dt{
+  font-weight:700;
+  color:#08172d;
+  margin-bottom:6px;
+}
+
+.companyDetails dd{
+  margin:0;
+  color:#555;
+  line-height:1.7;
+}
+
+.legalBases{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.legalBases div{
+  display:flex;
+  gap:14px;
+  background:#f8f9fc;
+  padding:18px;
+  border-radius:10px;
+}
+
+.legalBases strong{
+  display:block;
+  color:#08172d;
+}
+
+.legalBases small{
+  display:block;
+  color:#666;
+  margin-top:6px;
+  line-height:1.6;
+}
+
+.durationTable{
+  border:1px solid #e8e8e8;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.durationHeader,
+.durationTable>div{
+  display:grid;
+  grid-template-columns:260px 1fr;
+}
+
+.durationHeader{
+  background:#08172d;
+  color:#fff;
+}
+
+.durationHeader strong,
+.durationTable span{
+  padding:16px;
+}
+
+.durationTable>div:not(.durationHeader){
+  border-top:1px solid #ececec;
+}
+
+.securityBox{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  background:#f7f8fb;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.securityBox h3{
+  margin:0 0 8px;
+  color:#08172d;
+}
+
+.contactGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:20px;
+}
+
+.contactGrid a,
+.contactGrid div{
+  display:flex;
+  gap:14px;
+  padding:18px;
+  border:1px solid #ececec;
+  border-radius:10px;
+  color:#08172d;
+  text-decoration:none;
+}
+
+.contactGrid strong{
+  display:block;
+}
+
+.contactGrid small{
+  display:block;
+  margin-top:6px;
+  color:#666;
+  line-height:1.6;
+}
+
+.updateNotice{
+  margin-top:30px;
+  text-align:right;
+  color:#777;
+  font-size:14px;
+}
+
+@media(max-width:1100px){
+
+.layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+.companyDetails,
+.legalBases,
+.contactGrid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.policyCard{
+padding:22px;
+}
+
+.sectionContent{
+padding-left:0;
+}
+
+.durationHeader,
+.durationTable>div{
+grid-template-columns:1fr;
+}
+
+}

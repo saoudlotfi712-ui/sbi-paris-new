@@ -423,7 +423,7 @@ export default function EspaceProPage() {
 
     if (totalQuantity <= 0) {
       setRequestError(
-        "La quantité totale doit être supérieure à zéro.",
+        "La quantité totale doit être supérieure Ã  zéro.",
       );
       return;
     }
@@ -811,114 +811,76 @@ export default function EspaceProPage() {
     <main className={styles.page}>
       {/* =====================
           HERO
-      ===================== */}
-
-      <section
-        className={
-          styles.hero
-        }
-      >
+      ===================== */}      <section className={styles.exactHero}>
         <Image
           src="/espace-pro/images/hero.jpg"
-          alt={t(
-            "hero.imageAlt",
-          )}
+          alt={t("hero.imageAlt")}
           fill
           priority
           sizes="100vw"
-          className={
-            styles.heroImage
-          }
+          className={styles.exactHeroImage}
         />
 
-        <div
-          className={
-            styles.heroOverlay
-          }
-        />
+        <div className={styles.exactHeroOverlay} />
 
-        <div
-          className={
-            styles.heroContainer
-          }
-        >
-          <div
-            className={
-              styles.heroContent
-            }
-          >
-            <p
-              className={
-                styles.kicker
-              }
-            >
-              {t(
-                "hero.kicker",
-              )}
+        <div className={styles.exactHeroInner}>
+          <div className={styles.exactHeroContent}>
+            <p className={styles.exactHeroKicker}>
+              {t("hero.kicker")}
             </p>
 
-            <h1>
-              {t(
-                "hero.title.line1",
-              )}
+            <h1 className={styles.exactHeroTitle}>
+              {t("hero.title.line1")}
               <br />
-
-              {t(
-                "hero.title.line2",
-              )}
+              {t("hero.title.line2")}
               <br />
-
-              {t(
-                "hero.title.line3",
-              )}{" "}
-
-              <span>
-                SBI PARIS
-              </span>
+              {t("hero.title.line3")}
+              <span>SBI PARIS</span>
             </h1>
 
-            <p
-              className={
-                styles.heroDescription
-              }
-            >
-              {t(
-                "hero.description",
-              )}
+            <p className={styles.exactHeroDescription}>
+              {t("hero.description")}
             </p>
 
-            <div
-              className={
-                styles.heroActions
-              }
-            >
+            <div className={styles.exactHeroActions}>
               <Link
                 href="#avantages"
-                className={
-                  styles.primaryButton
-                }
+                className={styles.exactHeroPrimary}
               >
-                {t(
-                  "hero.buttons.advantages",
-                )}
+                {t("hero.buttons.advantages")}
               </Link>
 
               <Link
                 href="#contact"
-                className={
-                  styles.secondaryButton
-                }
+                className={styles.exactHeroSecondary}
               >
-                {t(
-                  "hero.buttons.quote",
-                )}
+                {t("hero.buttons.quote")}
               </Link>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* =====================
+        <div className={styles.exactHeroTrust}>
+          {advantages.slice(0, 4).map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <div
+                key={item.title}
+                className={styles.exactHeroTrustItem}
+              >
+                <Icon className={styles.exactHeroTrustIcon} />
+
+                <div>
+                  <strong>{item.title}</strong>
+                  <span>{item.description}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+{/* =====================
           AVANTAGES
       ===================== */}
 
@@ -1468,7 +1430,7 @@ export default function EspaceProPage() {
               {/* =================================================
                   CATÉGORIES
 
-                  Aucun prix ni remise n'est affiché au client.
+                  Aucun prix ni remise n'est affichÃ© au client.
               ================================================= */}
 
               <div
@@ -1565,7 +1527,7 @@ export default function EspaceProPage() {
                   PRODUITS
 
                   Le client choisit uniquement produit + quantité.
-                  Aucun prix, total ou remise n'est affiché.
+                  Aucun prix, total ou remise n'est affichÃ©.
               ================================================= */}
 
               {selectedCategories.length >
@@ -1691,7 +1653,7 @@ export default function EspaceProPage() {
                                   }}
                                 >
                                   <span>
-                                    Quantité
+                                    QuantitÃ©
                                   </span>
 
                                   <input
@@ -1981,3 +1943,5 @@ export default function EspaceProPage() {
     </main>
   );
 }
+
+

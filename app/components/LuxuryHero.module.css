@@ -285,3 +285,176 @@
     0 0 40px rgba(227, 6, 19, 0.25);
 }
 
+
+/* Cinematic hero motion */
+
+@keyframes heroKenBurns {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes heroContentReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.image {
+  animation: heroKenBurns 6s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+.content {
+  animation: heroContentReveal 0.9s ease-out both;
+}
+
+.brand {
+  animation: heroContentReveal 0.65s ease-out 0.05s both;
+}
+
+.title {
+  animation: heroContentReveal 0.8s ease-out 0.12s both;
+}
+
+.description {
+  animation: heroContentReveal 0.8s ease-out 0.22s both;
+}
+
+.actions {
+  animation: heroContentReveal 0.8s ease-out 0.30s both;
+}
+
+.stats {
+  animation: heroContentReveal 0.8s ease-out 0.38s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .content,
+  .brand,
+  .title,
+  .description,
+  .actions,
+  .stats {
+    animation: none !important;
+  }
+}
+
+
+/* Elegant light sweep on SBI PARIS */
+
+.brand {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.brand::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -45%;
+  width: 35%;
+  height: 140%;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255,255,255,0.15) 35%,
+    rgba(255,255,255,0.95) 50%,
+    rgba(255,255,255,0.15) 65%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  animation: brandLightSweep 4.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes brandLightSweep {
+  0% {
+    left: -45%;
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  32% {
+    left: 120%;
+    opacity: 1;
+  }
+
+  40%,
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand::after {
+    animation: none !important;
+  }
+}
+
+
+/* Subtle premium pulse on primary CTA */
+
+.primaryButton {
+  position: relative;
+  overflow: hidden;
+  animation: primaryCtaPulse 5s ease-in-out infinite;
+}
+
+@keyframes primaryCtaPulse {
+  0%,
+  72%,
+  100% {
+    box-shadow:
+      0 0 0 rgba(227, 6, 19, 0),
+      0 8px 24px rgba(227, 6, 19, 0.18);
+    transform: translateY(0);
+  }
+
+  82% {
+    box-shadow:
+      0 0 18px rgba(227, 6, 19, 0.45),
+      0 10px 30px rgba(227, 6, 19, 0.28);
+    transform: translateY(-1px);
+  }
+
+  90% {
+    box-shadow:
+      0 0 8px rgba(227, 6, 19, 0.22),
+      0 8px 24px rgba(227, 6, 19, 0.18);
+    transform: translateY(0);
+  }
+}
+
+.primaryButton:hover {
+  animation-play-state: paused;
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 20px rgba(227, 6, 19, 0.5),
+    0 12px 30px rgba(227, 6, 19, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primaryButton {
+    animation: none !important;
+  }
+}
+

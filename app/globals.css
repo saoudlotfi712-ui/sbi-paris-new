@@ -1454,3 +1454,112 @@ input, textarea, select, button { max-width: 100%; font: inherit; }
     animation: none;
   }
 }
+
+.trustItemPremium {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.trustItemPremium:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(7, 26, 61, 0.12);
+  background-color: #ffffff;
+}
+
+
+/* Premium history section */
+
+.historyPremiumImage {
+  transition:
+    transform 0.7s ease,
+    box-shadow 0.5s ease;
+  box-shadow: 0 18px 42px rgba(7, 26, 61, 0.10);
+}
+
+.historyPremiumImage:hover {
+  transform: scale(1.025);
+  box-shadow: 0 24px 54px rgba(7, 26, 61, 0.16);
+}
+
+.historyPremiumContent {
+  animation: historyReveal 0.9s ease-out both;
+}
+
+.historyPremiumStat {
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.historyPremiumStat:hover {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(7, 26, 61, 0.10);
+}
+
+@keyframes historyReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .historyPremiumContent {
+    animation: none !important;
+  }
+}
+
+
+/* Elegant golden glow for 1994 */
+
+.historyYearPremium {
+  display: inline-block;
+  color: #071a3d;
+  text-shadow:
+    0 0 0 rgba(212, 175, 55, 0);
+  animation: historyYearGlow 5.5s ease-in-out infinite;
+}
+
+@keyframes historyYearGlow {
+  0%,
+  68%,
+  100% {
+    color: #071a3d;
+    text-shadow:
+      0 0 0 rgba(212, 175, 55, 0);
+    transform: scale(1);
+  }
+
+  78% {
+    color: #b88a1e;
+    text-shadow:
+      0 0 10px rgba(212, 175, 55, 0.45),
+      0 0 22px rgba(212, 175, 55, 0.22);
+    transform: scale(1.015);
+  }
+
+  88% {
+    color: #071a3d;
+    text-shadow:
+      0 0 7px rgba(212, 175, 55, 0.15);
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .historyYearPremium {
+    animation: none !important;
+  }
+}
+

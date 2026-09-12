@@ -879,3 +879,651 @@
 .partnerButton{
   margin-top:26px;
 }
+
+/* =========================
+   PREMIUM HERO TRUST BAR
+========================= */
+
+.hero {
+  min-height: 700px;
+  padding-bottom: 120px;
+}
+
+.heroContainer {
+  min-height: 580px;
+}
+
+.heroTrust {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: min(1320px, calc(100% - 48px));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+
+.heroTrustItem {
+  min-height: 86px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  border-right: 1px solid rgba(255,255,255,.18);
+  transition:
+    background .3s ease,
+    transform .3s ease;
+}
+
+.heroTrustItem:last-child {
+  border-right: 0;
+}
+
+.heroTrustItem:hover {
+  background: rgba(255,255,255,.07);
+  transform: translateY(-3px);
+}
+
+.heroTrustIcon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  stroke-width: 1.6;
+  color: #fff;
+}
+
+.heroTrustItem strong {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.heroTrustItem span {
+  display: block;
+  max-width: 190px;
+  margin-top: 4px;
+  color: rgba(255,255,255,.68);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-bottom: 180px;
+  }
+
+  .heroTrust {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroTrustItem:nth-child(2) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 850px;
+    padding-bottom: 300px;
+  }
+
+  .heroTrust {
+    bottom: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .heroTrustItem {
+    min-height: 64px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.14);
+  }
+
+  .heroTrustItem:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+/* =========================
+   ESPACE PRO HERO V2
+========================= */
+
+.hero {
+  min-height: 760px !important;
+  padding-bottom: 125px !important;
+}
+
+.heroContainer {
+  min-height: 635px !important;
+  align-items: center;
+}
+
+.heroContent {
+  width: min(620px, 100%) !important;
+}
+
+.heroContent h1 {
+  font-size: clamp(58px, 5.6vw, 86px) !important;
+  line-height: .98 !important;
+  max-width: 650px;
+}
+
+.heroDescription {
+  max-width: 560px !important;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+}
+
+.heroImage {
+  object-position: 72% center !important;
+  transform: scale(1.09) !important;
+}
+
+.heroOverlay {
+  background: linear-gradient(
+    90deg,
+    rgba(5,18,43,.99) 0%,
+    rgba(5,18,43,.96) 28%,
+    rgba(5,18,43,.80) 45%,
+    rgba(5,18,43,.36) 68%,
+    rgba(5,18,43,.05) 100%
+  ) !important;
+}
+
+.heroTrust {
+  bottom: 22px !important;
+  width: min(1320px, calc(100% - 48px)) !important;
+  border-top: 1px solid rgba(255,255,255,.22) !important;
+  background: rgba(5,18,43,.18);
+  backdrop-filter: blur(3px);
+}
+
+.heroTrustItem {
+  min-height: 92px !important;
+  padding: 18px 22px !important;
+}
+
+.heroTrustIcon {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.heroTrustItem strong {
+  font-size: 15px !important;
+}
+
+.heroTrustItem span {
+  font-size: 11px !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 920px !important;
+  }
+
+  .heroImage {
+    object-position: 64% center !important;
+    transform: scale(1.06) !important;
+  }
+
+  .heroContent h1 {
+    font-size: 48px !important;
+  }
+
+  .heroTrust {
+    width: calc(100% - 28px) !important;
+  }
+}
+
+
+/* ==========================================
+   EXACT PREMIUM HERO - SBI PARIS ESPACE PRO
+========================================== */
+
+.exactHero {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+  background: #06162f;
+}
+
+.exactHeroImage {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: 72% center !important;
+  transform: scale(1.02);
+}
+
+.exactHeroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 14, 34, 0.99) 0%,
+      rgba(3, 14, 34, 0.96) 26%,
+      rgba(3, 14, 34, 0.78) 44%,
+      rgba(3, 14, 34, 0.32) 67%,
+      rgba(3, 14, 34, 0.05) 100%
+    );
+}
+
+.exactHeroInner {
+  position: relative;
+  z-index: 2;
+  width: min(1380px, calc(100% - 70px));
+  min-height: 760px;
+  margin: 0 auto;
+  padding: 56px 0 145px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.exactHeroContent {
+  width: min(640px, 48%);
+  padding-top: 18px;
+}
+
+.exactHeroKicker {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+}
+
+.exactHeroTitle {
+  margin: 0;
+  max-width: 650px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(54px, 5.2vw, 78px);
+  font-weight: 500;
+  line-height: .98;
+}
+
+.exactHeroTitle span {
+  display: block;
+  margin-top: 4px;
+  color: #e3262e;
+}
+
+.exactHeroDescription {
+  max-width: 590px;
+  margin: 26px 0 0;
+  color: rgba(255,255,255,.78);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.exactHeroActions {
+  display: flex;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.exactHeroPrimary,
+.exactHeroSecondary {
+  min-height: 58px;
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  transition: .3s ease;
+}
+
+.exactHeroPrimary {
+  background: #e3262e;
+  color: white;
+  border: 2px solid #e3262e;
+}
+
+.exactHeroPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(227,38,46,.28);
+}
+
+.exactHeroSecondary {
+  background: rgba(4,17,39,.28);
+  color: white;
+  border: 2px solid rgba(255,255,255,.58);
+  backdrop-filter: blur(4px);
+}
+
+.exactHeroSecondary:hover {
+  background: white;
+  color: #071a3d;
+}
+
+.exactHeroTrust {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  width: min(1380px, calc(100% - 70px));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255,255,255,.18);
+}
+
+.exactHeroTrustItem {
+  min-height: 88px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+  border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.exactHeroTrustItem:last-child {
+  border-right: none;
+}
+
+.exactHeroTrustIcon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  stroke-width: 1.5;
+}
+
+.exactHeroTrustItem strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.exactHeroTrustItem span {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255,255,255,.66);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .exactHero {
+    min-height: 900px;
+  }
+
+  .exactHeroInner {
+    min-height: 900px;
+    width: calc(100% - 40px);
+    padding-bottom: 260px;
+  }
+
+  .exactHeroContent {
+    width: 70%;
+  }
+
+  .exactHeroTrust {
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .exactHero {
+    min-height: 1080px;
+  }
+
+  .exactHeroImage {
+    object-position: 65% center !important;
+  }
+
+  .exactHeroOverlay {
+    background: rgba(3,14,34,.72);
+  }
+
+  .exactHeroInner {
+    width: calc(100% - 30px);
+    min-height: 1080px;
+    padding-top: 45px;
+    padding-bottom: 350px;
+  }
+
+  .exactHeroContent {
+    width: 100%;
+  }
+
+  .exactHeroTitle {
+    font-size: 46px;
+  }
+
+  .exactHeroActions {
+    flex-direction: column;
+  }
+
+  .exactHeroPrimary,
+  .exactHeroSecondary {
+    width: 100%;
+  }
+
+  .exactHeroTrust {
+    bottom: 18px;
+    width: calc(100% - 30px);
+    grid-template-columns: 1fr;
+  }
+
+  .exactHeroTrustItem {
+    min-height: 68px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,.13);
+  }
+}
+
+
+/* =========================
+   PREMIUM PRO FORM
+========================= */
+
+.formSection {
+  padding: 110px 0;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7f9fc 100%
+    );
+}
+
+.formContainer {
+  width: min(1360px, calc(100% - 48px));
+  gap: 64px;
+  align-items: stretch;
+}
+
+.formColumn {
+  padding: 42px;
+  border: 1px solid #e7ebf0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 18px 50px rgba(8, 26, 53, 0.08);
+}
+
+.formKicker {
+  color: #d32f2f;
+  font-size: 12px;
+  letter-spacing: .24em;
+}
+
+.formColumn h2 {
+  max-width: 620px;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.03;
+  color: #081a35;
+}
+
+.titleLine {
+  width: 72px;
+  height: 3px;
+  margin-top: 22px;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.formGrid {
+  gap: 22px;
+}
+
+.form label span {
+  color: #26354a;
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+
+.form input,
+.form select,
+.form textarea {
+  border: 1px solid #d9dee6;
+  border-radius: 10px;
+  background: #fbfcfe;
+  color: #10233d;
+  transition:
+    border-color .25s ease,
+    box-shadow .25s ease,
+    background .25s ease,
+    transform .25s ease;
+}
+
+.form input,
+.form select {
+  height: 58px;
+  padding: 0 16px;
+}
+
+.form textarea {
+  min-height: 150px;
+  padding: 16px;
+}
+
+.form input:hover,
+.form select:hover,
+.form textarea:hover {
+  border-color: #b8c1ce;
+  background: #ffffff;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #d32f2f;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 4px rgba(211, 47, 47, 0.08),
+    0 8px 20px rgba(8, 26, 53, 0.05);
+  transform: translateY(-1px);
+}
+
+.submitButton {
+  min-height: 60px;
+  margin-top: 28px;
+  border-radius: 10px;
+  background:
+    linear-gradient(
+      135deg,
+      #d32f2f 0%,
+      #b71c1c 100%
+    );
+  box-shadow:
+    0 12px 28px rgba(211,47,47,.18);
+}
+
+.submitButton:hover {
+  background: #081a35;
+  transform: translateY(-3px);
+  box-shadow:
+    0 16px 34px rgba(8,26,53,.18);
+}
+
+.formImageWrapper {
+  min-height: 720px;
+  border-radius: 22px;
+  box-shadow:
+    0 22px 55px rgba(8, 26, 53, 0.14);
+}
+
+.formImage {
+  transition: transform .8s ease;
+}
+
+.formImageWrapper:hover .formImage {
+  transform: scale(1.035);
+}
+
+.formImageOverlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(5,18,43,.82) 0%,
+      rgba(5,18,43,.24) 52%,
+      rgba(5,18,43,.02) 100%
+    );
+}
+
+.imageBadge {
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  padding: 22px 24px;
+  border-radius: 16px;
+  background: rgba(8,26,53,.86);
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.18);
+}
+
+@media (max-width: 1100px) {
+  .formColumn {
+    padding: 34px;
+  }
+
+  .formImageWrapper {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formSection {
+    padding: 70px 0;
+  }
+
+  .formColumn {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .formContainer {
+    width: calc(100% - 28px);
+    gap: 34px;
+  }
+
+  .formImageWrapper {
+    min-height: 380px;
+    border-radius: 16px;
+  }
+
+  .imageBadge {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 17px 18px;
+  }
+}
+

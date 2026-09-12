@@ -1,4 +1,4 @@
-import {getTranslations} from "next-intl/server";
+﻿import {getTranslations} from "next-intl/server";
 
 import {
   BadgeCheck,
@@ -53,6 +53,8 @@ export default async function HomePage() {
     <main>
       <LuxuryHero />
 
+      <TrustSection trustItems={trustItems} />
+
       <HistorySection t={t} />
 
       <ParisUniverse />
@@ -62,8 +64,6 @@ export default async function HomePage() {
       <WholesaleSection />
 
       <PromotionsShowcase />
-
-      <TrustSection trustItems={trustItems} />
     </main>
   );
 }
@@ -91,21 +91,29 @@ function TrustSection({
   return (
     <section
       style={{
-        padding: "34px 4%",
+        position: "relative",
+        zIndex: 5,
+        padding: "0 7% 34px",
+        marginTop: "-56px",
         backgroundColor: "#ffffff",
-        borderTop: "1px solid #e8ebf0",
-        borderBottom: "1px solid #e8ebf0",
       }}
     >
       <div
         style={{
           width: "100%",
-          maxWidth: "1450px",
+          maxWidth: "1400px",
           margin: "0 auto",
           display: "grid",
           gridTemplateColumns:
-            "repeat(auto-fit, minmax(230px, 1fr))",
+            "repeat(auto-fit, minmax(210px, 1fr))",
           alignItems: "stretch",
+          background:
+            "linear-gradient(135deg, #071a3d 0%, #0b234d 100%)",
+          borderRadius: "20px",
+          overflow: "hidden",
+          boxShadow:
+            "0 18px 45px rgba(7, 26, 61, 0.22)",
+          border: "1px solid rgba(255,255,255,0.10)",
         }}
       >
         {trustItems.map((item, index) => {
@@ -115,24 +123,24 @@ function TrustSection({
             <article
               key={item.title}
               style={{
-                minHeight: "125px",
-                padding: "20px 26px",
+                minHeight: "130px",
+                padding: "24px 28px",
                 display: "flex",
                 alignItems: "center",
                 gap: "18px",
                 borderRight:
                   index === trustItems.length - 1
                     ? "none"
-                    : "1px solid #e1e5eb",
+                    : "1px solid rgba(255,255,255,0.14)",
               }}
             >
               <Icon
-                size={43}
-                strokeWidth={1.55}
+                size={42}
+                strokeWidth={1.5}
                 aria-hidden="true"
                 style={{
                   flex: "0 0 auto",
-                  color: "#071a3d",
+                  color: "#ffffff",
                 }}
               />
 
@@ -140,12 +148,11 @@ function TrustSection({
                 <h3
                   style={{
                     margin: 0,
-                    color: "#071a3d",
+                    color: "#ffffff",
                     fontSize: "13px",
                     fontWeight: 900,
-                    lineHeight: 1.3,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.025em",
+                    lineHeight: 1.35,
+                    letterSpacing: "0.02em",
                   }}
                 >
                   {item.title}
@@ -154,9 +161,9 @@ function TrustSection({
                 <p
                   style={{
                     margin: "7px 0 0",
-                    color: "#596579",
+                    color: "rgba(255,255,255,0.72)",
                     fontSize: "12px",
-                    lineHeight: 1.5,
+                    lineHeight: 1.55,
                   }}
                 >
                   {item.description}
@@ -168,8 +175,8 @@ function TrustSection({
                     style={{
                       display: "inline-block",
                       marginTop: "7px",
-                      color: "#e30613",
-                      fontSize: "14px",
+                      color: "#ffffff",
+                      fontSize: "13px",
                       fontWeight: 800,
                       textDecoration: "none",
                     }}
@@ -230,7 +237,7 @@ function HistorySection({
           />
         </div>
 
-        <div style={{textAlign: "center"}}>
+        <div className="historyPremiumContent" style={{textAlign: "center"}}>
           <p
             style={{
               margin: 0,
@@ -244,6 +251,7 @@ function HistorySection({
           </p>
 
           <h2
+            className="historyYearPremium"
             style={{
               margin: "12px 0 0",
               color: "#071a3d",
@@ -369,3 +377,11 @@ function Stat({
     </div>
   );
 }
+
+
+
+
+
+
+
+

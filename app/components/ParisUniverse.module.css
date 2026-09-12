@@ -373,3 +373,141 @@
   }
 }
 
+
+/* ===== SBI PARIS - Premium Paris Universe Motion ===== */
+
+.card {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow:
+    0 22px 50px rgba(8, 27, 64, 0.20),
+    0 4px 14px rgba(8, 27, 64, 0.10);
+}
+
+.card:hover .image {
+  transform: scale(1.075);
+}
+
+.cardContent {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .cardContent {
+  transform: translateY(-5px);
+}
+
+.number {
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    color 0.4s ease;
+}
+
+.card:hover .number {
+  transform: translateY(-3px);
+  color: #ffffff;
+  opacity: 1;
+}
+
+.title,
+.kicker,
+.description,
+.ornament,
+.mainButton {
+  transition:
+    transform 0.4s ease,
+    text-shadow 0.4s ease;
+}
+
+.mainButton:hover {
+  box-shadow:
+    0 12px 30px rgba(201, 31, 46, 0.24);
+}
+
+/* Scroll reveal - modern browsers */
+@supports (animation-timeline: view()) {
+  .heading {
+    animation: parisHeadingReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 32%;
+  }
+
+  .card {
+    animation: parisCardReveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 28%;
+  }
+
+  .card:nth-child(2) {
+    animation-range: entry 8% cover 31%;
+  }
+
+  .card:nth-child(3) {
+    animation-range: entry 11% cover 34%;
+  }
+
+  .card:nth-child(4) {
+    animation-range: entry 7% cover 30%;
+  }
+
+  .card:nth-child(5) {
+    animation-range: entry 10% cover 33%;
+  }
+
+  .card:nth-child(6) {
+    animation-range: entry 13% cover 36%;
+  }
+}
+
+@keyframes parisHeadingReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: none;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: none;
+  }
+}
+
+@keyframes parisCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(34px) scale(0.97);
+    filter: none;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading,
+  .card {
+    animation: none !important;
+  }
+}
+
+
+
+.card,
+.card .image,
+.cardContent,
+.number,
+.category,
+.discover {
+  filter: none !important;
+  backface-visibility: hidden;
+}
+

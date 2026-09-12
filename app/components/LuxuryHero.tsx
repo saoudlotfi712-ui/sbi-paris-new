@@ -1,22 +1,67 @@
+﻿"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import styles from "./LuxuryHero.module.css";
 
+const heroImages = [
+  "/banner.jpg",
+  "/hero-slider/hero-2.jpg",
+  "/hero-slider/hero-3.jpg",
+];
+
 export default function LuxuryHero() {
   const t = useTranslations("hero");
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setCurrentImage((current) =>
+        (current + 1) % heroImages.length
+      );
+    }, 3000);
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   return (
-    <section className={styles.hero}>
-      <img
-        src="/banner.jpg"
-        alt={t("imageAlt")}
-        className={styles.image}
+    <section
+      className={styles.hero}
+      style={{ position: "relative" }}
+    >
+      {heroImages.map((src, index) => (
+        <img
+          key={src}
+          src={src}
+          alt={t("imageAlt")}
+          className={styles.image}
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            opacity: currentImage === index ? 1 : 0,
+            transition: "opacity 900ms ease-in-out",
+            zIndex: 0,
+          }}
+        />
+      ))}
+
+      <div
+        className={styles.overlay}
+        style={{ zIndex: 1 }}
       />
 
-      <div className={styles.overlay} />
-
-      <div className={styles.content}>
+      <div
+        className={styles.content}
+        style={{
+          position: "relative",
+          zIndex: 2,
+        }}
+      >
         <p className={styles.brand}>SBI PARIS</p>
 
         <h1 className={styles.title}>
@@ -53,7 +98,6 @@ export default function LuxuryHero() {
 
         <div className={styles.stats}>
           <Stat value="1994" label={t("stats.paris")} />
-          
           <Stat value="30" label={t("stats.countries")} />
         </div>
       </div>

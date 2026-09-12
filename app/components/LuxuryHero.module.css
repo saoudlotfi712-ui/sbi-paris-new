@@ -258,3 +258,30 @@
     font-size: 14px;
   }
 }
+/* Luxury title glow when hovering CTA buttons */
+
+.title,
+.title span {
+  transition:
+    text-shadow 0.35s ease,
+    filter 0.35s ease,
+    transform 0.35s ease;
+}
+
+.content:has(.primaryButton:hover) .title,
+.content:has(.secondaryButton:hover) .title {
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.55),
+    0 0 24px rgba(255, 255, 255, 0.28);
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.content:has(.primaryButton:hover) .title .red,
+.content:has(.secondaryButton:hover) .title .red {
+  text-shadow:
+    0 0 10px rgba(227, 6, 19, 0.9),
+    0 0 24px rgba(227, 6, 19, 0.55),
+    0 0 40px rgba(227, 6, 19, 0.25);
+}
+
